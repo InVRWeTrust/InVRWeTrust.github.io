@@ -1,0 +1,277 @@
+/* vietnamese */
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/Inconsolata/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp9s8WRL2kXWdycuJDETf.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/Inconsolata/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp9s8WRP2kXWdycuJDETf.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../fonts/Inconsolata/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp9s8WR32kXWdycuJDA.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/PoiretOne/UqyVK80NJXN4zfRgbdfbo5pcV-UyZKAbcw.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/PoiretOne/UqyVK80NJXN4zfRgbdfbo5BcV-UyZKAbcw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/PoiretOne/UqyVK80NJXN4zfRgbdfbo55cV-UyZKA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Lobster/neILzCirqoswsqX9zo-mM4MwWJXNqA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Lobster/neILzCirqoswsqX9zoamM4MwWJXNqA.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Lobster/neILzCirqoswsqX9zo2mM4MwWJXNqA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Lobster/neILzCirqoswsqX9zoymM4MwWJXNqA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Lobster/neILzCirqoswsqX9zoKmM4MwWJU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+  transform-style: preserve-3d;
+}
+
+html, body {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  width: 200vw;
+  max-width: 200vw;
+  overflow-x: hidden;
+  font-family: "Inconsolata";
+}
+a {
+  color: black;
+}
+body {
+  background-color: black;
+}
+#prop {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  min-height: 100%;
+  height: 100%;
+  letter-spacing: -0.6vw;
+  word-spacing: -0.5vw;
+  text-shadow: -0.4vw 0.4vw red;
+  word-break: break-all;
+  font-size: 14vw;
+  line-height: 66vh;
+  z-index: -1;
+  color: white;
+  text-align: justify;
+  text-transform: uppercase;
+  font-family: krungthep;
+  transform: rotate(-12deg) skew(-12deg);
+  left: -93vw;
+  font-size: 14vw;
+  margin-top: 4vh;
+  font-family: 'Lobster', cursive;
+}
+.emph {
+  text-shadow: -0.3vw 0.3vw white;
+  color: red;
+  text-decoration: underline;
+}
+article {
+  margin-top: calc(95vh);
+}
+article section div.window {
+  max-width: 50vw;
+  padding: 2ex;
+  margin-bottom: 66vh;
+}
+article section div.window > p {
+  padding: 1ex;
+}
+article section div.window > img,
+article section div.window > p,
+article section div.window > iframe,
+article section div.window h2,
+article section div.window div
+{
+  box-shadow: 0.2em 0.2em darkgrey;
+  transition: all 1s;
+  border: solid 0.1em black;
+  background-color: white
+}
+article section div.window.right > img,
+article section div.window.right > p,
+article section div.window.right > iframe,
+article section div.window.right h2,
+article section div.window.right div
+{
+  box-shadow: -0.2em 0.2em darkgrey;
+}
+article section div.window:hover > img,
+article section div.window:hover > p,
+article section div.window:hover > iframe,
+article section div.window:hover h2,
+article section div.window:hover div
+{
+  box-shadow: 0.4em 0.4em lightgrey;
+  transform: translateX(-0.2em);
+  /*border: solid 1px black;*/
+}
+article section div.window.right:hover > img,
+article section div.window.right:hover > p,
+article section div.window.right:hover > iframe,
+article section div.window.right:hover h2,
+article section div.window.right:hover div
+{
+  box-shadow: -0.4em 0.4em lightgrey;
+  transform: translateX(0.2em);
+}
+
+article section div.window img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+article section div h2, article section h3 {
+  margin-top: 0;
+  display: inline;
+  padding: 0.5em;
+}
+
+article section div h2 div + *,
+article section div div + *,
+article section div iframe + *
+{
+  margin-top: 2ex;
+}
+
+section {
+  margin: 0.5em;
+}
+section#statics div {
+  padding: 0.5em;
+}
+div.left.parallax-child-2 {
+  margin-left: -50vw;
+}
+div.left.parallax-child-1 {
+  margin-left: -150vw;
+}
+div.right.parallax-child-1 {
+  margin-left: -23vw;
+  margin-bottom: 80vh;
+}
+div.right.parallax-child-2 {
+  margin-left: 23vw;
+}
+/*
+div.left.parallax-child-1, div.right.parallax-child-2, article section div.window img {
+  box-shadow: -0.2em 0.2em black;
+}
+*/
+.no-margin {
+  margin: 0;
+}
+.text-center {
+  text-align: center;
+}
+/***********************************/
+#container, .parallax-container {
+}
+#container {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 1px;
+  perspective-origin: bottom;
+  -webkit-overflow-scrolling: touch;
+  transform-style: preserve-3d;
+}
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.parallax-child-1 .parallax-child-2 {
+  transform-origin: bottom;
+  transform-style: preserve-3d;
+}
+.parallax-child-1 {
+  transform: translate3d(0,0,-2px) scale(3);
+}
+.parallax-child-2 {
+  transform: translate3d(0,0,-1px) scale(2);
+}
+/***********************************/
