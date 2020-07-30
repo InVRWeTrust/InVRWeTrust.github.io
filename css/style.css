@@ -84,7 +84,7 @@ div.prop-text:first-child {
   text-decoration: underline;
 }
 article {
-  margin-top: -50vh;
+  margin-top: 34vh;
 }
 section div.window {
   max-width: 50vw;
@@ -206,6 +206,15 @@ div.left.parallax-child-1, div.right.parallax-child-2, article section div.windo
   transform: translate3d(0,0,-1px) scale(2);
 }
 /***********************************/
+section.flat {
+  transform-style: flat;
+}
+div#dataConsent {
+  position: fixed;
+  top: 50vh;
+  max-width: 96vw;
+  z-index: 10;
+}
 
 div#dataConsent div {
   text-align: right;
