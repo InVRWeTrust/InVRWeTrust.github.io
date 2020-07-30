@@ -8,12 +8,45 @@ vimeos.push(
   '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/189317525?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script><p><a href="https://vimeo.com/189317525">my lonesome hologram - a vr-installation</a> from <a href="https://vimeo.com/jithorse">daniel hengst / jitterhorse</a> on <a href="https://vimeo.com">Vimeo</a>.</p>'
 )
 
-function addContents(contents, targets) {
-  $('div.' + targets).each(function( index ) {
-    console.log( index + ": " + $( contents[index] ).text() );
-    $(this).html(contents[index]);
-  });
+function addContents(div, contents, index) {
+  console.log( index + ": " + $( contents[index] ).text() );
+  $(div).html(contents[index]);
+}
+function delContents(div, index) {
+  console.log( "del " + index );
+  $(div).html('');
 }
 
-addContents(sounds, 'soundcloud');
-addContents(vimeos, 'vimeo');
+function chooseContents(slider) {
+  console.log(slider);
+  var type = $(slider).data("slider");
+  console.log(type);
+  var content = {contents:[], targets:"" };
+  content.targets = type;
+  switch(type) {
+  case "soundcloud":
+    content.contents = sounds;
+    break;
+  case "vimeo":
+    content.contents = vimeos;
+    break;
+  default:
+    content.contents = None;
+  }
+  return content;
+}
+
+function contents(slider) {
+  content = chooseContents(slider);
+  choice = $(slider).is(":checked");
+  console.log(content.targets + ': ' + choice)
+  $('div.' + content.targets).each(function( index ) {
+    if (choice) {
+      console.log(content.targets + ' checked');
+      addContents(this, content.contents, index);
+    } else {
+      console.log(content.targets + ' unchecked');
+      delContents(this, index);
+    }
+  });
+}
