@@ -83,7 +83,7 @@ div.prop-text:first-child {
   text-decoration: underline;
 }
 article {
-  margin-top: 34vh;
+  margin-top: 80vh;
 }
 section div.window {
   max-width: 50vw;
@@ -132,6 +132,13 @@ section div#dataConsent.window:hover
   transform: translateX(-0.2em);
   /*border: solid 1px black;*/
 }
+#static1 {
+  transition: all 1s;
+}
+#static1:hover{
+  transform: translateX(-0.2em);
+}
+
 section div.window.right:hover > img,
 section div.window.right:hover > p,
 section div.window.right:hover > iframe,
@@ -174,6 +181,7 @@ section {
 }
 section#statics div {
   padding: 0.5em;
+  margin-bottom: 0;
 }
 div.window.right {
 margin-left: 60vh;
@@ -232,8 +240,9 @@ section.flat {
 }
 div#dataConsent {
   position: fixed;
-  top: 50vh;
-  max-width: 96vw;
+  top: 25vh;
+  left: 1.5vw;
+  max-width: 94vw;
   z-index: 10;
 }
 div.sliders .switch, div.sliders span.slider-desc {
@@ -299,6 +308,16 @@ div.window.placeholder.vimeo span.placeholder-fill {
   color: #1AB7EA;
 }
 
+button {
+  border-style: initial;
+  background: black;
+  color: white;
+  padding: 1ex;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  font-weight: bold;
+}
 /* The switch - the box around the slider */
 .switch {
   position: relative;
