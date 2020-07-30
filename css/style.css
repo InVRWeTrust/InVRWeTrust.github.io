@@ -156,6 +156,9 @@ section {
 section#statics div {
   padding: 0.5em;
 }
+div.window.right {
+margin-left: 60vh;
+}
 div.left.parallax-child-2 {
   margin-left: -34vw;
 }
