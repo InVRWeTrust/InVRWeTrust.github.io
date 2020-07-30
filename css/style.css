@@ -120,50 +120,49 @@ div.prop-text {
   text-decoration: underline;
 }
 article {
-  margin-top: 66vh;
 }
-article section div.window {
+section div.window {
   max-width: 50vw;
   padding: 2ex;
   margin-bottom: 70vh;
 }
-article section div.window > p {
+section div.window > p {
   padding: 1ex;
 }
-article section div.window > img,
-article section div.window > p,
-article section div.window > iframe,
-article section div.window h2,
-article section div.window div
+section div.window > img,
+section div.window > p,
+section div.window > iframe,
+section div.window h2,
+section div.window div
 {
   box-shadow: 0.2em 0.2em darkgrey;
   transition: all 1s;
   border: solid 0.1em black;
   background-color: white
 }
-article section div.window.right > img,
-article section div.window.right > p,
-article section div.window.right > iframe,
-article section div.window.right h2,
-article section div.window.right div
+section div.window.right > img,
+section div.window.right > p,
+section div.window.right > iframe,
+section div.window.right h2,
+section div.window.right div
 {
   box-shadow: -0.2em 0.2em darkgrey;
 }
-article section div.window:hover > img,
-article section div.window:hover > p,
-article section div.window:hover > iframe,
-article section div.window:hover h2,
-article section div.window:hover div
+section div.window:hover > img,
+section div.window:hover > p,
+section div.window:hover > iframe,
+section div.window:hover h2,
+section div.window:hover div
 {
   box-shadow: 0.4em 0.4em lightgrey;
   transform: translateX(-0.2em);
   /*border: solid 1px black;*/
 }
-article section div.window.right:hover > img,
-article section div.window.right:hover > p,
-article section div.window.right:hover > iframe,
-article section div.window.right:hover h2,
-article section div.window.right:hover div
+section div.window.right:hover > img,
+section div.window.right:hover > p,
+section div.window.right:hover > iframe,
+section div.window.right:hover h2,
+section div.window.right:hover div
 {
   box-shadow: -0.4em 0.4em lightgrey;
   transform: translateX(0.2em);
@@ -244,6 +243,21 @@ div.left.parallax-child-1, div.right.parallax-child-2, article section div.windo
 }
 /***********************************/
 
+div#dataConsent div {
+  text-align: right;
+}
+div#dataConsent b {
+  font-size: larger;
+  font-family: Lobster;
+}
+div#dataConsent div p:first-child {
+  margin-right: 60px;
+  text-align: left;
+}
+div#dataConsent div p {
+  margin: 1em;
+}
+
 div.window.placeholder.soundcloud {
   height: 200px;
   color: rgb(204, 68, 0);
@@ -273,6 +287,7 @@ div.window.placeholder {
   display: inline-block;
   width: 60px;
   height: 34px;
+  top: -10px;
 }
 
 /* Hide default HTML checkbox */
@@ -293,6 +308,7 @@ div.window.placeholder {
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
+  border: solid 1px;
 }
 
 .slider:before {
@@ -301,7 +317,7 @@ div.window.placeholder {
   height: 26px;
   width: 26px;
   left: 4px;
-  bottom: 4px;
+  bottom: 3px;
   background-color: black;
   -webkit-transition: .4s;
   transition: .4s;

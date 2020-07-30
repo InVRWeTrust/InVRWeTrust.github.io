@@ -31,14 +31,32 @@
 <body>
 <div id="container">
 <div id="prop"></div>
+<section>
+<div id="dataConsent" class="window parallax-child-2 right">
+  <div>
+    <p>
+      This side embeds contents from third party websites.
+      By agreeing to enable the third party content, you are subjected to the handling of your data according to that party.
+      <br>
+      You can review their respective data privacy policies here:
+      <br>
+      Soundcloud <a href="https://soundcloud.com/pages/cookies">Cookie Policy</a>, <a href="https://soundcloud.com/pages/privacy">Privacy Policy</a>.
+      <br>
+      Vimeo <a href="https://vimeo.com/cookie_policy">Cookie Policy</a>, <a href="https://vimeo.com/privacy">Privacy Policy</a>.
+    </p>
+    <p>
+    <span>Click to enable/disable contents from <b>soundcloud</b></span>
+    <label class="switch"><input data-slider="soundcloud" onclick="toggleContents(this);" type="checkbox"><span class="slider"></span></label>
+    </p>
+    <p>
+    <span>Click to enable/disable contents from <b>vimeo</b></span>
+    <label class="switch"><input data-slider="vimeo" onclick="toggleContents(this);" type="checkbox"><span class="slider"></span></label>
+    </p>
+  </div>
+</div>
+</section>
 <article>
 <section id="statics">
-  <div id="dataConsent" class="window parallax-child-2 right">
-    <span style="color:white">soundcloud</span>
-    <label class="switch"><input data-slider="soundcloud" onclick="toggleContents(this);" type="checkbox"><span class="slider"></span></label>
-    <span style="color:white">vimeo</span>
-    <label class="switch"><input data-slider="vimeo" onclick="toggleContents(this);" type="checkbox"><span class="slider"></span></label>
-  </div>
   <div id="static1" class="window parallax-child-1 left text-center">
     <a href="https://nextmuseum.io"><h2 class="no-margin">open call &rarr;</h2></a>
   </div>
