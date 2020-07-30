@@ -10,17 +10,21 @@ vimeos.push(
 
 function addContents(div, contents, index) {
   console.log( index + ": " + $( contents[index] ).text() );
+  $(div).removeClass('placeholder');
   $(div).html(contents[index]);
 }
-function delContents(div, index) {
+function delContents(div, targets, index) {
   console.log( "del " + index );
-  $(div).html('');
+  var text = '';
+  for(var i=0; i<1000; i++) {
+    text += '�'
+  }
+  $(div).html(text);
+  $(div).addClass('placeholder');
 }
 
-function chooseContents(slider) {
-  console.log(slider);
-  var type = $(slider).data("slider");
-  console.log(type);
+function chooseContents(type) {
+  console.log(type)
   var content = {contents:[], targets:"" };
   content.targets = type;
   switch(type) {
@@ -31,22 +35,30 @@ function chooseContents(slider) {
     content.contents = vimeos;
     break;
   default:
-    content.contents = None;
+    content.contents = null;
   }
   return content;
 }
 
-function contents(slider) {
-  content = chooseContents(slider);
-  choice = $(slider).is(":checked");
-  console.log(content.targets + ': ' + choice)
-  $('div.' + content.targets).each(function( index ) {
+function toggleContents(slider, type, choice) {
+  if (slider !== false) {
+    type = $(slider).data("slider");
+    choice = $(slider).is(":checked");
+  }
+  content = chooseContents(type);
+  targets = content.targets;
+  contents = content.contents;
+  console.log(targets + ': ' + choice)
+  $('div.' + targets).each(function( index ) {
     if (choice) {
-      console.log(content.targets + ' checked');
-      addContents(this, content.contents, index);
+      console.log(targets + ' checked');
+      addContents(this, contents, index);
     } else {
-      console.log(content.targets + ' unchecked');
-      delContents(this, index);
+      console.log(targets + ' unchecked');
+      delContents(this, targets, index);
     }
   });
 }
+
+toggleContents(false, "soundcloud", false);
+toggleContents(false, "vimeo", false);
