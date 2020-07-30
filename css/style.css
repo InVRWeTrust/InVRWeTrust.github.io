@@ -97,7 +97,8 @@ section div.window > img,
 section div.window > p,
 section div.window > iframe,
 section div.window h2,
-section div.window div
+section div.window:not(#dataConsent) div,
+section div#dataConsent.window
 {
   box-shadow: 0.2em 0.2em darkgrey;
   transition: all 1s;
@@ -116,7 +117,8 @@ section div.window:hover > img,
 section div.window:hover > p,
 section div.window:hover > iframe,
 section div.window:hover h2,
-section div.window:hover div
+section div.window:hover:not(#dataConsent) div,
+section div#dataConsent.window:hover
 {
   box-shadow: 0.4em 0.4em lightgrey;
   transform: translateX(-0.2em);
@@ -217,17 +219,28 @@ div#dataConsent {
   max-width: 96vw;
   z-index: 10;
 }
-
-div#dataConsent div {
-  text-align: right;
+div#dataConsent .switch, div#dataConsent span.slider-desc {
+  vertical-align: middle;
+}
+div#dataConsent span.slider-desc {
+  display: inline-block;
+}
+div#dataConsent .switch {
+  margin: 2px;
 }
 div#dataConsent b {
   font-size: larger;
   font-family: 'Glacial Indifference';
 }
-div#dataConsent div p:first-child {
-  margin-right: 60px;
+div#dataConsent div {
+  float: right;
+  text-align: right;
+  width: 49%
+}
+div#dataConsent div:first-child {
+  float: left;
   text-align: left;
+  border-right: solid 1px;
 }
 div#dataConsent div p {
   margin: 1em;
@@ -262,7 +275,6 @@ div.window.placeholder {
   display: inline-block;
   width: 60px;
   height: 34px;
-  top: -10px;
 }
 
 /* Hide default HTML checkbox */
