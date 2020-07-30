@@ -109,9 +109,17 @@ section div.window.right > img,
 section div.window.right > p,
 section div.window.right > iframe,
 section div.window.right h2,
-section div.window.right div:not(.sliders)
+section div.window.right:not(#dataConsent) div:not(.sliders)
 {
   box-shadow: -0.2em 0.2em darkgrey;
+}
+section div.window.right.parallax-child-2 > img,
+section div.window.right.parallax-child-2 > p,
+section div.window.right.parallax-child-2 > iframe,
+section div.window.right.parallax-child-2 h2,
+section div.window.right.parallax-child-2:not(#dataConsent) div:not(.sliders)
+{
+  box-shadow: -0.2em -0.2em darkgrey;
 }
 section div.window:hover > img,
 section div.window:hover > p,
@@ -120,7 +128,7 @@ section div.window:hover h2,
 section div.window:hover:not(#dataConsent) div:not(.sliders),
 section div#dataConsent.window:hover
 {
-  box-shadow: 0.4em 0.4em lightgrey;
+  box-shadow: -0.4em 0.4em lightgrey;
   transform: translateX(-0.2em);
   /*border: solid 1px black;*/
 }
@@ -128,10 +136,19 @@ section div.window.right:hover > img,
 section div.window.right:hover > p,
 section div.window.right:hover > iframe,
 section div.window.right:hover h2,
-section div.window.right:hover div:not(.sliders)
+section div.window.right:hover:not(#dataConsent) div:not(.sliders)
 {
-  box-shadow: -0.4em 0.4em lightgrey;
+  box-shadow: 0.4em 0.4em lightgrey;
   transform: translateX(0.2em);
+}
+section div.window.right.parallax-child-2:hover > img,
+section div.window.right.parallax-child-2:hover > p,
+section div.window.right.parallax-child-2:hover > iframe,
+section div.window.right.parallax-child-2:hover h2,
+section div.window.right.parallax-child-2:hover div:not(.sliders)
+{
+  box-shadow: 0.4em -0.4em lightgrey;
+  transform: translateX(0.2em) translateY(0.2em);
 }
 
 article section div.window img {
