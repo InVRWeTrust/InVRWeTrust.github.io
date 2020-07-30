@@ -87,6 +87,7 @@ html, body {
   max-width: 200vw;
   overflow-x: hidden;
   font-family: "Inconsolata";
+  font-size: 130%;
 }
 a {
   color: black;
@@ -95,28 +96,27 @@ body {
   background-color: black;
 }
 #prop {
-  text-align: center;
   position: absolute;
-  top: 0;
-  overflow: hidden;
-  width: 100%;
-  min-height: 100%;
-  height: 100%;
-  text-shadow: -0.4vw 0.4vw red;
+  transform: translate3d(0,0,-3px) scale(4);
+  transform-origin: 50% 0;
+  top: -160vh;
   font-size: 13vw;
-  left: -80vh;
-  line-height: 66vh;
+  left: -120vw;
   z-index: -1;
   color: white;
+  text-shadow: 0.3vw 0.3vw #cd0707;
   text-transform: uppercase;
-  font-family: 'Lobster', cursive;
+  font-family: 'Glacial Indifference';
 }
-div.prop-text {
-  transform: rotate(-6deg) skew(-6deg);
+#prop .prop-text {
+  width: 110vw;
+  margin-bottom: 50vh;
+}
+#prop .prop-text:first-child {
+  margin-top: -10vh;
 }
 .emph {
-  text-shadow: -0.3vw 0.3vw white;
-  color: red;
+  text-shadow: -0.3vw 0.3vw #006d95;
   text-decoration: underline;
 }
 article {
@@ -199,6 +199,9 @@ div.left.parallax-child-2 {
 div.left.parallax-child-1 {
   margin-left: -150vw;
 }
+.right {
+  margin-left: 40vw;
+}
 div.right.parallax-child-1 {
   margin-left: -23vw;
   margin-bottom: 80vh;
@@ -217,6 +220,15 @@ div.left.parallax-child-1, div.right.parallax-child-2, article section div.windo
 .text-center {
   text-align: center;
 }
+
+#statics {
+  position: relative;
+}
+#static1 {
+  position: absolute;
+  top: 0;
+}
+
 /***********************************/
 #container, .parallax-container {
 }
@@ -240,6 +252,6 @@ div.left.parallax-child-1, div.right.parallax-child-2, article section div.windo
   transform: translate3d(0,0,-2px) scale(3);
 }
 .parallax-child-2 {
-  transform: translate3d(0,0,-1px) scale(2);
+  transform: translate3d(0,0,-0.5px) scale(1.5);
 }
 /***********************************/
