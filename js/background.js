@@ -20,8 +20,9 @@ if (isIOS == 1) {
 }
 
 var text = '';
-for(var i=0; i<200; i++) {
-  text += 'in <span class="emph">VR</span> we <span class="emph">trust</span> ';
+for(var i=0; i<100; i++) {
+  text += '<div class="prop-text">in <span class="emph">VR</span> we <span class="emph">trust</span></div> ';
+  text += '<div class="prop-text"><span class="emph">we</span> trust <span class="emph">in</span> VR</div> ';
 }
 $('#prop').html(text);
 
