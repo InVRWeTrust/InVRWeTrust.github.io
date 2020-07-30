@@ -295,12 +295,15 @@ div.window.placeholder {
   transition: .4s;
 }
 
-input:checked + .slider {
-  background-color: red;
+input:checked + .slider.soundcloud {
+  background-color: rgb(204, 68, 0);
+}
+input:checked + .slider.vimeo {
+  background-color: #1AB7EA;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px red;
+  box-shadow: 0 0 1px black;
 }
 
 input:checked + .slider:before {
