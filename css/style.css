@@ -57,16 +57,15 @@ body {
 }
 #prop {
   transform-origin: top;
-  transform: translate3d(0,0,-3px) scale(3);
+  transform: translate3d(0,0,-3px) scale(4);
   position: absolute;
   overflow-y: hidden;
   top: -300vh;
-  left: -100vw;
   width: 100%;
   min-height: 100%;
   height: 100%;
   text-shadow: 0.3vw 0.3vw #cd0707;
-  font-size: 16.8vw;
+  font-size: 12.6vw;
   z-index: -1;
   color: white;
   text-transform: uppercase;
@@ -74,7 +73,7 @@ body {
 }
 div.prop-text {
   margin-top: 6ex;
-  width: calc(100% * 2 / 3);
+  width: 51%;
 }
 div.prop-text:first-child {
   margin-top: 0;
@@ -89,7 +88,7 @@ article {
 section div.window {
   max-width: 50vw;
   padding: 2ex;
-  margin-bottom: 70vh;
+  margin-bottom: 33vh;
 }
 section div.window > p {
   padding: 1ex;
@@ -158,7 +157,7 @@ section#statics div {
   padding: 0.5em;
 }
 div.left.parallax-child-2 {
-  margin-left: -50vw;
+  margin-left: -34vw;
 }
 div.left.parallax-child-1 {
   margin-left: -150vw;
@@ -203,7 +202,7 @@ div.left.parallax-child-1, div.right.parallax-child-2, article section div.windo
   transform: translate3d(0,0,-2px) scale(3);
 }
 .parallax-child-2 {
-  transform: translate3d(0,0,-1px) scale(2);
+  transform: translate3d(0,0,-0.5px) scale(1.5);
 }
 /***********************************/
 section.flat {
