@@ -56,16 +56,16 @@ body {
   background-color: black;
 }
 #prop {
-  text-align: center;
+  transform: translate3d(0,0,-3px) scale(3);
   position: absolute;
+  overflow-y: hidden;
   top: 0;
-  overflow: hidden;
+  left: -100vw;
   width: 100%;
   min-height: 100%;
   height: 100%;
-  text-shadow: -0.4vw 0.4vw red;
-  font-size: 13vw;
-  left: -80vh;
+  text-shadow: 0.3vw 0.3vw #cd0707;
+  font-size: 16.8vw;
   line-height: 66vh;
   z-index: -1;
   color: white;
@@ -73,14 +73,14 @@ body {
   font-family: 'Glacial Indifference';
 }
 div.prop-text {
-  transform: rotate(-6deg) skew(-6deg);
+  width: calc(100% * 2 / 3);
 }
 .emph {
-  text-shadow: -0.3vw 0.3vw white;
-  color: red;
+  text-shadow: -0.3vw 0.3vw #006d95;
   text-decoration: underline;
 }
 article {
+  margin-top: -50vh;
 }
 section div.window {
   max-width: 50vw;
@@ -193,7 +193,6 @@ div.left.parallax-child-1, div.right.parallax-child-2, article section div.windo
   display: none;
 }
 .parallax-child-1 .parallax-child-2 {
-  transform-origin: bottom;
   transform-style: preserve-3d;
 }
 .parallax-child-1 {

@@ -21,19 +21,25 @@ if (isIOS == 1) {
 
 var text = '';
 for(var i=0; i<100; i++) {
-  text += '<div class="prop-text">in <span class="emph">VR</span> we <span class="emph">trust</span></div> ';
-  text += '<div class="prop-text"><span class="emph">we</span> trust <span class="emph">in</span> VR</div> ';
+  text += '<div class="prop-text">in <span class="emph">VR</span> we <span class="emph">trust</span></div>'
+  text += '<div class="prop-text">we <span class="emph">trust</span> in <span class="emph">VR</span></div>'
+  text += '<div class="prop-text">we <span class="emph">trusted</span> in <span class="emph">VR</span></div>'
+  text += '<div class="prop-text">we <span class="emph">will trust</span> in <span class="emph">VR</span></div>'
+  text += '<div class="prop-text"><span class="emph">can</span> we <span class="emph">trust</span> in <span class="emph">VR</span>?</div>'
 }
 $('#prop').html(text);
 
 function fillBack() {
   var viewHeight = document.getElementById("container").scrollHeight;
   console.log(viewHeight);
-  viewHeight = Math.ceil(viewHeight * 1.3);
+  viewHeight = Math.ceil(viewHeight / 2);
   $("#prop").css("height", viewHeight);
   console.log(viewHeight);
 }
-fillBack();
+
+$( document ).ready(function() {
+  fillBack();
+});
 
 $(window).resize(function(){
   fillBack();
