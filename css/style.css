@@ -322,7 +322,9 @@ div.window.placeholder.vimeo span.placeholder-fill {
   -webkit-transition: .4s;
   transition: .4s;
 }
-
+input:checked + .slider {
+  background-color: black;
+}
 input:checked + .slider.soundcloud {
   background-color: rgb(204, 68, 0);
 }

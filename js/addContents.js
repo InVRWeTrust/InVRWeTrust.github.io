@@ -74,6 +74,11 @@ function toggleContents(slider, type, choice) {
   targets = content.targets;
   contents = content.contents;
 
+  // is this the save routine?
+  if (contents === null) {
+    console.log('save consents');
+    $('#dataConsent').css({"transform": "translateY(150vh)"});
+  }
   console.log(targets + ': ' + choice)
   $('div.' + targets).each(function( index ) {
     if (choice) {
