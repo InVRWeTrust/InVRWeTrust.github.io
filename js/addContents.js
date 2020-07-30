@@ -15,11 +15,36 @@ function addContents(div, contents, index) {
 }
 function delContents(div, targets, index) {
   console.log( "del " + index );
-  var text = '';
-  for(var i=0; i<1000; i++) {
-    text += '�'
+  var html = '';
+  html += '<div class="sliders">'
+  switch(targets) {
+  case "soundcloud":
+    html += '<p>'
+    html += 'Soundcloud <a href="https://soundcloud.com/pages/cookies">Cookie Policy &rarr;</a>, <a href="https://soundcloud.com/pages/privacy">Privacy Policy &rarr;</a>';
+    html += '</p>'
+    html += '<p>'
+    html += '<span class="slider-desc">Click to enable/disable contents from <b>soundcloud</b></span>'
+    html += '<label class="switch"><input data-slider="soundcloud" onclick="toggleContents(this);" type="checkbox"><span class="slider soundcloud"></span></label>'
+    html += '</p>'
+    break;
+  case "vimeo":
+    html += '<p>'
+    html += 'Vimeo <a href="https://vimeo.com/cookie_policy">Cookie Policy &rarr;</a>, <a href="https://vimeo.com/privacy">Privacy Policy &rarr;</a>.'
+    html += '</p>'
+    html += '<p>'
+    html += '<span class="slider-desc">Click to enable/disable contents from <b>vimeo</b></span>'
+    html += '<label class="switch"><input data-slider="vimeo" onclick="toggleContents(this);" type="checkbox"><span class="slider vimeo"></span></label>'
+    html += '</p>'
+    break;
+  default:
+    break;
   }
-  $(div).html(text);
+  html += '</div>'
+  html += '<span class="placeholder-fill">'
+  for(var i=0; i<1000; i++) {
+    html += '�'
+  }
+  $(div).html(html);
   $(div).addClass('placeholder');
 }
 
@@ -48,13 +73,16 @@ function toggleContents(slider, type, choice) {
   content = chooseContents(type);
   targets = content.targets;
   contents = content.contents;
+
   console.log(targets + ': ' + choice)
   $('div.' + targets).each(function( index ) {
     if (choice) {
       console.log(targets + ' checked');
       addContents(this, contents, index);
+      $('[data-slider="' + targets + '"]').prop( "checked", true );
     } else {
       console.log(targets + ' unchecked');
+      $('[data-slider="' + targets + '"]').prop( "checked", false );
       delContents(this, targets, index);
     }
   });

@@ -97,7 +97,7 @@ section div.window > img,
 section div.window > p,
 section div.window > iframe,
 section div.window h2,
-section div.window:not(#dataConsent) div,
+section div.window:not(#dataConsent) div:not(.sliders),
 section div#dataConsent.window
 {
   box-shadow: 0.2em 0.2em darkgrey;
@@ -109,7 +109,7 @@ section div.window.right > img,
 section div.window.right > p,
 section div.window.right > iframe,
 section div.window.right h2,
-section div.window.right div
+section div.window.right div:not(.sliders)
 {
   box-shadow: -0.2em 0.2em darkgrey;
 }
@@ -117,7 +117,7 @@ section div.window:hover > img,
 section div.window:hover > p,
 section div.window:hover > iframe,
 section div.window:hover h2,
-section div.window:hover:not(#dataConsent) div,
+section div.window:hover:not(#dataConsent) div:not(.sliders),
 section div#dataConsent.window:hover
 {
   box-shadow: 0.4em 0.4em lightgrey;
@@ -128,7 +128,7 @@ section div.window.right:hover > img,
 section div.window.right:hover > p,
 section div.window.right:hover > iframe,
 section div.window.right:hover h2,
-section div.window.right:hover div
+section div.window.right:hover div:not(.sliders)
 {
   box-shadow: -0.4em 0.4em lightgrey;
   transform: translateX(0.2em);
@@ -219,16 +219,17 @@ div#dataConsent {
   max-width: 96vw;
   z-index: 10;
 }
-div#dataConsent .switch, div#dataConsent span.slider-desc {
+div.sliders .switch, div.sliders span.slider-desc {
   vertical-align: middle;
 }
-div#dataConsent span.slider-desc {
+div.sliders span.slider-desc {
   display: inline-block;
 }
-div#dataConsent .switch {
+div.sliders .switch {
   margin: 2px;
+  margin-left: 0.5em;
 }
-div#dataConsent b {
+b {
   font-size: larger;
   font-family: 'Glacial Indifference';
 }
@@ -242,31 +243,43 @@ div#dataConsent div:first-child {
   text-align: left;
   border-right: solid 1px;
 }
-div#dataConsent div p {
+div.sliders p {
   margin: 1em;
 }
 
 div.window.placeholder.soundcloud {
   height: 200px;
-  color: rgb(204, 68, 0);
   background: #f5f5f5;
 }
 
 div.window.placeholder.vimeo {
   height: 1px;
   padding-bottom: calc(56.25% / 4);
-  color: #1AB7EA;
   background: #EEF1F2;
 }
 
 div.window.placeholder {
   border: solid 1px black;
   overflow-y: hidden;
+  width: 100%;
+  cursor: help;
+}
+div.window.placeholder span.placeholder-fill {
   word-break: break-all;
   padding: 0;
   font-size: 2em;
-  width: 100%;
-  cursor: help;
+}
+div.window.placeholder.soundcloud span.placeholder-fill {
+  word-break: break-all;
+  padding: 0;
+  font-size: 2em;
+  color: rgb(204, 68, 0);
+}
+div.window.placeholder.vimeo span.placeholder-fill {
+  word-break: break-all;
+  padding: 0;
+  font-size: 2em;
+  color: #1AB7EA;
 }
 
 /* The switch - the box around the slider */
