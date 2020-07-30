@@ -56,24 +56,28 @@ body {
   background-color: black;
 }
 #prop {
+  transform-origin: top;
   transform: translate3d(0,0,-3px) scale(3);
   position: absolute;
   overflow-y: hidden;
-  top: 0;
+  top: -300vh;
   left: -100vw;
   width: 100%;
   min-height: 100%;
   height: 100%;
   text-shadow: 0.3vw 0.3vw #cd0707;
   font-size: 16.8vw;
-  line-height: 66vh;
   z-index: -1;
   color: white;
   text-transform: uppercase;
   font-family: 'Glacial Indifference';
 }
 div.prop-text {
+  margin-top: 6ex;
   width: calc(100% * 2 / 3);
+}
+div.prop-text:first-child {
+  margin-top: 0;
 }
 .emph {
   text-shadow: -0.3vw 0.3vw #006d95;
