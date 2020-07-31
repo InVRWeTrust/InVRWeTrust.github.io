@@ -35,16 +35,9 @@ function setFold(target) {
 function scrollTo() {
   var anc = window.location.hash;
   console.log(anc);
-  var target = ''
-  switch(anc) {
-  case "#ko-kuration":
-    target = '#cocuration';
-    break;
-  default:
-    target = false;
-  }
+  var target = anc + '-fold'
 
-  if (target === false) {
+  if ( !$(target).length ) {
     // dont scroll if there is no real target
     console.log('no valid scroll target')
     return;
@@ -63,6 +56,6 @@ function scrollTo() {
   }, 3000);
 }
 
-sd('./md/co-curation_en.md', '#cocuration', true);
+sd('./md/co-curation_en.md', '#ko-kuration-fold', true);
 scrollTo();
 });
