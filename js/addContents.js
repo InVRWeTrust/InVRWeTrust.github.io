@@ -1,5 +1,27 @@
+function readSavedConsent() {
+  var saved = localStorage.getItem("save");
+  if (saved) {
+    options.forEach(function(item, index, array) {
+      if (item == "save") {
+        return;
+      }
+      var value = false;
+      var choice = false;
+      value = localStorage.getItem(item);
+      console.log("read from storage: " + item + ": " + value);
+      if (value === "true") {
+        choice = true;
+      }
+      toggleContents(false, item, choice);
+    });
+  } else {
+    options.forEach(function(item, index, array) {
+      toggleContents(false, item, false);
+    });
+  }
+}
+
 function saveConsent(choice) {
-  var options = ["save", "soundcloud", "vimeo"];
   if (choice) {
     options.forEach(function(item, index, array) {
       var slider = $('#dataConsent').find('[data-slider=' + item + ']')[0];
@@ -14,8 +36,11 @@ function saveConsent(choice) {
       localStorage.removeItem(item);
     });
   }
+  var saveSlider = $('#dataConsent').find('[data-slider="save"]')[0];
+  $(saveSlider).prop('checked', choice);
 }
 function addContents(div, contents, index) {
+  console.log(div, contents, index);
   console.log( index + ": " + $( contents[index] ).text() );
   $(div).removeClass('placeholder');
   $(div).html(contents[index]);
@@ -56,7 +81,7 @@ function delContents(div, targets, index) {
 }
 
 function chooseContents(type) {
-  console.log(type)
+  console.log("type: " + type)
   var content = {contents:[], targets:"" };
   content.targets = type;
   switch(type) {
@@ -97,22 +122,36 @@ function nextConsent() {
 }
 
 function toggleContents(slider, type, choice) {
+  console.log("slider given: " + slider);
+  var content,
+      targets,
+      contents;
   if (slider !== false) {
+    console.log("slider was given")
     type = $(slider).data("slider");
     choice = $(slider).is(":checked");
+    // reset save state after toggling
+    saveConsent(false);
   }
-  content = chooseContents(type);
-  targets = content.targets;
-  contents = content.contents;
 
-  if (contents === 'next') {
+  console.log(type + " choice: " + choice);
+  if (choice) {
+    console.log(type + ": entered choice == true routine");
+    content = chooseContents(type);
+    targets = content.targets;
+    contents = content.contents;
+  } else {
+    targets = type;
+  }
+
+  if (targets === 'next') {
     nextConsent();
     // it's a button, we don't need the following slider logic
     return;
   }
-  if (contents === 'save') {
+  if (targets === 'save') {
     saveConsent(choice);
-    // There is only one other save slider in privacy.
+    // There is only one save slider in privacy.
     // We will handle it in the function above.
     return;
   }
