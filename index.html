@@ -29,40 +29,38 @@
   <title>in VR we trust</title>
 </head>
 <body>
+  <div id="dataConsent" class="window">
+    <div>
+      <p>
+        This side embeds contents from third party websites.
+        By agreeing to enable the third party content, you are subjected to the handling of your data according to that party.
+        <br>
+        You can review their respective data privacy policies here:
+        <br>
+        Soundcloud <a href="https://soundcloud.com/pages/cookies">Cookie Policy &rarr;</a>, <a href="https://soundcloud.com/pages/privacy">Privacy Policy &rarr;</a>.
+        <br>
+        Vimeo <a href="https://vimeo.com/cookie_policy">Cookie Policy &rarr;</a>, <a href="https://vimeo.com/privacy">Privacy Policy &rarr;</a>.
+      </p>
+    </div>
+    <div class="sliders">
+      <p>
+      <span class="slider-desc">Click to enable/disable contents from:</span>
+      </p>
+      <p>
+      <span class="slider-desc"><b>soundcloud</b></span>
+      <label class="switch"><input data-slider="soundcloud" onclick="toggleContents(this);" type="checkbox"><span class="slider soundcloud"></span></label>
+      </p>
+      <p>
+      <span class="slider-desc"><b>vimeo</b></span>
+      <label class="switch"><input data-slider="vimeo" onclick="toggleContents(this);" type="checkbox"><span class="slider vimeo"></span></label>
+      </p>
+      <p>
+      <button data-slider="save" onclick="toggleContents(this);">Save your selection</button>
+      </p>
+    </div>
+  </div>
 <div id="container">
 <div id="prop"></div>
-<section class="flat">
-<div id="dataConsent" class="window">
-  <div>
-    <p>
-      This side embeds contents from third party websites.
-      By agreeing to enable the third party content, you are subjected to the handling of your data according to that party.
-      <br>
-      You can review their respective data privacy policies here:
-      <br>
-      Soundcloud <a href="https://soundcloud.com/pages/cookies">Cookie Policy &rarr;</a>, <a href="https://soundcloud.com/pages/privacy">Privacy Policy &rarr;</a>.
-      <br>
-      Vimeo <a href="https://vimeo.com/cookie_policy">Cookie Policy &rarr;</a>, <a href="https://vimeo.com/privacy">Privacy Policy &rarr;</a>.
-    </p>
-  </div>
-  <div class="sliders">
-    <p>
-    <span class="slider-desc">Click to enable/disable contents from:</span>
-    </p>
-    <p>
-    <span class="slider-desc"><b>soundcloud</b></span>
-    <label class="switch"><input data-slider="soundcloud" onclick="toggleContents(this);" type="checkbox"><span class="slider soundcloud"></span></label>
-    </p>
-    <p>
-    <span class="slider-desc"><b>vimeo</b></span>
-    <label class="switch"><input data-slider="vimeo" onclick="toggleContents(this);" type="checkbox"><span class="slider vimeo"></span></label>
-    </p>
-    <p>
-    <button data-slider="save" onclick="toggleContents(this);">Save your selection</button>
-    </p>
-  </div>
-</div>
-</section>
 <section id="statics">
   <div id="static1" class="window left text-center">
     <a href="https://nextmuseum.io"><h2 class="no-margin">open call &rarr;</h2></a>
