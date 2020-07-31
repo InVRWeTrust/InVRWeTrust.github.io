@@ -31,5 +31,32 @@ function setFold(target) {
   });
   toggleFold(foldStartId);
 }
+
+function scrollTo() {
+  var anc = window.location.hash;
+  console.log(anc);
+  var target = ''
+  switch(anc) {
+  case "#ko-kuration":
+    target = '#cocuration';
+    break;
+  default:
+    target = '#'
+  }
+
+  setTimeout(function(){
+    $(function(){
+        $('#container').animate({
+            scrollTop: $(target).offset().top
+        }, 2000);
+        return false;
+    });
+  }, 1000);
+  setTimeout(function(){
+    $(target).trigger( "click" );
+  }, 3000);
+}
+
 sd('./md/co-curation_en.md', '#cocuration', true);
+scrollTo();
 });
