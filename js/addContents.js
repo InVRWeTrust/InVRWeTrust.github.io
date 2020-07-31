@@ -13,8 +13,8 @@ function delContents(div, targets, index) {
     html += 'Soundcloud <a href="https://soundcloud.com/pages/cookies">Cookie Policy &rarr;</a>, <a href="https://soundcloud.com/pages/privacy">Privacy Policy &rarr;</a>';
     html += '</p>'
     html += '<p>'
-    html += '<span class="slider-desc">Click to enable/disable contents from <b>soundcloud</b></span>'
     html += '<label class="switch"><input data-slider="soundcloud" onclick="toggleContents(this);" type="checkbox"><span class="slider soundcloud"></span></label>'
+    html += '<span class="slider-desc">Click to enable/disable contents from <b>soundcloud</b></span>'
     html += '</p>'
     break;
   case "vimeo":
@@ -22,8 +22,8 @@ function delContents(div, targets, index) {
     html += 'Vimeo <a href="https://vimeo.com/cookie_policy">Cookie Policy &rarr;</a>, <a href="https://vimeo.com/privacy">Privacy Policy &rarr;</a>.'
     html += '</p>'
     html += '<p>'
-    html += '<span class="slider-desc">Click to enable/disable contents from <b>vimeo</b></span>'
     html += '<label class="switch"><input data-slider="vimeo" onclick="toggleContents(this);" type="checkbox"><span class="slider vimeo"></span></label>'
+    html += '<span class="slider-desc">Click to enable/disable contents from <b>vimeo</b></span>'
     html += '</p>'
     break;
   default:
@@ -49,6 +49,9 @@ function chooseContents(type) {
   case "vimeo":
     content.contents = vimeos;
     break;
+  case "next":
+    content.contents = 'next';
+    break;
   default:
     content.contents = null;
   }
@@ -65,8 +68,7 @@ function hideConsent() {
     }, 1000);
   }
 }
-function saveConsent() {
-  console.log('save consents');
+function nextConsent() {
   var nextInfo = '<p class="trust-q"><b>Do <span class="emph">You</span> Trust <span class="emph">In</span> VR?</b></p>'
   $("#consentInfo").html(nextInfo);
   var nextSliders = '<p class="trust-btn"><button class="btn-yes" onclick="hideConsent(true);">Yes</button>'
@@ -83,10 +85,8 @@ function toggleContents(slider, type, choice) {
   targets = content.targets;
   contents = content.contents;
 
-  // is this the save routine?
-  if (contents === null) {
-    saveConsent();
-    return;
+  if (contents == 'next') {
+    nextConsent();
   }
   console.log(targets + ': ' + choice)
   $('div.' + targets).each(function( index ) {
