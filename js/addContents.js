@@ -1,3 +1,20 @@
+function saveConsent(choice) {
+  var options = ["save", "soundcloud", "vimeo"];
+  if (choice) {
+    options.forEach(function(item, index, array) {
+      var slider = $('#dataConsent').find('[data-slider=' + item + ']')[0];
+      console.log(slider);
+      var value = $(slider).is(":checked");
+      console.log("added to storage:" + item + ": " + value);
+      localStorage.setItem(item, value);
+    });
+  } else {
+    options.forEach(function(item, index, array) {
+      console.log("removed from storage: " + item);
+      localStorage.removeItem(item);
+    });
+  }
+}
 function addContents(div, contents, index) {
   console.log( index + ": " + $( contents[index] ).text() );
   $(div).removeClass('placeholder');
@@ -52,6 +69,9 @@ function chooseContents(type) {
   case "next":
     content.contents = 'next';
     break;
+  case "save":
+    content.contents = 'save';
+    break;
   default:
     content.contents = null;
   }
@@ -85,10 +105,20 @@ function toggleContents(slider, type, choice) {
   targets = content.targets;
   contents = content.contents;
 
-  if (contents == 'next') {
+  if (contents === 'next') {
     nextConsent();
+    // it's a button, we don't need the following slider logic
+    return;
+  }
+  if (contents === 'save') {
+    saveConsent(choice);
+    // There is only one other save slider in privacy.
+    // We will handle it in the function above.
+    return;
   }
   console.log(targets + ': ' + choice)
+  // cycle through all divs with class "target".
+  // Set their sliders and poulate wach with content from array "contents[]".
   $('div.' + targets).each(function( index ) {
     if (choice) {
       console.log(targets + ' checked');
