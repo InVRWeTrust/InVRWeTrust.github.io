@@ -1,4 +1,3 @@
-$( document ).ready(function() {
 function sd(file, target, fold) {
   var converter = new showdown.Converter(),
       text      = '';
@@ -55,7 +54,3 @@ function scrollTo() {
     $(target).trigger( "click" );
   }, 3000);
 }
-
-sd('./md/co-curation_en.md', '#ko-kuration-fold', true);
-scrollTo();
-});
