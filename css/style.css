@@ -90,9 +90,8 @@ div.prop-text:first-child {
 }
 div.window {
   max-width: 50vw;
-  padding: 2ex;
 }
-div.window > p {
+div.window p {
   padding: 1ex;
 }
  div.window > img,
@@ -169,13 +168,6 @@ div h2, h3 {
   margin-top: 0;
   display: inline;
   padding: 0.5em;
-}
-
-div h2 div + *,
-div div + *,
-div iframe + *
-{
-  margin-top: 2ex;
 }
 div.window.right {
 margin-left: 42vw;
@@ -255,27 +247,42 @@ b {
 }
 div#dataConsent div {
   float: right;
-  text-align: right;
-  width: 45%
+  width: 49%
 }
 div#dataConsent div:first-child {
   float: left;
-  text-align: left;
-  border-right: solid 1px;
 }
-div.sliders p {
-  margin: 1em;
+div#dataConsent div:last-child {
+  border-left: solid 1px;
+}
+p:first-child {
+  margin-top: 0
+}
+p:last-child {
+  margin-bottom: 0
+}
+
+div.placeholder .sliders {
+  font-size: small;
 }
 
 div.window.placeholder.soundcloud {
   height: 200px;
   background: #f5f5f5;
+  box-shadow: 0.2em 0.2em rgb(204, 68, 0);
+}
+div.window.placeholder.soundcloud.right {
+  box-shadow: -0.2em 0.2em rgb(204, 68, 0);
 }
 
 div.window.placeholder.vimeo {
   height: 1px;
   padding-bottom: calc(56.25% / 4);
   background: #EEF1F2;
+  box-shadow: 0.2em 0.2em #1AB7EA;
+}
+div.window.placeholder.vimeo.right {
+  box-shadow: -0.2em 0.2em #1AB7EA;
 }
 
 div.window.placeholder {
@@ -316,8 +323,8 @@ button {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 3em;
+  height: 1.5em;
 }
 
 /* Hide default HTML checkbox */
@@ -344,10 +351,10 @@ button {
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 3px;
+  height: 1.2em;
+  width: 1.2em;
+  left: 0.1em;
+  bottom: 0.075em;
   background-color: black;
   -webkit-transition: .4s;
   transition: .4s;
@@ -363,12 +370,27 @@ input:checked + .slider.vimeo {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px black;
+  box-shadow: 0 0 1px transparent;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(1.5em);
+  -ms-transform: translateX(1.5em);
+  transform: translateX(1.5em);
   background: white;
+}
+
+/*************************************/
+@media only screen and (max-width: 1000px) {
+  div.window {
+    max-width: 66vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #static1 h2 {
+    font-size: medium;
+  }
+  div.placeholder .sliders {
+    font-size: 66%;
+  }
 }

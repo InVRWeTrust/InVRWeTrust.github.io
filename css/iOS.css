@@ -1,3 +1,39 @@
-.parallax-child-1 .parallax-child-2 {
-  transform: none !important;
+* {
+  transform-style: flat !important;
+  transform: translate3d(0,0,0) !important;
+  perspective: none !important;
+}
+div.parallax-child-1, div.parallax-child-2 {
+  margin-left: 0 !important;
+  margin-bottom: 0 !important;
+}
+div.left, div.right {
+  margin-left: 0 !important;
+}
+div.left {
+  transform: translateX(5vw) !important;
+}
+div.right {
+  transform: translateX(45vw) !important;
+}
+div#static1 {
+  transform: translateX(0vw) !important;
+}
+#prop {
+  top: 0 !important;
+}
+div.window.placeholder.vimeo {
+  padding-bottom: calc(56.25% / 4);
+}
+
+@media only screen and (max-width: 1000px) {
+  div.right {
+    transform: translateX(33vw) !important;
+  }
+  div.left {
+    transform: translateX(4vw) !important;
+  }
+  div#static1 {
+    transform: translateX(-16vw) !important;
+  }
 }

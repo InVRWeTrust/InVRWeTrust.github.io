@@ -78,13 +78,20 @@ function toggleContents(slider, type, choice) {
   if (contents === null) {
     console.log('save consents');
     $('#dataConsent').css({"transform": "translateY(150vh)"});
+    if (ios) {
+      $('#dataConsent').hide();
+    } else {
+      setTimeout(function(){
+        $('#dataConsent').hide();
+      }, 1000);
+    }
   }
   console.log(targets + ': ' + choice)
   $('div.' + targets).each(function( index ) {
     if (choice) {
       console.log(targets + ' checked');
-      addContents(this, contents, index);
       $('[data-slider="' + targets + '"]').prop( "checked", true );
+      addContents(this, contents, index);
     } else {
       console.log(targets + ' unchecked');
       $('[data-slider="' + targets + '"]').prop( "checked", false );
