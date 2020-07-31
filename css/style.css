@@ -104,20 +104,26 @@ body {
   left: -120vw;
   z-index: -1;
   color: white;
-  text-shadow: 0.3vw 0.3vw #cd0707;
   text-transform: uppercase;
   font-family: 'Glacial Indifference';
 }
-#prop .prop-text {
+.prop-text {
   width: 110vw;
   margin-bottom: 50vh;
+  text-shadow: 0.3vw 0.3vw #cd0707;
+}
+.prop-text:hover {
+  text-shadow: -0.3vw 0.3vw #006d95;
 }
 #prop .prop-text:first-child {
   margin-top: -10vh;
 }
-.emph {
+.prop-text .emph {
   text-shadow: -0.3vw 0.3vw #006d95;
   text-decoration: underline;
+}
+.prop-text:hover .emph {
+  text-shadow: 0.3vw 0.3vw #cd0707;
 }
 article {
   margin-top: 66vh;
