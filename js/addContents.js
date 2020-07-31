@@ -3,6 +3,7 @@ function readSavedConsent() {
   if (saved) {
     options.forEach(function(item, index, array) {
       if (item == "save") {
+        hideConsent('#dataConsent');
         return;
       }
       var value = false;
@@ -103,22 +104,22 @@ function chooseContents(type) {
   return content;
 }
 
-function hideConsent() {
-  if (ios) {
-    $('#dataConsent').hide();
-  } else {
-    $('#dataConsent').css({"transform": "translateY(150vh)"});
-    setTimeout(function(){
-      $('#dataConsent').hide();
-    }, 1000);
+function hideConsent(id, option) {
+  if (id === true) {
+    id = '#trust-q';
+    option = "slow";
   }
-}
-function nextConsent() {
-  var nextInfo = '<p class="trust-q"><b>Do <span class="emph">You</span> Trust <span class="emph">In</span> VR?</b></p>'
-  $("#consentInfo").html(nextInfo);
-  var nextSliders = '<p class="trust-btn"><button class="btn-yes" onclick="hideConsent(true);">Yes</button>'
-  nextSliders += '<button class="btn-no" onclick="hideConsent(false);">No</button></p>'
-  $("#consentSliders").html(nextSliders);
+  $(id).hide(option);
+  if (id === "#dataConsent") {
+    setTimeout(function(){
+      var target = '#privacy-fold'
+      $(id).appendTo(target);
+      var nextBtn = $(id).find('[data-slider="next"]')[0];
+      $(nextBtn).hide();
+      $(".consent-reminder").hide();
+      $(id).show("slow");
+    }, 2000);
+  }
 }
 
 function toggleContents(slider, type, choice) {
@@ -130,8 +131,10 @@ function toggleContents(slider, type, choice) {
     console.log("slider was given")
     type = $(slider).data("slider");
     choice = $(slider).is(":checked");
-    // reset save state after toggling
-    saveConsent(false);
+    if (type !== "next") {
+      // reset save state after toggling
+      saveConsent(false);
+    }
   }
 
   console.log(type + " choice: " + choice);
@@ -145,7 +148,7 @@ function toggleContents(slider, type, choice) {
   }
 
   if (targets === 'next') {
-    nextConsent();
+    hideConsent('#dataConsent', "slow");
     // it's a button, we don't need the following slider logic
     return;
   }

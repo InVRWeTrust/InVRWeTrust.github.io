@@ -142,8 +142,8 @@ div.window p {
  div.window > p,
  div.window > iframe,
  div.window h2,
- div.window:not(#dataConsent) div:not(.sliders),
- div#dataConsent.window
+ div.window:not(.consent) div:not(.sliders),
+ div.consent.window
 {
   box-shadow: 0.2em 0.2em darkgrey;
   transition: all 1s;
@@ -154,7 +154,7 @@ div.window p {
  div.window.right > p,
  div.window.right > iframe,
  div.window.right h2,
- div.window.right:not(#dataConsent) div:not(.sliders)
+ div.window.right:not(.consent) div:not(.sliders)
 {
   box-shadow: -0.2em 0.2em darkgrey;
 }
@@ -162,7 +162,7 @@ div.window p {
  div.window.right.parallax-child-2 > p,
  div.window.right.parallax-child-2 > iframe,
  div.window.right.parallax-child-2 h2,
- div.window.right.parallax-child-2:not(#dataConsent) div:not(.sliders)
+ div.window.right.parallax-child-2:not(.consent) div:not(.sliders)
 {
   box-shadow: -0.2em -0.2em darkgrey;
 }
@@ -170,8 +170,8 @@ div.window p {
  div.window:hover > p,
  div.window:hover > iframe,
  div.window:hover h2,
- div.window:hover:not(#dataConsent) div:not(.sliders),
- div#dataConsent.window:hover
+ div.window:hover:not(.consent) div:not(.sliders),
+ div.consent.window:hover
 {
   box-shadow: -0.4em 0.4em lightgrey;
   transform: translateX(-0.2em);
@@ -188,7 +188,7 @@ div.window p {
  div.window.right:hover > p,
  div.window.right:hover > iframe,
  div.window.right:hover h2,
- div.window.right:hover:not(#dataConsent) div:not(.sliders)
+ div.window.right:hover:not(.consent) div:not(.sliders)
 {
   box-shadow: 0.4em 0.4em lightgrey;
   transform: translateX(0.2em);
@@ -268,26 +268,36 @@ div.left.parallax-child-1, div.right.parallax-child-2, article section div.windo
 section.flat {
   transform-style: flat;
 }
-div#dataConsent {
+body div.consent {
   position: fixed;
   top: 25vh;
   left: 1.5vw;
-  max-width: 94vw;
-  min-width: 94vw;
   z-index: 10;
 }
-div#dataConsent, div#dataConsent p {
+body div#dataConsent {
+  z-index: 11;
+}
+
+div.fold div.consent {
+  position: absolute;
+}
+
+div.consent {
+  max-width: 94vw;
+  min-width: 94vw;
+}
+div.consent, div.consent p {
   transform-style: flat;
 }
-#consentInfo, #consentSliders {
+.consentInfo, .consentSliders {
   display: table;
   height: 20vh;
 }
-#consentInfo p, p.trust-btn {
+.consentInfo p, p.trust-btn {
   display: table-cell;
   vertical-align: middle;
 }
-#consentSliders p {
+.consentSliders p {
   margin: 0;
 }
 p.trust-q {
@@ -329,14 +339,14 @@ div.sliders .switch {
 b {
   font-family: 'Glacial Indifference';
 }
-div#dataConsent div {
+div.consent div {
   float: right;
   width: 49%
 }
-div#dataConsent div:first-child {
+div.consent div:first-child {
   float: left;
 }
-div#dataConsent div:last-child {
+div.consent div:last-child {
   border-left: solid 1px;
 }
 p:first-child {

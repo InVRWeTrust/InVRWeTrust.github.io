@@ -29,8 +29,8 @@
   <title>in VR we trust</title>
 </head>
 <body>
-  <div id="dataConsent" class="window">
-    <div id="consentInfo">
+  <div id="dataConsent" class="window consent">
+    <div class="consentInfo">
       <p>
         This side embeds contents from third party websites.
         By agreeing to enable the third party content, you are subjected to the handling of your data according to that party.
@@ -42,7 +42,7 @@
         <b>Vimeo</b> <a href="https://vimeo.com/cookie_policy">Cookie Policy &rarr;</a>, <a href="https://vimeo.com/privacy">Privacy Policy &rarr;</a>.
       </p>
     </div>
-    <div id="consentSliders" class="sliders">
+    <div class="consentSliders sliders">
       <p>
       <span class="slider-desc">Click to enable/disable contents from:</span>
       </p>
@@ -55,13 +55,26 @@
       <span class="slider-desc"><b>vimeo</b></span>
       </p>
       <p>
-      <span>You can make this side remember your selection. For this, your selection will be saved in your browser. You can later change the settings at our <a href="#privacy">Privacy Policy</a>.</span>
+      <span>You can make this side remember your selection. For this, your selection will be saved in your browser. <span class="consent-reminder">You can later change the settings at our <a href="#privacy">Privacy Policy</a>.</span></span>
       <br><br>
       <label class="switch"><input data-slider="save" onclick="toggleContents(this);" type="checkbox"><span class="slider"></span></label>
       <span class="slider-desc"><b>save</b></span>
       </p>
       <p>
       <button data-slider="next" onclick="toggleContents(this);">next</button>
+      </p>
+    </div>
+  </div>
+  <div id="trust-q" class="window consent">
+    <div class="consentInfo">
+      <p class="trust-q">
+        <b>Do <span class="emph">You</span> Trust <span class="emph">In</span> VR?</b>
+      </p>
+    </div>
+    <div class="consentSliders">
+      <p class="trust-btn">
+        <button class="btn-yes" onclick="hideConsent(true);">Yes</button>
+        <button class="btn-no" onclick="hideConsent(true);">No</button>
       </p>
     </div>
   </div>
@@ -97,6 +110,7 @@
   </div>
   <div id="ko-kuration-fold" class="fold first"></div>
   <div id="impressum-fold" class="fold"></div>
+  <div id="privacy-fold" class="fold"></div>
 </div> <!-- container -->
 
 <script src="./js/jquery-3.5.1.min.js"></script>
