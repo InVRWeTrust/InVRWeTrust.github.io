@@ -62,11 +62,15 @@ div.fold {
   max-width: 94vw;
   padding: 1em;
   margin: 1em;
-  margin-top: 66vh;
+  margin-top: 0;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
   transform: translateX(-50vw);
+  border: solid 1px;
+}
+div.fold.first {
+  margin-top: 100vh;
 }
 div.fold p {
   text-align: left;
