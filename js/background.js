@@ -1,6 +1,29 @@
-var userAgent = window.navigator.userAgent.toLowerCase(),
-    ios = /iphone|ipod|ipad/.test( userAgent );
+function isIOS() {
+  if (/iPad|iPhone|iPod/.test(navigator.platform)) {
+    return true;
+  } else {
+    return navigator.maxTouchPoints &&
+      navigator.maxTouchPoints > 2 &&
+      /MacIntel/.test(navigator.platform);
+  }
+}
+function isIpadPro() {
+    var ratio = window.devicePixelRatio || 1;
+    var screen = {
+        width : window.screen.width * ratio,
+        height : window.screen.height * ratio
+    };
+    return (screen.width === 2048 && screen.height === 2732) || (screen.width === 2732 && screen.height === 2048) || (screen.width === 1536 && screen.height === 2048) || (screen.width === 2048 && screen.height === 1536);
+}
+
+var ios = false;
+ios = isIpadPro();
 //ios = true;
+if (ios) {
+  ios = true;
+} else {
+  ios = isIOS();
+}
 if (ios) {
   $('head').append('<link rel="stylesheet" type="text/css" href="./css/iOS.css">');
 }
