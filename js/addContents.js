@@ -65,6 +65,25 @@ function chooseContents(type) {
   return content;
 }
 
+function hideConsent() {
+  if (ios) {
+    $('#dataConsent').hide();
+  } else {
+    $('#dataConsent').css({"transform": "translateY(150vh)"});
+    setTimeout(function(){
+      $('#dataConsent').hide();
+    }, 1000);
+  }
+}
+function saveConsent() {
+  console.log('save consents');
+  var nextInfo = '<p class="trust-q"><b>Do <span class="emph">You</span> Trust <span class="emph">In</span> VR?</b></p>'
+  $("#consentInfo").html(nextInfo);
+  var nextSliders = '<p class="trust-btn"><button class="btn-yes" onclick="hideConsent(true);">Yes</button>'
+  nextSliders += '<button class="btn-no" onclick="hideConsent(false);">No</button></p>'
+  $("#consentSliders").html(nextSliders);
+}
+
 function toggleContents(slider, type, choice) {
   if (slider !== false) {
     type = $(slider).data("slider");
@@ -76,15 +95,8 @@ function toggleContents(slider, type, choice) {
 
   // is this the save routine?
   if (contents === null) {
-    console.log('save consents');
-    $('#dataConsent').css({"transform": "translateY(150vh)"});
-    if (ios) {
-      $('#dataConsent').hide();
-    } else {
-      setTimeout(function(){
-        $('#dataConsent').hide();
-      }, 1000);
-    }
+    saveConsent();
+    return;
   }
   console.log(targets + ': ' + choice)
   $('div.' + targets).each(function( index ) {

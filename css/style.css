@@ -82,6 +82,12 @@ div.prop-text:first-child {
   text-shadow: -0.3vw 0.3vw #006d95;
   text-decoration: underline;
 }
+.trust-q .emph {
+  text-shadow: -0.02em 0.02em #006d95;
+}
+.trust-q {
+  text-shadow: 0.02em 0.02em #cd0707;
+}
 #static1 {
   margin-top: 80vh;
 }
@@ -229,7 +235,48 @@ div#dataConsent {
   top: 25vh;
   left: 1.5vw;
   max-width: 94vw;
+  min-width: 94vw;
   z-index: 10;
+}
+div#dataConsent, div#dataConsent p {
+  transform-style: flat;
+}
+#consentInfo, #consentSliders {
+  display: table;
+  height: 20vh;
+}
+#consentInfo p, p.trust-btn {
+  display: table-cell;
+  vertical-align: middle;
+}
+#consentSliders p {
+  margin: 0;
+}
+p.trust-q {
+  font-size: 2em;
+
+}
+p.trust-btn button {
+  width: 6em;
+  margin: 1em;
+  box-shadow: -0.1em 0.1em #cd0707;
+  background-color: inherit;
+  border: solid 1px;
+  color: #cd0707;
+  transition: 1s all;
+}
+p.trust-btn button.btn-yes {
+  color: #006d95;
+  box-shadow: 0.1em 0.1em #006d95;
+}
+p.trust-btn button:hover {
+  box-shadow: 0.2em 0.2em;
+}
+p.trust-btn button.btn-yes:hover {
+  box-shadow: -0.2em 0.2em;
+}
+p.trust-q, p.trust-btn {
+  text-align: center;
 }
 div.sliders .switch, div.sliders span.slider-desc {
   vertical-align: middle;
