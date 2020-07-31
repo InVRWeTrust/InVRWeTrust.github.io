@@ -82,51 +82,53 @@ div.prop-text:first-child {
   text-shadow: -0.3vw 0.3vw #006d95;
   text-decoration: underline;
 }
-article {
+#static1 {
   margin-top: 80vh;
 }
-section div.window {
+#static2 {
+  margin-top: -10vh;
+}
+div.window {
   max-width: 50vw;
   padding: 2ex;
-  margin-bottom: 33vh;
 }
-section div.window > p {
+div.window > p {
   padding: 1ex;
 }
-section div.window > img,
-section div.window > p,
-section div.window > iframe,
-section div.window h2,
-section div.window:not(#dataConsent) div:not(.sliders),
-section div#dataConsent.window
+ div.window > img,
+ div.window > p,
+ div.window > iframe,
+ div.window h2,
+ div.window:not(#dataConsent) div:not(.sliders),
+ div#dataConsent.window
 {
   box-shadow: 0.2em 0.2em darkgrey;
   transition: all 1s;
   border: solid 0.1em black;
   background-color: white
 }
-section div.window.right > img,
-section div.window.right > p,
-section div.window.right > iframe,
-section div.window.right h2,
-section div.window.right:not(#dataConsent) div:not(.sliders)
+ div.window.right > img,
+ div.window.right > p,
+ div.window.right > iframe,
+ div.window.right h2,
+ div.window.right:not(#dataConsent) div:not(.sliders)
 {
   box-shadow: -0.2em 0.2em darkgrey;
 }
-section div.window.right.parallax-child-2 > img,
-section div.window.right.parallax-child-2 > p,
-section div.window.right.parallax-child-2 > iframe,
-section div.window.right.parallax-child-2 h2,
-section div.window.right.parallax-child-2:not(#dataConsent) div:not(.sliders)
+ div.window.right.parallax-child-2 > img,
+ div.window.right.parallax-child-2 > p,
+ div.window.right.parallax-child-2 > iframe,
+ div.window.right.parallax-child-2 h2,
+ div.window.right.parallax-child-2:not(#dataConsent) div:not(.sliders)
 {
   box-shadow: -0.2em -0.2em darkgrey;
 }
-section div.window:hover > img,
-section div.window:hover > p,
-section div.window:hover > iframe,
-section div.window:hover h2,
-section div.window:hover:not(#dataConsent) div:not(.sliders),
-section div#dataConsent.window:hover
+ div.window:hover > img,
+ div.window:hover > p,
+ div.window:hover > iframe,
+ div.window:hover h2,
+ div.window:hover:not(#dataConsent) div:not(.sliders),
+ div#dataConsent.window:hover
 {
   box-shadow: -0.4em 0.4em lightgrey;
   transform: translateX(-0.2em);
@@ -139,49 +141,41 @@ section div#dataConsent.window:hover
   transform: translateX(-0.2em);
 }
 
-section div.window.right:hover > img,
-section div.window.right:hover > p,
-section div.window.right:hover > iframe,
-section div.window.right:hover h2,
-section div.window.right:hover:not(#dataConsent) div:not(.sliders)
+ div.window.right:hover > img,
+ div.window.right:hover > p,
+ div.window.right:hover > iframe,
+ div.window.right:hover h2,
+ div.window.right:hover:not(#dataConsent) div:not(.sliders)
 {
   box-shadow: 0.4em 0.4em lightgrey;
   transform: translateX(0.2em);
 }
-section div.window.right.parallax-child-2:hover > img,
-section div.window.right.parallax-child-2:hover > p,
-section div.window.right.parallax-child-2:hover > iframe,
-section div.window.right.parallax-child-2:hover h2,
-section div.window.right.parallax-child-2:hover div:not(.sliders)
+ div.window.right.parallax-child-2:hover > img,
+ div.window.right.parallax-child-2:hover > p,
+ div.window.right.parallax-child-2:hover > iframe,
+ div.window.right.parallax-child-2:hover h2,
+ div.window.right.parallax-child-2:hover div:not(.sliders)
 {
   box-shadow: 0.4em -0.4em lightgrey;
   transform: translateX(0.2em) translateY(0.2em);
 }
 
-article section div.window img {
+div.window img {
   width: 100%;
   display: block;
   margin: 0 auto;
 }
-article section div h2, article section h3 {
+div h2, h3 {
   margin-top: 0;
   display: inline;
   padding: 0.5em;
 }
 
-article section div h2 div + *,
-article section div div + *,
-article section div iframe + *
+div h2 div + *,
+div div + *,
+div iframe + *
 {
   margin-top: 2ex;
-}
-
-section {
-  margin: 0.5em;
-}
-section#statics div {
-  padding: 0.5em;
-  margin-bottom: 0;
 }
 div.window.right {
 margin-left: 60vh;
@@ -262,7 +256,7 @@ b {
 div#dataConsent div {
   float: right;
   text-align: right;
-  width: 49%
+  width: 45%
 }
 div#dataConsent div:first-child {
   float: left;
