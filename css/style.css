@@ -83,10 +83,10 @@ div.prop-text:first-child {
   text-decoration: underline;
 }
 .trust-q .emph {
-  text-shadow: -0.02em 0.02em #006d95;
+  text-shadow: -0.03em 0.03em #006d95;
 }
 .trust-q {
-  text-shadow: 0.02em 0.02em #cd0707;
+  text-shadow: 0.04em 0.04em #cd0707;
 }
 #static1 {
   margin-top: 80vh;
