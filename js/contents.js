@@ -10,6 +10,7 @@ vimeos.push(
 
 $( document ).ready(function() {
 sd('./md/co-curation_en.md', '#ko-kuration-fold', true);
+sd('./md/impressum_en.md', '#impressum-fold', true);
 
 ////////////////////////////////////////////////////////
 toggleContents(false, "soundcloud", false);
