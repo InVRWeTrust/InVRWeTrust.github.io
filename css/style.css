@@ -291,10 +291,14 @@ div.window.placeholder {
   width: 100%;
   cursor: help;
 }
+div.window.placeholder p {
+  margin: 0;
+}
 div.window.placeholder span.placeholder-fill {
   word-break: break-all;
   padding: 0;
   font-size: 2em;
+  line-height: 1ex;
 }
 div.window.placeholder.soundcloud span.placeholder-fill {
   word-break: break-all;
