@@ -3,6 +3,9 @@
   transform: translate3d(0,0,0) !important;
   perspective: none !important;
 }
+div.fold {
+  transform: translateX(-45vw) !important;
+}
 div.parallax-child-1, div.parallax-child-2 {
   margin-left: 0 !important;
   margin-bottom: 0 !important;
