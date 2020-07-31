@@ -41,7 +41,13 @@ function scrollTo() {
     target = '#cocuration';
     break;
   default:
-    target = '#'
+    target = false;
+  }
+
+  if (target === false) {
+    // dont scroll if there is no real target
+    console.log('no valid scroll target')
+    return;
   }
 
   setTimeout(function(){
