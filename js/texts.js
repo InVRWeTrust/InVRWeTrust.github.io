@@ -38,22 +38,33 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
 function scrollTo(anc) {
   console.log(anc);
-  var target = anc + '-fold'
-
-  if ( !$(target).length ) {
-    // dont scroll if there is no real target
-    console.log('no valid scroll target')
-    return;
+  var scrollTarget = 0;
+  var toTop = false
+  if (anc == "#top") {
+    target = anc;
+    toTop = true;
+  } else {
+    target = anc + '-fold';
   }
 
-  $('#container').animate({
-      scrollTop: 0
-  }, 0);
+  if ($(target).length) {
+    $('#container').animate({
+        scrollTop: 0
+    }, 0);
+    scrollTarget = $(target).offset().top;
+  } else {
+    if (toTop) {
+      scrollTarget = 0;
+    } else {
+    console.log('no valid scroll target')
+    return;
+    }
+  }
 
   setTimeout(function(){
     $(function(){
         $('#container').animate({
-            scrollTop: $(target).offset().top
+            scrollTop: scrollTarget
         }, 2000);
         return false;
     });
