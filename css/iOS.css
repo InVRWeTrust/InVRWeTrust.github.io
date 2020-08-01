@@ -14,13 +14,10 @@ div.left, div.right {
   margin-left: 0 !important;
 }
 div.left {
-  transform: translateX(5vw) !important;
+  transform: translateX(6vw) !important;
 }
 div.right {
-  transform: translateX(45vw) !important;
-}
-div#static1 {
-  transform: translateX(0vw) !important;
+  transform: translateX(48vw) !important;
 }
 #prop {
   top: 0 !important;
@@ -31,12 +28,20 @@ div.window.placeholder.vimeo {
 
 @media only screen and (max-width: 1000px) {
   div.right {
-    transform: translateX(33vw) !important;
+    transform: translateX(32vw) !important;
   }
   div.left {
-    transform: translateX(4vw) !important;
+    transform: translateX(3vw) !important;
+  }
+  #container div#static1 {
+    transform: translateX(-12vw) !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  div.right {
+    transform: translateX(18vw) !important;
   }
   div#static1 {
-    transform: translateX(-16vw) !important;
+    margin: -80vh 0 80vh -10vw;
   }
 }

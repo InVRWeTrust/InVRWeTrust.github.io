@@ -18,12 +18,12 @@ function isIpadPro() {
 
 var ios = false;
 ios = isIpadPro();
-//ios = true;
 if (ios) {
   ios = true;
 } else {
   ios = isIOS();
 }
+//ios = true;
 if (ios) {
   $('head').append('<link rel="stylesheet" type="text/css" href="./css/iOS.css">');
 }
@@ -42,9 +42,9 @@ function fillBack() {
   var viewHeight = document.getElementById("container").scrollHeight;
   console.log(viewHeight);
   if (ios) {
-    viewHeight = Math.ceil(viewHeight * 1.1);
+    viewHeight = Math.ceil(viewHeight / 1.2);
   } else {
-    viewHeight = Math.ceil(viewHeight / 2);
+    viewHeight = Math.ceil(viewHeight / 3.4);
   }
   $("#prop").css("height", viewHeight);
   console.log(viewHeight);
@@ -54,7 +54,7 @@ $( document ).ready(function() {
   fillBack();
 });
 
-$(window).resize(function(){
+$('#container').resize(function(){
   fillBack();
 });
 

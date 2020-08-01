@@ -146,7 +146,7 @@ div.prop-text:first-child {
   top: 1ex;
 }
 #static1 {
-  margin: -80vh 0 80vh -10vw;
+  margin: -60vh 0 60vh -10vw;
 }
 #static2 {
   margin-top: 80vh;
@@ -520,6 +520,21 @@ input:checked + .slider:before {
   }
 }
 @media only screen and (max-width: 600px) {
+  #static1 {
+    margin: -100vh 0 100vh -10vw;
+  }
+  div.window {
+    max-width: 80vw;
+  }
+  div.window.right {
+    margin-left: 18vw;
+  }
+  div.right.parallax-child-1 {
+    margin-left: -66vw;
+  }
+  div.left.parallax-child-2 {
+    margin-left: -28vw;
+  }
   #static1 h2 {
     font-size: medium;
   }
