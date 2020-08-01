@@ -1,6 +1,15 @@
+function setSaveSlider(choice) {
+  var saveSlider = $('#dataConsent').find('[data-slider="save"]')[0];
+  $(saveSlider).prop('checked', choice);
+}
 function readSavedConsent() {
-  var saved = localStorage.getItem("save");
+  var saved = false;
+  var savedValue = localStorage.getItem("save");
+  if (savedValue == "true") {
+    saved = true;
+  }
   if (saved) {
+    setSaveSlider(saved);
     options.forEach(function(item, index, array) {
       if (item == "save") {
         hideConsent('#dataConsent');
@@ -37,8 +46,7 @@ function saveConsent(choice) {
       localStorage.removeItem(item);
     });
   }
-  var saveSlider = $('#dataConsent').find('[data-slider="save"]')[0];
-  $(saveSlider).prop('checked', choice);
+  setSaveSlider(choice);
 }
 function addContents(div, contents, index) {
   console.log(div, contents, index);
@@ -131,7 +139,7 @@ function toggleContents(slider, type, choice) {
     console.log("slider was given")
     type = $(slider).data("slider");
     choice = $(slider).is(":checked");
-    if (type !== "next") {
+    if (type !== "next" && type !== "save") {
       // reset save state after toggling
       saveConsent(false);
     }
