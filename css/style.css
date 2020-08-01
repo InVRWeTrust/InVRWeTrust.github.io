@@ -139,11 +139,10 @@ div.prop-text:first-child {
   text-shadow: 0.03em 0.03em #cd0707;
 }
 #static1 {
-  margin-top: 80vh;
-  margin-left: -10vw;
+  margin: -80vh 0 80vh -10vw;
 }
 #static2 {
-  margin-top: -10vh;
+  margin-top: 80vh;
 }
 div.window {
   max-width: 50vw;
