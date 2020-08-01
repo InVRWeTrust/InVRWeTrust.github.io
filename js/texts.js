@@ -56,6 +56,7 @@ function scrollTo(anc) {
   }, 1000);
   setTimeout(function(){
     var title = $(target).find("h2")[0];
-    $(title).trigger( "click" );
+    var fold = $(target).find(".fold-start")[0];
+    $(fold).show("slow");
   }, 3000);
 }
