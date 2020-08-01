@@ -43,8 +43,8 @@ html, body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
-  width: 200vw;
-  max-width: 200vw;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
   font-family: "Inconsolata";
 }
@@ -263,6 +263,7 @@ div.left.parallax-child-1, div.right.parallax-child-2, article section div.windo
 #container, .parallax-container {
 }
 #container {
+  width: 200vw;
   height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
