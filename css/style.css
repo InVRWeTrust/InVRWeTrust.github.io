@@ -140,6 +140,7 @@ div.prop-text:first-child {
 }
 #static1 {
   margin-top: 80vh;
+  margin-left: -10vw;
 }
 #static2 {
   margin-top: -10vh;
