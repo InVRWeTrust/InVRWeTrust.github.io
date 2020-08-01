@@ -25,7 +25,7 @@ function setFold(target) {
   var foldStart = '<div id="' + foldStartId + '"class="fold-start"></div>';
   $(target).children().wrapAll(foldStart);
   $(title).prependTo(target);
-  $(target).click(function(){
+  $(title).click(function(){
     toggleFold(foldStartId);
   });
   toggleFold(foldStartId);
@@ -51,6 +51,7 @@ function scrollTo() {
     });
   }, 1000);
   setTimeout(function(){
-    $(target).trigger( "click" );
+    var title = $(target).find("h2")[0];
+    $(title).trigger( "click" );
   }, 3000);
 }

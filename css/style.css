@@ -55,8 +55,13 @@ body {
   background-color: black;
 }
 
-div.fold {
+div.fold h2 {
   cursor: context-menu;
+  margin: 0;
+  display: block;
+  text-decoration-line: underline;
+}
+div.fold {
   text-align: center;
   background: white;
   max-width: 94vw;
@@ -80,6 +85,13 @@ div.fold p {
 }
 div.fold p:first-child {
   margin-top: revert;
+}
+div.fold div.fold-start {
+  margin-top: 2ex;
+}
+
+#privacy-fold {
+  width: 100%;
 }
 
 #prop {
@@ -279,7 +291,9 @@ body div#dataConsent {
 }
 
 div.fold div.consent {
-  position: absolute;
+  position: initial;
+  display: inline-table;
+  margin-top: 2ex;
 }
 
 div.consent {
