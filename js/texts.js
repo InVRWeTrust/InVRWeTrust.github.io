@@ -31,8 +31,12 @@ function setFold(target) {
   toggleFold(foldStartId);
 }
 
-function scrollTo() {
-  var anc = window.location.hash;
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    scrollTo($.attr(this, 'href'));
+});
+
+function scrollTo(anc) {
   console.log(anc);
   var target = anc + '-fold'
 

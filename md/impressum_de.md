@@ -13,7 +13,7 @@ Die durch die Seitenbetreiber_innen erstellten Inhalte und Werke auf diesen Seit
 Wir nehmen den Schutz deiner personenbezogenen Daten sehr ernst. Wir möchten, dass du weißt, wann wir welche Daten erheben und wie wir sie verwenden.
 Im Zuge der Weiterentwicklung unserer Internet-Seiten und der Implementierung neuer Technologien können auch Änderungen dieser Datenschutzerklärung erforderlich werden. Daher empfehlen wir dir, sich diese Datenschutzerklärung ab und zu erneut durchzulesen.
 
-[Datenschutz](#privacy-fold)
+[Datenschutz](#privacy)
 
 ### Haftung für Links
 

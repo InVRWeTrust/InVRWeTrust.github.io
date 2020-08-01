@@ -17,5 +17,5 @@ sd('./md/privacy_en.md', '#privacy-fold', true);
 
 ////////////////////////////////////////////////////////
 readSavedConsent();
-scrollTo();
+scrollTo(window.location.hash);
 });
