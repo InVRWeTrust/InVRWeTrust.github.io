@@ -46,6 +46,10 @@ function scrollTo(anc) {
     return;
   }
 
+  $('#container').animate({
+      scrollTop: 0
+  }, 0);
+
   setTimeout(function(){
     $(function(){
         $('#container').animate({
