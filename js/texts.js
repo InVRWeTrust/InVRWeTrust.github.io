@@ -1,4 +1,7 @@
-function sd(file, target, fold) {
+function sd(target, fold) {
+  var lang = 'de';
+  var file = './md/' + lang + '/' + target + '.md';
+  target = '#' + target;
   var converter = new showdown.Converter(),
       text      = '';
   $.get(file, function (response) {
