@@ -7,11 +7,15 @@ $.urlParam = function(name){
     return decodeURI(results[1]) || 0;
 }
 
-if ($.urlParam('lang')) {
-  lang = $.urlParam('lang');
+if (localStorage.getItem('lang')) {
+  lang = localStorage.getItem('lang');
 } else {
-  var userLang = navigator.language || navigator.userLanguage;
-  lang = userLang.split('-')[0];
+  if ($.urlParam('lang')) {
+    lang = $.urlParam('lang');
+  } else {
+    var userLang = navigator.language || navigator.userLanguage;
+    lang = userLang.split('-')[0];
+  }
 }
 
 // hide parameters
@@ -20,6 +24,16 @@ var url = window.location.href;
 window.history.replaceState({}, document.title, url);
 
 $("html").attr("lang",lang);
+// overwrite previous saved lang setting
+$(document).on('click', 'a[href^="./?lang"]', function (event) {
+  if (localStorage.getItem('lang')) {
+    event.preventDefault();
+    console.log('storage: newUrl: ' + this.href);
+    var newLang = this.href.split('=')[1];
+    console.log('storage: newLang: ' + newLang);
+    localStorage.setItem('lang', newLang);
+  }
+});
 
 function sd(target, fold, dependents) {
   if (!langs.includes(lang)) {

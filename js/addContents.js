@@ -11,14 +11,17 @@ function readSavedConsent() {
   if (saved) {
     setSaveSlider(saved);
     options.forEach(function(item, index, array) {
-      if (item == "save") {
-        hideConsent('#dataConsent');
-        return;
-      }
       var value = false;
       var choice = false;
       value = localStorage.getItem(item);
       console.log("read from storage: " + item + ": " + value);
+      if (item == "save") {
+        hideConsent('#dataConsent');
+        return;
+      }
+      if (item == "lang") {
+        return;
+      }
       if (value === "true") {
         choice = true;
       }
@@ -34,9 +37,14 @@ function readSavedConsent() {
 function saveConsent(choice) {
   if (choice) {
     options.forEach(function(item, index, array) {
-      var slider = $('#dataConsent').find('[data-slider=' + item + ']')[0];
-      console.log(slider);
-      var value = $(slider).is(":checked");
+      var value;
+      if (item == "lang") {
+        value = lang;
+      } else {
+        var slider = $('#dataConsent').find('[data-slider=' + item + ']')[0];
+        console.log(slider);
+        value = $(slider).is(":checked");
+      }
       console.log("added to storage:" + item + ": " + value);
       localStorage.setItem(item, value);
     });
