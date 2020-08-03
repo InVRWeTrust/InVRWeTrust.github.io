@@ -1,5 +1,18 @@
-var userLang = navigator.language || navigator.userLanguage;
-var lang = userLang.split('-')[0];
+var lang;
+$.urlParam = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results==null) {
+       return null;
+    }
+    return decodeURI(results[1]) || 0;
+}
+
+if ($.urlParam('lang')) {
+  lang = $.urlParam('lang');
+} else {
+  var userLang = navigator.language || navigator.userLanguage;
+  lang = userLang.split('-')[0];
+}
 
 $("html").attr("lang",lang);
 
