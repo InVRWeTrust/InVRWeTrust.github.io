@@ -317,7 +317,6 @@ div.consent, div.consent p {
   display: table;
 }
 .consentInfo p, p.trust-btn {
-  display: table-cell;
   vertical-align: middle;
 }
 
