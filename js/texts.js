@@ -39,6 +39,14 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     scrollTo($.attr(this, 'href'), true);
 });
 
+function tryFoldTarget(target) {
+  if ( target === '#top' || $(target).length ) {
+    return target;
+  } else {
+    return target + '-fold';
+  }
+}
+
 function scrollTo(anc, intra) {
   console.log(anc);
   var scrollTarget = 0;
@@ -53,6 +61,8 @@ function scrollTo(anc, intra) {
       target = anc + '-fold';
     }
   }
+
+  target = tryFoldTarget(target);
 
   if ($(target).length) {
     $('#container').animate({
