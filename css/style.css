@@ -140,7 +140,12 @@ div.prop-text:first-child {
   top: 1ex;
 }
 #static1 {
-  margin: -60vh 0 60vh -10vw;
+  /*margin: -60vh 0 60vh -10vw;*/
+  position: fixed;
+  top: 2ex;
+  left: 3em;
+  margin: 0;
+  z-index: 90
 }
 #static2 {
   margin-top: 80vh;
@@ -507,9 +512,11 @@ input:checked + .slider:before {
   }
 }
 @media only screen and (max-width: 600px) {
+  /*
   #static1 {
     margin: -100vh 0 100vh -10vw;
   }
+  */
   div.window {
     max-width: 80vw;
   }
@@ -522,9 +529,11 @@ input:checked + .slider:before {
   div.left.parallax-child-2 {
     margin-left: -28vw;
   }
+  /*
   #static1 h2 {
     font-size: medium;
   }
+  */
   div.placeholder .sliders {
     font-size: 66%;
   }

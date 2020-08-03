@@ -36,15 +36,12 @@ div.window.placeholder.vimeo {
   div.left {
     transform: translateX(3vw) !important;
   }
-  #container div#static1 {
+  #container {
     transform: translateX(-12vw) !important;
   }
 }
 @media only screen and (max-width: 600px) {
   div.right {
     transform: translateX(18vw) !important;
-  }
-  div#static1 {
-    margin: -80vh 0 80vh -10vw;
   }
 }
