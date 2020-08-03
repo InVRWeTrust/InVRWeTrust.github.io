@@ -11,7 +11,7 @@ vimeos.push(
 )
 
 $( document ).ready(function() {
-sd('./md/co-curation_en.md', '#ko-kuration-fold', true);
+sd('./md/co-curation_en.md', '#co-curation-fold', true);
 sd('./md/impressum_en.md', '#impressum-fold', true);
 sd('./md/privacy_en.md', '#privacy-fold', true);
 
