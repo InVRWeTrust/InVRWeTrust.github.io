@@ -53,27 +53,24 @@
       <span id="saveBtn" class="slider-desc"></span>
       </p>
       <p>
-      <button id="closeBtn" data-slider="next" onclick="toggleContents(this);"></button>
+      <button class="md-closeBtn" data-slider="next" onclick="toggleContents(this);"></button>
       </p>
     </div>
   </div>
   <div id="trust-q" class="window consent" style="display: none;">
-    <div class="consentInfo">
-      <p class="trust-q">
-        Do You Trust In VR?
-      </p>
+    <div id="trustQ" class="consentInfo">
     </div>
     <div class="consentSliders sliders">
       <p>
       <label class="switch"><input data-slider="yes" onclick="hideConsent(true);" type="checkbox"><span class="slider yes"></span></label>
-      <span class="slider-desc"><b>Yes</b></span>
+      <span id="yes" class="slider-desc"></span>
       </p>
       <p>
       <label class="switch"><input data-slider="no" onclick="hideConsent(true);" type="checkbox"><span class="slider no"></span></label>
-      <span class="slider-desc"><b>No</b></span>
+      <span id="no" class="slider-desc"></span>
       </p>
       <p>
-        <button data-slider="next" onclick="hideConsent(true);">close</button>
+        <button class="md-closeBtn" data-slider="next" onclick="hideConsent(true);">close</button>
       </p>
     </div>
   </div>
