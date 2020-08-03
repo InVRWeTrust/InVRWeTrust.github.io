@@ -20,5 +20,5 @@ sd('privacy-fold', true);
 
 ////////////////////////////////////////////////////////
 readSavedConsent();
-scrollTo(window.location.hash);
+scrollTo(window.location.hash, false);
 });

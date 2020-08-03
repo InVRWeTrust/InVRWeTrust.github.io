@@ -36,10 +36,10 @@ function setFold(target) {
 
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
-    scrollTo($.attr(this, 'href'));
+    scrollTo($.attr(this, 'href'), true);
 });
 
-function scrollTo(anc) {
+function scrollTo(anc, intra) {
   console.log(anc);
   var scrollTarget = 0;
   var toTop = false
@@ -47,7 +47,11 @@ function scrollTo(anc) {
     target = anc;
     toTop = true;
   } else {
-    target = anc + '-fold';
+    if (intra) {
+      target = anc;
+    } else {
+      target = anc + '-fold';
+    }
   }
 
   if ($(target).length) {
