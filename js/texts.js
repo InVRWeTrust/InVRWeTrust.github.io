@@ -14,6 +14,11 @@ if ($.urlParam('lang')) {
   lang = userLang.split('-')[0];
 }
 
+// hide parameters
+var url = window.location.href;
+    url = url.split('?')[0];
+window.history.replaceState({}, document.title, url);
+
 $("html").attr("lang",lang);
 
 function sd(target, fold, dependents) {
