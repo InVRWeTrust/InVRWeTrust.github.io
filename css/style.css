@@ -110,7 +110,7 @@ div.prop-text {
   width: 51%;
 }
 div.prop-text:first-child {
-  margin-top: 0;
+  margin-top: 30vh;
 }
 .prop-text, .prop-text .emph {
   transition: 1s all;
