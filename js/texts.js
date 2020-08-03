@@ -22,7 +22,6 @@ function sd(target, fold, dependents) {
       $(target).each(function( index ) {
         $(this).html(html);
       });
-      fillBack();
       if (fold) {
         setFold(target);
       };
@@ -31,6 +30,7 @@ function sd(target, fold, dependents) {
           sd(item, false);
         });
       }
+      fillBack();
   });
 }
 
