@@ -369,6 +369,12 @@ p:last-child {
 
 div.placeholder .sliders {
   font-size: small;
+  background: inherit;
+  max-width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: 4%;
 }
 
 div.window.placeholder.soundcloud {
@@ -394,6 +400,7 @@ div.window.placeholder {
   overflow-y: hidden;
   width: 100%;
   cursor: help;
+  overflow: hidden;
 }
 div.window.placeholder p {
   margin: 0;
@@ -402,7 +409,11 @@ div.window.placeholder span.placeholder-fill {
   word-break: break-all;
   padding: 0;
   font-size: 2em;
-  line-height: 1ex;
+  line-height: calc(1ex * (4 / 3));
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 110%;
 }
 div.window.placeholder.soundcloud span.placeholder-fill {
   word-break: break-all;
