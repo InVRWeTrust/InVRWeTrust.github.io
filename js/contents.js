@@ -22,6 +22,7 @@ sd('yes', false);
 sd('no', false);
 sd('closeBtn', false);
 sd('consentReminder', false);
+sd('intro', false);
 sd('co-curation-fold', true);
 sd('impressum-fold', true);
 sd('privacy-fold', true);
