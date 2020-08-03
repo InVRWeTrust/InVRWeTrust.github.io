@@ -64,15 +64,15 @@ div.fold h2 {
 div.fold {
   text-align: center;
   background: white;
-  max-width: 94vw;
   padding: 1em;
   margin: 1em;
   margin-top: 0;
-  width: fit-content;
   margin-left: auto;
   margin-right: auto;
   transform: translateX(-50vw);
   border: solid 1px;
+  width: 80ch;
+  max-width: 90vw;
 }
 div.fold.first {
   margin-top: 100vh;
@@ -88,10 +88,6 @@ div.fold p:first-child {
 }
 div.fold div.fold-start {
   margin-top: 2ex;
-}
-
-div.fold {
-  width: 100%;
 }
 
 #prop {
