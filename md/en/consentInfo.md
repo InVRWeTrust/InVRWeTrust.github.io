@@ -1,3 +1,5 @@
+&#127760; [DE](./?lang=de)|[EN](./?lang=en)
+
 This side embeds contents from third party websites.  
 By agreeing to enable the third party content, you are subjected to the handling of your data according to that party.  
 You can review their respective data privacy policies here:  
