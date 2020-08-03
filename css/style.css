@@ -372,6 +372,7 @@ div.placeholder .sliders {
   margin-right: auto;
   position: relative;
   margin-top: 4%;
+  border: solid 1px;
 }
 
 div.window.placeholder.soundcloud {
