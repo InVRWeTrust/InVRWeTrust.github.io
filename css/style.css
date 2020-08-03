@@ -490,7 +490,7 @@ input:checked + .slider:before {
 
 /*************************************/
 @media only screen and (max-width: 1000px) {
-  div.window {
+  div:not(.consent).window {
     max-width: 66vw;
   }
   div.window.right {
@@ -506,7 +506,7 @@ input:checked + .slider:before {
     margin: -100vh 0 100vh -10vw;
   }
   */
-  div.window {
+  div:not(.consent).window {
     max-width: 80vw;
   }
   div.window.right {
