@@ -3,7 +3,7 @@
   transform: translate3d(0,0,0) !important;
   perspective: none !important;
 }
-body div.consent {
+body div:not(.fold).consent {
   top: 10vh;
 }
 div.fold {

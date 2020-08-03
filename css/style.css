@@ -253,6 +253,8 @@ body div:not(.fold).consent {
   top: 25vh;
   left: 25%;
   z-index: 10;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 body div#dataConsent {
   z-index: 11;
@@ -513,6 +515,10 @@ input:checked + .slider:before {
   }
   div.left.parallax-child-2 {
     margin-left: -28vw;
+  }
+  body div:not(.fold).consent {
+    top: 12vh;
+    left: 4%;
   }
   /*
   #static1 h2 {

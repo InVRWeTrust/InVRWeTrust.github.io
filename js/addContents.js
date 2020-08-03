@@ -123,6 +123,7 @@ function hideConsent(id, option) {
       var target = '#privacy-fold'
       $(id).insertAfter(target);
       $(id).addClass("fold");
+      $(id).removeClass("window");
       var nextBtn = $(id).find('[data-slider="next"]')[0];
       $(nextBtn).hide();
       $(".consent-reminder").hide();
