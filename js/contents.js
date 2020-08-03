@@ -15,7 +15,7 @@ var langs = ["en", "de"];
 $( document ).ready(function() {
 
 sd('backToTop', false);
-sd('consentInfo-1', false, ['policiesSoundcloud','policiesVimeo']);
+sd('consentInfo', false, ['policiesSoundcloud','policiesVimeo']);
 sd('sliderDesc', false);
 sd('saveDesc', false);
 sd('saveBtn', false);
