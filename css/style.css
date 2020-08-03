@@ -381,8 +381,7 @@ div.window.placeholder.soundcloud.right {
 }
 
 div.window.placeholder.vimeo {
-  height: 1px;
-  padding-bottom: calc(56.25% / 4);
+  height: calc(50vw * 0.5625);
   background: #EEF1F2;
   box-shadow: 0.2em 0.2em #1AB7EA;
 }
@@ -494,6 +493,9 @@ input:checked + .slider:before {
   div:not(.consent).window {
     max-width: 66vw;
   }
+  div.window.placeholder.vimeo {
+    height: calc(66vw * 0.5625);
+  }
   div.window.right {
     margin-left: 33vw;
   }
@@ -509,6 +511,9 @@ input:checked + .slider:before {
   */
   div:not(.consent).window {
     max-width: 80vw;
+  }
+  div.window.placeholder.vimeo {
+    height: calc(80vw * 0.5625);
   }
   div.window.right {
     margin-left: 18vw;
