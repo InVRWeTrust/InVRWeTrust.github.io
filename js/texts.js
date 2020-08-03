@@ -1,5 +1,13 @@
+var userLang = navigator.language || navigator.userLanguage;
+var lang = userLang.split('-')[0];
+
+$("html").attr("lang",lang);
+
 function sd(target, fold, dependents) {
-  var lang = 'de';
+  if (!langs.includes(lang)) {
+    lang = langs[0];
+    console.log('lang: falling back to ' + lang);
+  }
   var file = './md/' + lang + '/' + target + '.md';
   targetId = '#' + target;
   targetClass = '.md-' + target;
