@@ -55,41 +55,6 @@ body {
   background-color: black;
 }
 
-div.fold h2 {
-  cursor: context-menu;
-  margin: 0;
-  display: block;
-  text-decoration-line: underline;
-}
-div.fold {
-  text-align: center;
-  background: white;
-  padding: 1em;
-  margin: 1em;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  transform: translateX(-50vw);
-  border: solid 1px;
-  width: 80ch;
-  max-width: 90vw;
-}
-div.fold.first {
-  margin-top: 100vh;
-}
-div.fold p {
-  text-align: left;
-  max-width: 80ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-div.fold p:first-child {
-  margin-top: revert;
-}
-div.fold div.fold-start {
-  margin-top: 2ex;
-}
-
 #prop {
   transform-origin: top;
   transform: translate3d(0,0,-3px) scale(4);
@@ -283,10 +248,10 @@ div.left.parallax-child-1, div.right.parallax-child-2, article section div.windo
 section.flat {
   transform-style: flat;
 }
-body div.consent {
+body div:not(.fold).consent {
   position: fixed;
   top: 25vh;
-  left: 1.5vw;
+  left: 25%;
   z-index: 10;
 }
 body div#dataConsent {
@@ -299,16 +264,50 @@ div.fold div.consent {
   margin-top: 2ex;
 }
 
-div.consent {
-  max-width: 94vw;
-  min-width: 94vw;
+div.consent, div.fold {
+  width: 80ch;
+  max-width: 90vw;
 }
+
+div.fold h2 {
+  cursor: context-menu;
+  margin: 0;
+  display: block;
+  text-decoration-line: underline;
+}
+div.fold {
+  text-align: center;
+  background: white;
+  padding: 1em;
+  margin: 1em;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: -25%;
+  border: solid 1px;
+  position: relative;
+}
+div.fold.first {
+  margin-top: 100vh;
+}
+div.fold p {
+  text-align: left;
+  max-width: 80ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.fold p:first-child {
+  margin-top: revert;
+}
+div.fold div.fold-start {
+  margin-top: 2ex;
+}
+
 div.consent, div.consent p {
   transform-style: flat;
 }
 .consentInfo, .consentSliders {
   display: table;
-  height: 20vh;
 }
 .consentInfo p, p.trust-btn {
   display: table-cell;
@@ -355,16 +354,6 @@ div.sliders .switch {
 }
 b {
   font-family: 'Glacial Indifference';
-}
-div.consent div {
-  float: right;
-  width: 49%
-}
-div.consent div:first-child {
-  float: left;
-}
-div.consent div:last-child {
-  border-left: solid 1px;
 }
 p:first-child {
   margin-top: 0

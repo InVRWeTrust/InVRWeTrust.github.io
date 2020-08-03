@@ -121,7 +121,8 @@ function hideConsent(id, option) {
   if (id === "#dataConsent") {
     setTimeout(function(){
       var target = '#privacy-fold'
-      $(id).appendTo(target);
+      $(id).insertAfter(target);
+      $(id).addClass("fold");
       var nextBtn = $(id).find('[data-slider="next"]')[0];
       $(nextBtn).hide();
       $(".consent-reminder").hide();
