@@ -27,7 +27,6 @@ $("html").attr("lang",lang);
 // overwrite previous saved lang setting
 $(document).on('click', 'a[href^="./?lang"]', function (event) {
   if (localStorage.getItem('lang')) {
-    event.preventDefault();
     console.log('storage: newUrl: ' + this.href);
     var newLang = this.href.split('=')[1];
     console.log('storage: newLang: ' + newLang);
