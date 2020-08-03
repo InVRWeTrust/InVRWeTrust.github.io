@@ -120,6 +120,7 @@ function hideConsent(id, option) {
   $(id).hide(option);
   if (id === "#dataConsent") {
     setTimeout(function(){
+      $('#trust-q').show("slow");
       var target = '#privacy-fold'
       $(id).insertAfter(target);
       $(id).addClass("fold");

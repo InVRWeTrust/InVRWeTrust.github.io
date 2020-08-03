@@ -320,10 +320,11 @@ div.consent, div.consent p {
 .consentSliders p {
   margin: 0;
 }
+/*
 p.trust-q {
   font-size: 2em;
-
 }
+*/
 p.trust-btn button {
   width: 6em;
   margin: 1em;
