@@ -115,8 +115,11 @@ div.prop-text:first-child {
 div.window {
   max-width: 50vw;
 }
-div.window p {
+div.window p, div.fold p {
   padding: 1ex;
+}
+div.fold p {
+  margin: 0
 }
  div.window > img,
  div.window > p,
@@ -317,11 +320,7 @@ div.consent, div.consent p {
   display: table-cell;
   vertical-align: middle;
 }
-/*
-p.trust-q {
-  font-size: 2em;
-}
-*/
+
 p.trust-btn button {
   width: 6em;
   margin: 1em;
@@ -341,9 +340,6 @@ p.trust-btn button:hover {
 p.trust-btn button.btn-yes:hover {
   box-shadow: -0.2em 0.2em;
 }
-p.trust-q, p.trust-btn {
-  text-align: center;
-}
 div.sliders .switch, div.sliders span.slider-desc {
   vertical-align: middle;
 }
@@ -353,6 +349,10 @@ div.sliders span.slider-desc {
 div.sliders .switch {
   margin: 2px;
   margin-right: 0.5em;
+}
+.sliders p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 b, strong {
   font-family: 'Glacial Indifference';
