@@ -1,13 +1,27 @@
 function sd(target, fold) {
   var lang = 'de';
   var file = './md/' + lang + '/' + target + '.md';
-  target = '#' + target;
+  targetId = '#' + target;
+  targetClass = '.md-' + target;
+  if($(targetId).length) {
+    target = targetId;
+  // else we assume it's a class
+  } else {
+    if($(targetClass).length) {
+      target = targetClass;
+    } else {
+      console.log('showdown: target ' + target + ' not found.');
+      return;
+    }
+  }
   var converter = new showdown.Converter(),
       text      = '';
   $.get(file, function (response) {
       text = response;
       var html      = converter.makeHtml(text);
-      $(target).html(html);
+      $(target).each(function( index ) {
+        $(this).html(html);
+      });
       fillBack();
       if (fold) {
         setFold(target);
