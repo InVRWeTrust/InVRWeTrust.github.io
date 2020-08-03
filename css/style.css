@@ -438,6 +438,9 @@ button {
   cursor: pointer;
   font-weight: bold;
 }
+button p, span p {
+  padding: 0 !important;
+}
 /* The switch - the box around the slider */
 .switch {
   position: relative;

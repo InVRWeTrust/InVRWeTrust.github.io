@@ -14,6 +14,11 @@ $( document ).ready(function() {
 
 sd('backToTop', false);
 sd('consentInfo-1', false);
+sd('sliderDesc', false);
+sd('saveDesc', false);
+sd('saveBtn', false);
+sd('closeBtn', false);
+sd('consentReminder', false);
 sd('co-curation-fold', true);
 sd('impressum-fold', true);
 sd('privacy-fold', true);
