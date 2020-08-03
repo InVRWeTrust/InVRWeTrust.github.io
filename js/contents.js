@@ -11,6 +11,9 @@ vimeos.push(
 )
 
 $( document ).ready(function() {
+
+var lang = 'de';
+sd('./md/' + lang + '/consentInfo-1.md', '#consentInfo-1', false);
 sd('./md/co-curation_en.md', '#co-curation-fold', true);
 sd('./md/impressum_en.md', '#impressum-fold', true);
 sd('./md/privacy_en.md', '#privacy-fold', true);

@@ -357,7 +357,7 @@ div.sliders .switch {
   margin: 2px;
   margin-right: 0.5em;
 }
-b {
+b, strong {
   font-family: 'Glacial Indifference';
 }
 p:first-child {
