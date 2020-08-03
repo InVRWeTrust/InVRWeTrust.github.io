@@ -1,4 +1,4 @@
-function sd(target, fold) {
+function sd(target, fold, dependents) {
   var lang = 'de';
   var file = './md/' + lang + '/' + target + '.md';
   targetId = '#' + target;
@@ -26,6 +26,11 @@ function sd(target, fold) {
       if (fold) {
         setFold(target);
       };
+      if(dependents) {
+        dependents.forEach(function(item, index, array) {
+          sd(item, false);
+        });
+      }
   });
 }
 
