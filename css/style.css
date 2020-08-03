@@ -95,7 +95,7 @@ div.prop-text:first-child {
 }
 #backToTop {
   width: max-content;
-  left: 60vw;
+  right: 1ex;
   position: fixed;
   z-index: 10;
   top: 1ex;
@@ -104,7 +104,7 @@ div.prop-text:first-child {
   /*margin: -60vh 0 60vh -10vw;*/
   position: fixed;
   top: 2ex;
-  left: 3em;
+  left: 0.4ex;
   margin: 0;
   z-index: 90
 }
