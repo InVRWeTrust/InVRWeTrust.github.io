@@ -196,6 +196,22 @@ div.fold p {
   transform: translateX(0.2em) translateY(0.2em);
 }
 
+#interviewFarina p:nth-child(2n) {
+    margin-right: 3em;
+    box-shadow: -0.2em 0.2em #cd0707;
+}
+#interviewFarina p:nth-child(2n+1) {
+    margin-left: 3em;
+    box-shadow: 0.2em 0.2em #006d95;
+}
+#interviewFarina:hover p:nth-child(2n) {
+    box-shadow: -0.4em 0.4em #cd0707;
+    transform: translateX(0.4em) translateY(0.2em);
+}
+#interviewFarina:hover p:nth-child(2n+1) {
+    box-shadow: 0.4em 0.4em #006d95;
+}
+
 div.window img {
   width: 100%;
   display: block;
@@ -239,6 +255,9 @@ div.right.parallax-child-1 {
   margin-left: -23vw;
   margin-bottom: 80vh;
 }
+#intro {
+  margin-bottom: 150vh;
+}
 div.right.parallax-child-2 {
   margin-left: 23vw;
 }
@@ -279,6 +298,7 @@ div.left.parallax-child-1, div.right.parallax-child-2, article section div.windo
 .parallax-child-2 {
   transform: translate3d(0,0,-0.5px) scale(1.5);
 }
+
 /***********************************/
 section.flat {
   transform-style: flat;
