@@ -3,11 +3,15 @@
   transform: translate3d(0,0,0) !important;
   perspective: none !important;
 }
-#co-curation-fold {
+#co-curation-fold, body div:not(.fold).consent {
   transform: translateX(-50%) !important;
 }
 body div:not(.fold).consent {
+  left: 50%;
+}
+body div:not(.fold).consent {
   top: 17vh;
+  max-height: 70vh;
 }
 div.fold {
   transform: translateX(-50vw) !important;
@@ -36,9 +40,6 @@ div.right {
   }
   div.left {
     transform: translateX(3vw) !important;
-  }
-  body div:not(.fold).consent {
-    left: 5%;
   }
 }
 @media only screen and (max-width: 600px) {

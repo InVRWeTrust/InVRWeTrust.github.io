@@ -121,6 +121,13 @@ div.window {
   left: 25%;
   transform: translateX(-50%);
 }
+body div:not(.fold).consent {
+  left: 50%;
+  transform: translateX(-50%);
+}
+body div:hover:not(.fold).consent {
+  transform: translateX(-50%);
+}
 div.window p, div.fold p {
   padding: 1ex;
 }
@@ -262,9 +269,8 @@ section.flat {
 body div:not(.fold).consent {
   position: fixed;
   top: 25vh;
-  left: 25%;
   z-index: 10;
-  max-height: 80vh;
+  max-height: 70vh;
   overflow-y: auto;
 }
 body div#dataConsent {
@@ -506,7 +512,33 @@ input:checked + .slider:before {
 }
 
 /*************************************/
+@media only screen and (min-width: 1000px) {
+  html, body {
+    font-size: 110%;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  html, body {
+    font-size: 120%;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  html, body {
+    font-size: 130%;
+  }
+  div.placeholder .sliders {
+    font-size: 1vw;
+  }
+}
+@media only screen and (min-width: 2400px) {
+  html, body {
+    font-size: 1.333vw;
+  }
+}
 @media only screen and (max-width: 1000px) {
+  html, body {
+    font-size: 100%;
+  }
   div:not(.consent).window {
     max-width: 66vw;
   }
@@ -543,7 +575,7 @@ input:checked + .slider:before {
   }
   body div:not(.fold).consent {
     top: 12vh;
-    left: 4%;
+    max-height: 80vh;
   }
   /*
   #static1 h2 {
