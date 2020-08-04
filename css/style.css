@@ -201,6 +201,26 @@ div.window img {
   display: block;
   margin: 0 auto;
 }
+#langChange {
+  border-bottom: solid 1px;
+  text-align: center;
+  display: block;
+  padding-bottom: 1ex;
+  margin-bottom: 0;
+}
+#langChange img {
+  height: 4ex;
+  width: auto;
+  vertical-align: middle;
+  display: inline;
+}
+#dataConsent div > p:nth-child(1) {
+  margin-bottom: 0;
+}
+#dataConsent div > p:nth-child(2) {
+  margin-top: 0;
+}
+
 div h2, h3 {
   margin-top: 0;
   display: inline;
@@ -325,6 +345,11 @@ div.consent, div.consent p {
 .consentInfo, .consentSliders {
   display: table;
 }
+.slider-label p {
+  vertical-align: middle;
+  display: inline;
+}
+
 .consentInfo p, p.trust-btn {
   vertical-align: middle;
 }
@@ -348,19 +373,21 @@ p.trust-btn button:hover {
 p.trust-btn button.btn-yes:hover {
   box-shadow: -0.2em 0.2em;
 }
-div.sliders .switch, div.sliders span.slider-desc {
+div.sliders .switch, div.sliders span.slider-label {
   vertical-align: middle;
 }
-div.sliders span.slider-desc {
+div.sliders span.slider-label {
   display: inline-block;
 }
-div.sliders .switch {
-  margin: 2px;
-  margin-right: 0.5em;
-}
-.sliders p {
+div.window .sliders p {
   margin-top: 0;
   margin-bottom: 0;
+}
+div#trust-q span.slider-label {
+  display: inline-block;
+}
+div#trustQ {
+  font-size: 150%;
 }
 b, strong {
   font-family: 'Glacial Indifference';
@@ -446,6 +473,15 @@ button {
 }
 button p, span p {
   padding: 0 !important;
+}
+button.closeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+}
+p.slider {
+
 }
 /* The switch - the box around the slider */
 .switch {

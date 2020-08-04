@@ -34,6 +34,14 @@ function readSavedConsent() {
   }
 }
 
+function allAndClose(button) {
+  var turnOn = ['soundcloud', 'vimeo', 'save'];
+  turnOn.forEach(function(item, index, array) {
+    toggleContents(false, item, true);
+  });
+  toggleContents(button);
+}
+
 function saveConsent(choice) {
   if (choice) {
     options.forEach(function(item, index, array) {

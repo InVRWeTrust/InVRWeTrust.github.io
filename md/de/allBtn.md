@@ -1,0 +1,1 @@
+Alle auswählen und schließen

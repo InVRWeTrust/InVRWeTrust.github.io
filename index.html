@@ -31,6 +31,7 @@
 <body>
   <div id="backToTop" class="window"></div>
   <div id="dataConsent" class="window consent">
+    <button class="md-closeBtn closeBtn" data-slider="next" onclick="toggleContents(this);">&#10005;</button>
     <div id="consentInfo" class="consentInfo">
     </div>
     <div class="consentSliders sliders">
@@ -39,38 +40,36 @@
       </p>
       <p>
       <label class="switch"><input data-slider="soundcloud" onclick="toggleContents(this);" type="checkbox"><span class="slider soundcloud"></span></label>
-      <span class="slider-desc"><b>Soundcloud</b></span>
+      <span class="slider-label"><b>Soundcloud</b></span>
       </p>
       <p>
       <label class="switch"><input data-slider="vimeo" onclick="toggleContents(this);" type="checkbox"><span class="slider vimeo"></span></label>
-      <span class="slider-desc"><b>Vimeo</b></span>
+      <span class="slider-label"><b>Vimeo</b></span>
       </p>
       <p>
-      <span id="saveDesc"></span>
-      <span id="consentReminder" class="consent-reminder"></span>
-      <br>
+      <span id="saveDesc"></span><span id="consentReminder" class="consent-reminder"></span>
+      </p>
+      <p>
       <label class="switch"><input data-slider="save" onclick="toggleContents(this);" type="checkbox"><span class="slider"></span></label>
-      <span id="saveBtn" class="slider-desc"></span>
+      <span class="md-saveBtn slider-label"></span>
       </p>
       <p>
-      <button class="md-closeBtn" data-slider="next" onclick="toggleContents(this);"></button>
+      <button class="md-allBtn" data-slider="next" onclick="allAndClose(this);"></button>
       </p>
     </div>
   </div>
   <div id="trust-q" class="window consent" style="display: none;">
+    <button class="md-closeBtn closeBtn" data-slider="next" onclick="hideConsent(true);">&#10005;</button>
     <div id="trustQ" class="consentInfo">
     </div>
     <div class="consentSliders sliders">
       <p>
-      <label class="switch"><input data-slider="yes" onclick="hideConsent(true);" type="checkbox"><span class="slider yes"></span></label>
-      <span id="yes" class="slider-desc"></span>
+      <span id="yes" class="slider-label"></span>
+      <label class="switch"><input data-slider="yes" onclick="toggleContents(this);" type="checkbox"><span class="slider yes"></span></label>
+      <span id="no" class="slider-label"></span>
       </p>
       <p>
-      <label class="switch"><input data-slider="no" onclick="hideConsent(true);" type="checkbox"><span class="slider no"></span></label>
-      <span id="no" class="slider-desc"></span>
-      </p>
-      <p>
-        <button class="md-closeBtn" data-slider="next" onclick="hideConsent(true);">close</button>
+        <button class="md-saveAndClose" data-slider="yes" onclick="toggleContents(this);hideConsent(true);">&#10005;</button>
       </p>
     </div>
   </div>
