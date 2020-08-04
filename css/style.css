@@ -123,7 +123,7 @@ body div:not(.fold).consent {
   transform: translateX(-50%);
 }
 body div:hover:not(.fold).consent {
-  transform: translateX(-50%);
+  transform: translateX(calc(-50% - 0.2em)) translateY(-0.2em);
 }
 div.window p, div.fold p {
   padding: 1ex;
@@ -167,15 +167,24 @@ div.fold p {
  div.window:hover:not(.consent) div:not(.sliders),
  div.consent.window:hover
 {
-  box-shadow: -0.4em 0.4em lightgrey;
-  transform: translateX(-0.2em);
+  box-shadow: 0.4em 0.4em lightgrey;
+  transform: translateX(-0.2em) translateY(-0.2em);
   /*border: solid 1px black;*/
 }
 #static1, #backToTop {
   transition: all 1s;
 }
 #static1:hover, #backToTop:hover {
-  transform: translateX(-0.2em);
+  transform: translateX(-0.2em) translateY(-0.2em);
+}
+#static1 h2 {
+  box-shadow: -0.2em 0.2em lightgrey;
+}
+#static1 h2:hover {
+  box-shadow: -0.4em 0.4em lightgrey;
+}
+#static1:hover, #static1 h2:hover {
+  transform: translateX(0.2em) translateY(-0.2em);
 }
 
  div.fold:hover,
@@ -185,8 +194,8 @@ div.fold p {
  div.window.right:hover h2,
  div.window.right:hover:not(.consent) div:not(.sliders)
 {
-  box-shadow: 0.4em 0.4em lightgrey;
-  transform: translateX(0.2em);
+  box-shadow: -0.4em 0.4em lightgrey;
+  transform: translateX(0.2em) translateY(-0.2em);
 }
  div.window.right.parallax-child-2:hover > img,
  div.window.right.parallax-child-2:hover > p,
@@ -194,7 +203,7 @@ div.fold p {
  div.window.right.parallax-child-2:hover h2,
  div.window.right.parallax-child-2:hover div:not(.sliders)
 {
-  box-shadow: 0.4em -0.4em lightgrey;
+  box-shadow: -0.4em -0.4em lightgrey;
   transform: translateX(0.2em) translateY(0.2em);
 }
 
@@ -208,10 +217,11 @@ div.fold p {
 }
 #interviewFarina:hover p:nth-child(2n) {
     box-shadow: -0.4em 0.4em #cd0707;
-    transform: translateX(0.4em) translateY(0.2em);
+    transform: translateX(0.4em) translateY(-0.2em);
 }
 #interviewFarina:hover p:nth-child(2n+1) {
     box-shadow: 0.4em 0.4em #006d95;
+    transform: translateX(-0.4em) translateY(-0.2em);
 }
 
 div.window img {
