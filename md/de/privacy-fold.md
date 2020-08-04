@@ -14,6 +14,6 @@ Diese Internetseiten können Daten über Sie sammeln, Cookies benutzen, zusätzl
 [Untenstehend](#dataConsent) können Sie entscheiden, ob und welche dieser eingebetteten Inhalte eingeschaltet werden sollen.
 
 
-### What rights you have over your data
+### Rechte betroffener Personen
 
 Vollständige Datenschutz-Grundverordnung: <http://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679>→
