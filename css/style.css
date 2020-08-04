@@ -115,6 +115,12 @@ div.prop-text:first-child {
 div.window {
   max-width: 50vw;
 }
+#co-curation-fold {
+  top: 10ex;
+  position: absolute;
+  left: 25%;
+  transform: translateX(-50%);
+}
 div.window p, div.fold p {
   padding: 1ex;
 }

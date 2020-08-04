@@ -3,8 +3,11 @@
   transform: translate3d(0,0,0) !important;
   perspective: none !important;
 }
+#co-curation-fold {
+  transform: translateX(-50%) !important;
+}
 body div:not(.fold).consent {
-  top: 10vh;
+  top: 17vh;
 }
 div.fold {
   transform: translateX(-50vw) !important;
@@ -16,9 +19,6 @@ div.parallax-child-1, div.parallax-child-2 {
 }
 div.left, div.right {
   margin-left: 0 !important;
-}
-div.left {
-  transform: translateX(6vw) !important;
 }
 div.right {
   transform: translateX(48vw) !important;
@@ -36,6 +36,9 @@ div.right {
   }
   div.left {
     transform: translateX(3vw) !important;
+  }
+  body div:not(.fold).consent {
+    left: 5%;
   }
 }
 @media only screen and (max-width: 600px) {
