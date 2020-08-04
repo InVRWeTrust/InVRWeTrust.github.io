@@ -150,7 +150,7 @@ function hideConsent(id, option) {
     var ms;
     if (ios) {
       ms = 0;
-      option = null;
+      option = "";
     } else {
       ms = 2000;
       option = "slow";
