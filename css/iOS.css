@@ -24,6 +24,9 @@ div.parallax-child-1, div.parallax-child-2 {
 div.left, div.right {
   margin-left: 0 !important;
 }
+div.left {
+  transform: translateX(1em) !important;
+}
 div.right {
   transform: translateX(48vw) !important;
 }
