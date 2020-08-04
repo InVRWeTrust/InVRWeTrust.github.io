@@ -143,6 +143,7 @@ div.fold p {
   border: solid 0.1em black;
   background-color: white
 }
+ div.fold,
  div.window.right > img,
  div.window.right > p,
  div.window.right > iframe,
@@ -177,6 +178,7 @@ div.fold p {
   transform: translateX(-0.2em);
 }
 
+ div.fold:hover,
  div.window.right:hover > img,
  div.window.right:hover > p,
  div.window.right:hover > iframe,
@@ -332,6 +334,7 @@ div.fold h2 {
   text-decoration-line: underline;
 }
 div.fold {
+  transition: all 1s;
   text-align: center;
   background: white;
   padding: 1em;
