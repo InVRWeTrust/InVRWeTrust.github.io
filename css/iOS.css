@@ -6,8 +6,6 @@
 body div:not(.fold).consent {
   transform: translateX(-50%) !important;
   left: 50%;
-  top: 45vh;
-  max-height: calc(98vh - 45vh);
 }
 body div.fold.consent {
   padding-bottom: 15ex;
@@ -16,15 +14,21 @@ div.fold {
   transform: translateX(-50vw) !important;
   left: 0;
 }
+div.fold.first {
+  margin-top: 10vh;
+}
 div.parallax-child-1, div.parallax-child-2 {
   margin-left: 0 !important;
-  margin-bottom: 0 !important;
+  margin-bottom: -10px !important;
 }
 div.left, div.right {
   margin-left: 0 !important;
 }
 div.right {
   transform: translateX(48vw) !important;
+}
+#intro {
+    margin-top: 64vh;
 }
 #prop {
   top: 0 !important;

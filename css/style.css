@@ -110,13 +110,13 @@ div.prop-text:first-child {
   z-index: 90
 }
 #intro {
-  margin-top: 50vh;
+  margin-top: 1000px;
 }
 div.window {
   max-width: 50vw;
 }
 #co-curation-fold {
-  top: 50vh;
+  top: 66vh;
 }
 body div:not(.fold).consent {
   left: 50%;
@@ -255,10 +255,7 @@ div.left.parallax-child-1 {
 }
 div.right.parallax-child-1 {
   margin-left: -23vw;
-  margin-bottom: 80vh;
-}
-#intro {
-  margin-bottom: 150vh;
+  margin-bottom: 2000px;
 }
 div.right.parallax-child-2 {
   margin-left: 23vw;
@@ -307,12 +304,14 @@ section.flat {
 }
 body div:not(.fold).consent {
   position: fixed;
-  top: 51vh;
   z-index: 10;
   max-height: calc(98vh - 51vh);
   overflow-y: auto;
   font-size: 80%;
+  bottom: 2vh;
+  max-height: 60vh;
 }
+
 body div#dataConsent {
   z-index: 11;
 }
@@ -348,7 +347,7 @@ div.fold {
   position: relative;
 }
 div.fold.first {
-  margin-top: 100vh;
+  margin-top: 1500px;
 }
 div.fold p {
   text-align: left;
@@ -579,17 +578,25 @@ input:checked + .slider:before {
     font-size: 120%;
   }
 }
+@media only screen and (min-width: 1700px) {
+  div.prop-text:first-child {
+    margin-top: 25vh;
+  }
+}
 @media only screen and (min-width: 1900px) {
   html, body {
-    font-size: 130%;
+    font-size: 125%;
   }
   div.placeholder .sliders {
     font-size: 1vw;
   }
+  div.prop-text:first-child {
+    margin-top: 20vh;
+  }
 }
 @media only screen and (min-width: 2400px) {
   html, body {
-    font-size: 1.333vw;
+    font-size: 133%;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -629,10 +636,6 @@ input:checked + .slider:before {
   }
   div.left.parallax-child-2 {
     margin-left: -28vw;
-  }
-  body div:not(.fold).consent {
-    top: 42vh;
-    max-height: calc(98vh - 42vh);
   }
   /*
   #static1 h2 {
