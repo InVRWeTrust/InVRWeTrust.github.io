@@ -78,7 +78,9 @@ function uniqId() {
 }
 
 function toggleFold(id) {
-  $('#' + id).toggle("slow");
+  $('#' + id).toggle("slow", function() {
+    fillBack();
+  });
 }
 function setFold(target) {
   var title = $(target).find( "h2" )[0];

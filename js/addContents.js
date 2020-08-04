@@ -127,8 +127,16 @@ function hideConsent(id, option) {
   }
   $(id).hide(option);
   if (id === "#dataConsent") {
+    var ms;
+    if (ios) {
+      ms = 0;
+      option = null;
+    } else {
+      ms = 2000;
+      option = "slow";
+    }
     setTimeout(function(){
-      $('#trust-q').show("slow");
+      $('#trust-q').show(option);
       var target = '#privacy-fold'
       $(id).insertAfter(target);
       $(id).addClass("fold");
@@ -136,8 +144,10 @@ function hideConsent(id, option) {
       var nextBtn = $(id).find('[data-slider="next"]')[0];
       $(nextBtn).hide();
       $(".consent-reminder").hide();
-      $(id).show("slow");
-    }, 2000);
+      $(id).show(option, function() {
+        fillBack();
+      });
+    }, ms);
   }
 }
 
