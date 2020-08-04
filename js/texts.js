@@ -92,12 +92,15 @@ function setFold(target) {
   toggleFold(foldStartId);
 }
 
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-    scrollTo($.attr(this, 'href'), true);
-});
+function intraLinks() {
+  $(document).on('click', 'a[href^="#"]', function (event) {
+      event.preventDefault();
+      scrollTo($.attr(this, 'href'), true);
+  });
+}
 
 function tryFoldTarget(target) {
+  console.log('scrollTo target obj: ' + JSON.stringify($(target)) );
   if ( target === '#top' || $(target).length ) {
     return target;
   } else {
@@ -106,7 +109,7 @@ function tryFoldTarget(target) {
 }
 
 function scrollTo(anc, intra) {
-  console.log(anc);
+  console.log('scrollTo: ' + anc + ', ' + intra);
   var scrollTarget = 0;
   var toTop = false
   if (anc == "#top") {
@@ -121,7 +124,9 @@ function scrollTo(anc, intra) {
   }
 
   target = tryFoldTarget(target);
+  console.log('scrollTo target: ' + target);
 
+  console.log('scrollTo target obj: ' + JSON.stringify($(target)) );
   if ($(target).length) {
     $('#container').animate({
         scrollTop: 0

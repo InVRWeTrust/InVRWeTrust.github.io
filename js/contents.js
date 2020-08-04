@@ -32,4 +32,5 @@ sd('privacy-fold', true);
 ////////////////////////////////////////////////////////
 readSavedConsent();
 scrollTo(window.location.hash, false);
+intraLinks();
 });
