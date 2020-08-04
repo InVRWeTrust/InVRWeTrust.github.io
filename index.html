@@ -58,18 +58,18 @@
       </p>
     </div>
   </div>
-  <div id="trust-q" class="window consent" style="display: none;">
+  <div id="trust-q" class="window consent">
     <button class="md-closeBtn closeBtn" data-slider="next" onclick="hideConsent(true);">&#10005;</button>
     <div id="trustQ" class="consentInfo">
     </div>
     <div class="consentSliders sliders">
       <p>
-      <span id="yes" class="slider-label"></span>
-      <label class="switch"><input data-slider="yes" onclick="toggleContents(this);" type="checkbox"><span class="slider yes"></span></label>
       <span id="no" class="slider-label"></span>
+      <label class="switch"><input id="trustInput" data-slider="trust" onclick="toggleContents(this);" type="checkbox"><span class="slider yes"></span></label>
+      <span id="yes" class="slider-label"></span>
       </p>
       <p>
-        <button class="md-saveAndClose" data-slider="yes" onclick="toggleContents(this);hideConsent(true);">&#10005;</button>
+        <button class="md-saveAndClose" data-slider="yes" onclick=saveTrust()>&#10005;</button>
       </p>
     </div>
   </div>

@@ -1,3 +1,11 @@
+function saveTrust(){
+  toggleContents('#trustInput');
+  hideConsent(true);
+  var value = $('#trustInput').is(":checked")
+  console.log("added to storage:" + 'trust' + ": " + value);
+  localStorage.setItem('trust', value);
+}
+
 function setSaveSlider(choice) {
   var saveSlider = $('#dataConsent').find('[data-slider="save"]')[0];
   $(saveSlider).prop('checked', choice);
@@ -17,6 +25,10 @@ function readSavedConsent() {
       console.log("read from storage: " + item + ": " + value);
       if (item == "save") {
         hideConsent('#dataConsent');
+        return;
+      }
+      if (item == "trust") {
+        hideConsent('#trust-q');
         return;
       }
       if (item == "lang") {
@@ -144,7 +156,6 @@ function hideConsent(id, option) {
       option = "slow";
     }
     setTimeout(function(){
-      $('#trust-q').show(option);
       var target = '#privacy-fold'
       $(id).insertAfter(target);
       $(id).addClass("fold");
@@ -152,6 +163,7 @@ function hideConsent(id, option) {
       var nextBtn = $(id).find('[data-slider="next"]')[0];
       $(nextBtn).hide();
       $(".consent-reminder").hide();
+      $(".md-allBtn").hide();
       $(id).show(option, function() {
         fillBack();
       });
@@ -168,7 +180,7 @@ function toggleContents(slider, type, choice) {
     console.log("slider was given")
     type = $(slider).data("slider");
     choice = $(slider).is(":checked");
-    if (type !== "next" && type !== "save") {
+    if (type !== "next" && type !== "save" && type !=="trust") {
       // reset save state after toggling
       saveConsent(false);
     }

@@ -1,4 +1,4 @@
-var options = ["save", "lang", "soundcloud", "vimeo"];
+var options = ["save", "lang", "soundcloud", "vimeo", "trust"];
 
 var sounds = [];
 sounds.push(
