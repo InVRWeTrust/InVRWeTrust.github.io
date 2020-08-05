@@ -2,7 +2,7 @@
 
 ### Website provided by
 
-Cookie Monster
+<div class="md-impressumAddress"></div>
 
 ### Copyright
 

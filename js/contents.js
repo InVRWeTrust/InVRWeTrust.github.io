@@ -22,7 +22,7 @@ sd('consentReminder', false);
 sd('intro', false);
 sd('interviewFarina', false);
 sd('co-curation-fold', true);
-sd('impressum-fold', true);
+sd('impressum-fold', true, ['impressumAddress']);
 sd('privacy-fold', true);
 
 ////////////////////////////////////////////////////////
