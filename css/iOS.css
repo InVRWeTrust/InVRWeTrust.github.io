@@ -6,6 +6,7 @@
 body div:not(.fold).consent {
   transform: translateX(-50%) !important;
   left: 50%;
+  bottom: 12vh;
 }
 body div.fold.consent {
   padding-bottom: 15ex;
@@ -51,5 +52,8 @@ div.right {
 @media only screen and (max-width: 600px) {
   div.right {
     transform: translateX(18vw) !important;
+  }
+  #static1, #backToTop {
+    top: 4vh;
   }
 }
