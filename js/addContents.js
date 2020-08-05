@@ -152,14 +152,8 @@ function hideConsent(id, option) {
   }
   $(id).hide(option);
   if (id === "#dataConsent") {
-    var ms;
-    if (ios) {
-      ms = 0;
-      option = "";
-    } else {
-      ms = 2000;
-      option = "slow";
-    }
+    var ms = 2000;
+    option = "slow";
     setTimeout(function(){
       var target = '#privacy-fold'
       $(id).insertAfter(target);
