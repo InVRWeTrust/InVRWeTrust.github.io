@@ -107,8 +107,8 @@ div.prop-text:first-child {
 #static1 {
   /*margin: -60vh 0 60vh -10vw;*/
   position: fixed;
-  top: 2ex;
-  left: 0.4ex;
+  top: 3ex;
+  left: 2ex;
   margin: 0;
 }
 #intro {
@@ -176,7 +176,7 @@ div.fold p {
 #static1, #backToTop {
   transition: all 1s;
 }
-#static1:hover, #backToTop:hover {
+#backToTop:hover {
   transform: translateX(-0.2em) translateY(-0.2em);
 }
 #static1 h2 {
@@ -185,7 +185,7 @@ div.fold p {
 #static1 h2:hover {
   box-shadow: -0.4em 0.4em lightgrey;
 }
-#static1:hover, #static1 h2:hover {
+#static1:hover {
   transform: translateX(0.2em) translateY(-0.2em);
 }
 
