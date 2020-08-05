@@ -4,6 +4,7 @@ function saveTrust(){
   var value = $('#trustInput').is(":checked")
   console.log("added to storage:" + 'trust' + ": " + value);
   localStorage.setItem('trust', value);
+  setSaveSlider(true);
 }
 
 function setSaveSlider(choice) {
@@ -13,7 +14,7 @@ function setSaveSlider(choice) {
 function readSavedConsent() {
   var saved = false;
   var savedValue = localStorage.getItem("save");
-  if (savedValue == "true") {
+  if (savedValue == "true" || localStorage.getItem("trust")) {
     saved = true;
   }
   if (localStorage.getItem("trust")) {
