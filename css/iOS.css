@@ -1,25 +1,25 @@
 * {
-  transform-style: flat !important;
-  transform: translate3d(0,0,0) !important;
-  perspective: none !important;
+  transform-style: flat;
+  perspective: none;
 }
 body div:not(.fold).consent {
-  transform: translateX(-50%) !important;
-  left: 50%;
   bottom: 80px;
 }
 body div.fold.consent {
   padding-bottom: 15ex;
 }
 div.fold {
-  transform: translateX(-50vw) !important;
+  transform: translateX(-50vw);
   left: 0;
+}
+div.fold:hover {
+  transform: translateX(calc(-50vw + 0.2em)) translateY(-0.2em);
 }
 div.fold.first {
   margin-top: 10vh;
 }
 div.parallax-child-1, div.parallax-child-2 {
-  margin-left: 0 !important;
+  margin-left: 0;
   margin-bottom: -10px !important;
 }
 div.left, div.right {
@@ -35,7 +35,8 @@ div.right {
     margin-top: 64vh;
 }
 #prop {
-  top: -10vh !important;
+  top: -10vh;
+  transform: none;
 }
 #container {
   min-width: none;
