@@ -6,6 +6,7 @@
 body div:not(.fold).consent {
   transform: translateX(-50%) !important;
   left: 50%;
+  bottom: 80px;
 }
 body div.fold.consent {
   padding-bottom: 15ex;
@@ -48,22 +49,22 @@ div.right {
     transform: translateX(3vw) !important;
   }
 }
-@media only screen and (max-width: 1000px) {
-  div.right {
-    transform: translateX(32vw) !important;
-  }
-  div.left {
-    transform: translateX(3vw) !important;
+@media (max-width: 1000px) and (orientation: landscape) {
+  body div:not(.fold).consent {
+    font-size: 70%;
+    bottom: 100px;
   }
 }
 @media only screen and (max-width: 600px) {
   div.right {
     transform: translateX(18vw) !important;
   }
+}
+@media (max-width: 600px) and (orientation: portrait) {
   #static1, #backToTop {
-    top: 4vh;
+    top: 15px;
   }
   body div:not(.fold).consent {
-    bottom: 12vh;
+    bottom: 125px;
   }
 }

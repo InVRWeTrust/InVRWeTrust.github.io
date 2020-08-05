@@ -316,11 +316,10 @@ section.flat {
 body div:not(.fold).consent {
   position: fixed;
   z-index: 10;
-  max-height: calc(98vh - 51vh);
   overflow-y: auto;
   font-size: 80%;
   bottom: 2vh;
-  max-height: 60vh;
+  max-height: 80vh;
 }
 
 body div#dataConsent {
