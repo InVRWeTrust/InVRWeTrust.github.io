@@ -76,7 +76,8 @@ div.prop-text {
   width: 51%;
 }
 div.prop-text:first-child {
-  margin-top: 30vh;
+  /* view height - consent box height - desired position */
+  margin-top: calc(100vh - 360px - 30vh);
 }
 .prop-text, .prop-text .emph {
   transition: 1s all;
@@ -578,6 +579,11 @@ input:checked + .slider:before {
 }
 
 /*************************************/
+@media only screen and (min-height: 1000px) {
+  div.prop-text:first-child {
+    margin-top: 30vh;
+  }
+}
 @media only screen and (min-width: 1000px) {
   html, body {
     font-size: 110%;
