@@ -661,3 +661,8 @@ input:checked + .slider:before {
     font-size: 66%;
   }
 }
+@media (max-height: 550px) and (orientation: landscape) {
+  div.prop-text:first-child {
+    margin-top: 30vh;
+  }
+}
