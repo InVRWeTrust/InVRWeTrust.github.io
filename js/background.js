@@ -42,9 +42,9 @@ function fillBack() {
   var viewHeight = document.getElementById("container").scrollHeight;
   //console.log('fillBack: ' + viewHeight);
   if (ios) {
-    viewHeight = Math.ceil(viewHeight * 0.95);
+    viewHeight = viewHeight;
   } else {
-    viewHeight = Math.ceil(viewHeight / 3.4);
+    viewHeight = viewHeight * (1 / 3);
   }
   $("#prop").css("height", viewHeight);
   //console.log('fillBack conv: ' + ios + ' ' + viewHeight);
