@@ -40,14 +40,14 @@ $('#prop').html(text);
 
 function fillBack() {
   var viewHeight = document.getElementById("container").scrollHeight;
-  console.log(viewHeight);
+  //console.log('fillBack: ' + viewHeight);
   if (ios) {
-    viewHeight = Math.ceil(viewHeight / 1.2);
+    viewHeight = Math.ceil(viewHeight * 0.95);
   } else {
     viewHeight = Math.ceil(viewHeight / 3.4);
   }
   $("#prop").css("height", viewHeight);
-  console.log(viewHeight);
+  //console.log('fillBack conv: ' + ios + ' ' + viewHeight);
 }
 
 $( document ).ready(function() {
