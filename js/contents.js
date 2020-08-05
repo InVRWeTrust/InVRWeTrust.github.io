@@ -6,27 +6,21 @@ var vimeos = [];
 
 var langs = ["en", "de"];
 
-$( document ).ready(function() {
-
-sd('backToTop', false);
-sd('consentInfo', false, ['policiesSoundcloud','policiesVimeo']);
-sd('sliderDesc', false);
-sd('saveDesc', false);
-sd('saveBtn', false);
-sd('trustQ', false);
-sd('yes', false);
-sd('no', false);
-sd('allBtn', false);
-sd('saveAndClose', false);
-sd('consentReminder', false);
-sd('intro', false);
-sd('interviewFarina', false);
-sd('co-curation-fold', true);
-sd('impressum-fold', true, ['impressumAddress']);
-sd('privacy-fold', true);
-
-////////////////////////////////////////////////////////
-readSavedConsent();
-scrollTo(window.location.hash, false);
-intraLinks();
-});
+var texts = {
+  'backToTop': [],
+  'consentInfo': ['policiesSoundcloud','policiesVimeo'],
+  'sliderDesc': [],
+  'saveDesc': [],
+  'saveBtn': [],
+  'trustQ': [],
+  'yes': [],
+  'no': [],
+  'allBtn': [],
+  'saveAndClose': [],
+  'consentReminder': [],
+  'intro': [],
+  'interviewFarina': [],
+  'co-curation-fold': [],
+  'impressum-fold': ['impressumAddress'],
+  'privacy-fold': []
+};

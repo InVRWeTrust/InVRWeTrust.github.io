@@ -34,7 +34,9 @@ $(document).on('click', 'a[href^="./?lang"]', function (event) {
   }
 });
 
-function sd(target, fold, dependents) {
+function sd(target, dependents) {
+  var last;
+  var fold = target.endsWith("-fold");
   if (!langs.includes(lang)) {
     lang = langs[0];
     console.log('lang: falling back to ' + lang);
@@ -55,6 +57,7 @@ function sd(target, fold, dependents) {
   }
   var converter = new showdown.Converter(),
       text      = '';
+  //converter.setOption('noHeaderId', true);
   $.get(file, function (response) {
       text = response;
       var html      = converter.makeHtml(text);
@@ -66,10 +69,18 @@ function sd(target, fold, dependents) {
       };
       if(dependents) {
         dependents.forEach(function(item, index, array) {
-          sd(item, false);
+          textsN++;
+          sd(item, []);
         });
       }
-      fillBack();
+      textsI++;
+      if (textsI >= textsN) {
+        console.log("sd(): last text: " + textsN );
+        readSavedConsent();
+        intraLinks();
+        fillBack();
+        scrollTo(window.location.hash, false);
+      }
   });
 }
 
@@ -103,15 +114,15 @@ function intraLinks() {
 
 function tryFoldTarget(target) {
   console.log('scrollTo target obj: ' + JSON.stringify($(target)) );
-  if ( target === '#top' || $(target).length ) {
-    return target;
-  } else {
-    return target + '-fold';
-  }
+    if ( target === '#top' || $(target).length ) {
+      return target;
+    } else {
+      return target + '-fold';
+    }
 }
 
 function scrollTo(anc, intra) {
-  console.log('scrollTo: ' + anc + ', ' + intra);
+  //console.log('scrollTo: ' + anc + ', ' + intra);
   var scrollTarget = 0;
   var toTop = false
   if (anc == "#top") {
@@ -125,24 +136,29 @@ function scrollTo(anc, intra) {
     }
   }
 
-  target = tryFoldTarget(target);
-  console.log('scrollTo target: ' + target);
+  //target = tryFoldTarget(target);
+  //console.log('scrollTo target: ' + target);
 
-  console.log('scrollTo target obj: ' + JSON.stringify($(target)) );
+  //console.log('scrollTo target obj: ' + JSON.stringify($(target)) );
   if ($(target).length) {
-    $('#container').animate({
-        scrollTop: 0
-    }, 0);
-    scrollTarget = $(target).offset().top;
+    $('#container').scrollTop(0);
+    setTimeout(function(){
+      //console.log('scrollTo offset: ' + JSON.stringify($(target).offset()));
+      scrollTarget = $(target).offset().top;
+      scrollToAct(target, scrollTarget);
+    }, 1100);
   } else {
     if (toTop) {
       scrollTarget = 0;
+      scrollToAct(null, scrollTarget);
     } else {
     console.log('no valid scroll target')
     return;
     }
   }
+}
 
+function scrollToAct(target, scrollTarget) {
   setTimeout(function(){
     $(function(){
         $('#container').animate({
@@ -156,3 +172,11 @@ function scrollTo(anc, intra) {
     $(fold).show("slow");
   }, 3000);
 }
+
+var textsN = Object.keys(texts).length;
+var textsI = 0;
+$( document ).ready(function(){
+  for (const prop in texts) {
+    sd(prop, texts[prop]);
+  };
+});

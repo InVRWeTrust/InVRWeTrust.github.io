@@ -50,14 +50,6 @@ function fillBack() {
   //console.log('fillBack conv: ' + ios + ' ' + viewHeight);
 }
 
-$( document ).ready(function() {
-  fillBack();
-});
-
-$('#container').resize(function(){
-  fillBack();
-});
-
 //var height = $('#container').height();
 //console.log(height);
 //$("#static1").offset({top: height, left: 0 });
