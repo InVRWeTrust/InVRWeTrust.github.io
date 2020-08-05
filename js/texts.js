@@ -152,7 +152,6 @@ function scrollTo(anc, intra) {
     });
   }, 1000);
   setTimeout(function(){
-    var title = $(target).find("h2")[0];
     var fold = $(target).find(".fold-start")[0];
     $(fold).show("slow");
   }, 3000);
