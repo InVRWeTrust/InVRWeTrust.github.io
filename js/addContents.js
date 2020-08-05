@@ -16,6 +16,9 @@ function readSavedConsent() {
   if (savedValue == "true") {
     saved = true;
   }
+  if (localStorage.getItem("trust")) {
+    hideConsent('#trust-q');
+  }
   if (saved) {
     setSaveSlider(saved);
     options.forEach(function(item, index, array) {
@@ -29,7 +32,6 @@ function readSavedConsent() {
       }
       if (item == "trust") {
         hideConsent('#trust-q');
-        return;
       }
       if (item == "lang") {
         return;
@@ -54,7 +56,7 @@ function allAndClose(button) {
   toggleContents(button);
 }
 
-function saveConsent(choice) {
+function saveConsent(choice, clear) {
   if (choice) {
     options.forEach(function(item, index, array) {
       var value;
@@ -69,10 +71,12 @@ function saveConsent(choice) {
       localStorage.setItem(item, value);
     });
   } else {
-    options.forEach(function(item, index, array) {
-      console.log("removed from storage: " + item);
-      localStorage.removeItem(item);
-    });
+    if (clear) {
+      options.forEach(function(item, index, array) {
+        console.log("removed from storage: " + item);
+        localStorage.removeItem(item);
+      });
+    }
   }
   setSaveSlider(choice);
 }
@@ -181,19 +185,23 @@ function toggleContents(slider, type, choice) {
     type = $(slider).data("slider");
     choice = $(slider).is(":checked");
     if (type !== "next" && type !== "save" && type !=="trust") {
-      // reset save state after toggling
-      saveConsent(false);
+      // reset save state after togglings
+      saveConsent(false, false);
     }
   }
 
   console.log(type + " choice: " + choice);
   if (choice) {
     console.log(type + ": entered choice == true routine");
+    console.log(type + ' checked');
+    $('[data-slider="' + type + '"]').prop( "checked", true );
     content = chooseContents(type);
     targets = content.targets;
     contents = content.contents;
   } else {
     targets = type;
+    console.log(type + ' unchecked');
+    $('[data-slider="' + type + '"]').prop( "checked", false );
   }
 
   if (targets === 'next') {
@@ -202,7 +210,7 @@ function toggleContents(slider, type, choice) {
     return;
   }
   if (targets === 'save') {
-    saveConsent(choice);
+    saveConsent(choice, true);
     // There is only one save slider in privacy.
     // We will handle it in the function above.
     return;
@@ -212,12 +220,8 @@ function toggleContents(slider, type, choice) {
   // Set their sliders and poulate wach with content from array "contents[]".
   $('div.' + targets).each(function( index ) {
     if (choice) {
-      console.log(targets + ' checked');
-      $('[data-slider="' + targets + '"]').prop( "checked", true );
       addContents(this, contents, index);
     } else {
-      console.log(targets + ' unchecked');
-      $('[data-slider="' + targets + '"]').prop( "checked", false );
       delContents(this, targets, index);
     }
   });
