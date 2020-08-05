@@ -183,7 +183,7 @@ div.fold p {
   box-shadow: -0.2em 0.2em lightgrey;
 }
 #static1 h2:hover {
-  box-shadow: -0.4em 0.4em lightgrey;
+  box-shadow: -0.3em 0.3em lightgrey;
 }
 #static1:hover {
   transform: translateX(0.2em) translateY(-0.2em);
