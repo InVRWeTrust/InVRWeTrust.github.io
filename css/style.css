@@ -95,11 +95,13 @@ div.prop-text:first-child {
 .prop-text:hover .emph {
   text-shadow: 0.3vw 0.3vw #cd0707;
 }
+#backToTop, #static1 {
+  z-index: 90;
+}
 #backToTop {
   width: max-content;
   right: 1ex;
   position: fixed;
-  z-index: 10;
   top: 1ex;
 }
 #static1 {
@@ -108,7 +110,6 @@ div.prop-text:first-child {
   top: 2ex;
   left: 0.4ex;
   margin: 0;
-  z-index: 90
 }
 #intro {
   margin-top: 1000px;
