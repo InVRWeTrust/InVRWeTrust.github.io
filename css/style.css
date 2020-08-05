@@ -242,6 +242,7 @@ div.window img {
   width: auto;
   vertical-align: middle;
   display: inline;
+  margin-left: -4ex;
 }
 #dataConsent div > p:nth-child(1) {
   margin-bottom: 0;
