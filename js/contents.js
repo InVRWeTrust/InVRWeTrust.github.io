@@ -20,6 +20,7 @@ var texts = {
   'consentReminder': [],
   'intro': [],
   'interviewFarina': [],
+  'subscribe-fold': [],
   'co-curation-fold': [],
   'impressum-fold': ['impressumAddress'],
   'privacy-fold': []

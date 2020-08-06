@@ -312,9 +312,6 @@ div.left.parallax-child-1, div.right.parallax-child-2, article section div.windo
 }
 
 /***********************************/
-section.flat {
-  transform-style: flat;
-}
 body div:not(.fold).consent {
   position: fixed;
   z-index: 10;
@@ -374,7 +371,7 @@ div.fold div.fold-start {
   margin-top: 2ex;
 }
 
-div.consent, div.consent p {
+div.consent, div.consent p, div.fold {
   transform-style: flat;
 }
 .consentInfo, .consentSliders {
@@ -496,7 +493,7 @@ div.window.placeholder.vimeo span.placeholder-fill {
   color: #1AB7EA;
 }
 
-button {
+button, input.button {
   border-style: initial;
   background: black;
   color: white;
@@ -577,6 +574,10 @@ input:checked + .slider:before {
   -ms-transform: translateX(1.5em);
   transform: translateX(1.5em);
   background: white;
+}
+
+#mc_embed_signup div {
+    display: inline-block;
 }
 
 /*************************************/
