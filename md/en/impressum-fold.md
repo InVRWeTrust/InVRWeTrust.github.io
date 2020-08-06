@@ -13,7 +13,7 @@ Our web pages and their contents are subject to German copyright law. Unless exp
 We take the protection of your personal information very seriously. We want you to know when we collect what data and how we use it.
 As our web pages evolve and new technologies are implemented, changes to this privacy policy may be required. Therefore, we recommend that you read this privacy policy from time to time.
 
-[Privacy Policy](#privacy)
+[Privacy Policy](#privacy-fold)
 
 ### Accountability for links
 
