@@ -1,3 +1,6 @@
+var options = ["save", "lang", "soundcloud", "vimeo", "trust"];
+readSavedConsent();
+
 function saveTrust(){
   toggleContents('#trustInput');
   hideConsent(true);
@@ -94,20 +97,18 @@ function delContents(div, targets, index) {
   switch(targets) {
   case "soundcloud":
     html += '<p>'
-    html += '<span class="md-policiesSoundcloud"></span>';
+    html += '<span class="slider-desc md-sliderDesc sd-nop"></span> <b>Soundcloud</b>. <span class="slider-desc md-privacyLink sd-nop"></span>'
     html += '</p>'
     html += '<p>'
     html += '<label class="switch"><input data-slider="soundcloud" onclick="toggleContents(this);" type="checkbox"><span class="slider soundcloud"></span></label>'
-    html += '<span class="slider-desc md-sliderDesc"></span> <b>Soundcloud</b>'
     html += '</p>'
     break;
   case "vimeo":
     html += '<p>'
-    html += '<span class="md-policiesVimeo"></span>'
+    html += '<span class="slider-desc md-sliderDesc sd-nop"></span> <b>Vimeo</b>. <span class="slider-desc md-privacyLink sd-nop"></span>'
     html += '</p>'
     html += '<p>'
     html += '<label class="switch"><input data-slider="vimeo" onclick="toggleContents(this);" type="checkbox"><span class="slider vimeo"></span></label>'
-    html += '<span class="slider-desc md-sliderDesc"></span> <b>Vimeo</b>'
     html += '</p>'
     break;
   default:
@@ -120,6 +121,9 @@ function delContents(div, targets, index) {
   }
   $(div).html(html);
   $(div).addClass('placeholder');
+  if (typeof sd === "function") {
+    sd('sliderDesc',['privacyLink'])
+  }
 }
 
 function chooseContents(type) {

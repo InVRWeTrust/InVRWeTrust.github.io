@@ -76,7 +76,10 @@ function sd(target, dependents) {
       textsI++;
       if (textsI >= textsN) {
         console.log("sd(): last text: " + textsN );
-        readSavedConsent();
+        $(".sd-nop").each(function( index ) {
+          var cnt = $(this).find("p").contents();
+          $(this).find("p").replaceWith(cnt);
+        });
         intraLinks();
         fillBack();
         scrollTo(window.location.hash, false);

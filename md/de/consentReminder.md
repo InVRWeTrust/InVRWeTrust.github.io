@@ -1,1 +1,1 @@
-Sie können Ihre Entscheidung später unter der [Datenschutzrichtlinien](#privacy-fold) ändern.
+Sie können Ihre Entscheidung später unter der <span class="md-privacyLink sd-nop"></span> ändern.

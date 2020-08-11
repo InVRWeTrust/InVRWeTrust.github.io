@@ -1,1 +1,1 @@
-You can later change the settings at our [Privacy Policy](#privacy-fold).
+You can later change the settings at our <span class="md-privacyLink sd-nop"></span>.
