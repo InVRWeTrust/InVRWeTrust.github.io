@@ -1,0 +1,1 @@
+**Andreas Broeckmann:** Die Formulierung "VR-Kunst" tappt meines Erachtens in die alte Medienkunst-Falle, den künstlerischen Gehalt doch vorrangig über das technische Medium zu erschließen; man kann das machen, ist dann aber doch gleich wieder gefangen in der Blase, aus der Sie die Debatte ja begrüßenswerter Weise herausführen wollen.

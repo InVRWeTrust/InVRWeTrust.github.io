@@ -18,6 +18,7 @@ var texts = {
   'consentReminder': [],
   'intro': [],
   'interviewFarina': [],
+  'interviewBroeckmann': [],
   'subscribe-fold': [],
   'co-curation-fold': [],
   'impressum-fold': ['impressumAddress'],
