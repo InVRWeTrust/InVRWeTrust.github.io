@@ -93,28 +93,35 @@ function addContents(div, contents, index) {
 function delContents(div, targets, index) {
   console.log( "del " + index );
   var html = '';
-  html += '<div class="sliders">'
   switch(targets) {
   case "soundcloud":
+    html += '<div class="link">'
+    html += '<p>'
+    html += '<b><a href="https://soundcloud.com/invrwetrust/baruch-gottlieb">Baruch Gottlieb in conversation with Clemens Schöll &rarr;</a></b>'
+    html += '</p>'
+    html += '</div>'
+    html += '<div class="sliders">'
     html += '<p>'
     html += '<span class="slider-desc md-sliderDesc sd-nop"></span> <b>Soundcloud</b>. <span class="slider-desc md-privacyLink sd-nop"></span>'
     html += '</p>'
     html += '<p>'
     html += '<label class="switch"><input data-slider="soundcloud" onclick="toggleContents(this);" type="checkbox"><span class="slider soundcloud"></span></label>'
     html += '</p>'
+    html += '</div>'
     break;
   case "vimeo":
+    html += '<div class="sliders">'
     html += '<p>'
     html += '<span class="slider-desc md-sliderDesc sd-nop"></span> <b>Vimeo</b>. <span class="slider-desc md-privacyLink sd-nop"></span>'
     html += '</p>'
     html += '<p>'
     html += '<label class="switch"><input data-slider="vimeo" onclick="toggleContents(this);" type="checkbox"><span class="slider vimeo"></span></label>'
     html += '</p>'
+    html += '</div>'
     break;
   default:
     break;
   }
-  html += '</div>'
   html += '<span class="placeholder-fill">'
   for(var i=0; i<1000; i++) {
     html += '�'

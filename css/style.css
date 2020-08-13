@@ -137,7 +137,7 @@ div.fold p {
  div.window > p,
  div.window > iframe,
  div.window h2,
- div.window:not(.consent) div:not(.sliders),
+ div.window:not(.consent):not(.placeholder) div:not(.sliders),
  div.consent.window
 {
   box-shadow: 0.2em 0.2em darkgrey;
@@ -150,7 +150,7 @@ div.fold p {
  div.window.right > p,
  div.window.right > iframe,
  div.window.right h2,
- div.window.right:not(.consent) div:not(.sliders)
+ div.window.right:not(.consent):not(.placeholder) div:not(.sliders)
 {
   box-shadow: -0.2em 0.2em darkgrey;
 }
@@ -158,7 +158,7 @@ div.fold p {
  div.window.right.parallax-child-2 > p,
  div.window.right.parallax-child-2 > iframe,
  div.window.right.parallax-child-2 h2,
- div.window.right.parallax-child-2:not(.consent) div:not(.sliders)
+ div.window.right.parallax-child-2:not(.consent):not(.placeholder) div:not(.sliders)
 {
   box-shadow: -0.2em -0.2em darkgrey;
 }
@@ -166,7 +166,7 @@ div.fold p {
  div.window:hover > p,
  div.window:hover > iframe,
  div.window:hover h2,
- div.window:hover:not(.consent) div:not(.sliders),
+ div.window:hover:not(.consent):not(.placeholder) div:not(.sliders),
  div.consent.window:hover
 {
   box-shadow: 0.4em 0.4em lightgrey;
@@ -194,7 +194,7 @@ div.fold p {
  div.window.right:hover > p,
  div.window.right:hover > iframe,
  div.window.right:hover h2,
- div.window.right:hover:not(.consent) div:not(.sliders)
+ div.window.right:hover:not(.consent):not(.placeholder) div:not(.sliders)
 {
   box-shadow: -0.4em 0.4em lightgrey;
   transform: translateX(0.2em) translateY(-0.2em);
@@ -344,10 +344,12 @@ div.fold h2 {
   display: block;
   text-decoration-line: underline;
 }
+div.fold, div.placeholder div.link {
+  background: white;
+}
 div.fold {
   transition: all 1s;
   text-align: center;
-  background: white;
   padding: 1em;
   margin: 1em;
   margin-top: 0;
@@ -626,7 +628,7 @@ input:checked + .slider:before {
   html, body {
     font-size: 100%;
   }
-  div:not(.consent).window {
+  div:not(.consent):not(.placeholder).window {
     max-width: 66vw;
   }
   div.window.placeholder.vimeo {
@@ -645,7 +647,7 @@ input:checked + .slider:before {
     margin: -100vh 0 100vh -10vw;
   }
   */
-  div:not(.consent).window {
+  div:not(.consent):not(.placeholder).window {
     max-width: 80vw;
   }
   div.window.placeholder.vimeo {
