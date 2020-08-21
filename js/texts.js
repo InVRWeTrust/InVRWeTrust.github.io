@@ -135,7 +135,11 @@ function scrollTo(anc, intra) {
     if (intra) {
       target = anc;
     } else {
-      target = anc + '-fold';
+      if ($(anc).length) {
+        target = anc;
+      } else {
+        target = anc + '-fold';
+      }
     }
   }
 
@@ -148,6 +152,10 @@ function scrollTo(anc, intra) {
     setTimeout(function(){
       //console.log('scrollTo offset: ' + JSON.stringify($(target).offset()));
       scrollTarget = $(target).offset().top;
+      var scale = $(target).css('transform').split(',')[5];
+      if (scale) {
+        scrollTarget = scrollTarget * scale;
+      }
       scrollToAct(target, scrollTarget);
     }, 1100);
   } else {
@@ -155,7 +163,7 @@ function scrollTo(anc, intra) {
       scrollTarget = 0;
       scrollToAct(null, scrollTarget);
     } else {
-    console.log('no valid scroll target')
+    console.log('scrollTo: no valid scroll target: ' + target)
     return;
     }
   }
