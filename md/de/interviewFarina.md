@@ -1,3 +1,6 @@
+Farina Hamman ist Interaktionsdesignerin und KünstlerIn. Sie ist in verschiedenen Communities tätig, äußerst gut vernetzt und unterstütz 'in VR we trust' diesbezüglich. 
+https://farina-hamann.de/
+
 **Daniel:** Hallo liebe Farina. Wir freuen uns dass Du mit im Team von 'In VR we trust' bist. Wie bist du zu VR gekommen und an welchen Stellen hat Dein Leben zur Zeit mit VR zu tun?
 
 **Farina:** Ich freue mich auch sehr dabei zu sein und das Projekt 'In VR we trust' zu unterstützen. Ich habe 2015 mit dem Erscheinen der Google Cardboard begonnen, mich mit VR zu beschäftigen. Nach einem VR-Workshop an der HBK Braunschweig habe ich 2016 gemeinsam mit Annika Heller mein erstes VR-Projekt entwickelt: eine virtuelle Reise mit dem Titel 'Ana Kalypto'. Auf der einen Seite hat es mich begeistert meine Kreativität mit meinem technischen Interesse verbinden zu können und auf der anderen Seite faszinieren mich die Möglichkeiten und Herausforderungen eines so neuen Mediums.   
