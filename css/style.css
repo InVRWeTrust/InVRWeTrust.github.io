@@ -213,7 +213,7 @@ div.fold p {
     margin-right: 3em;
     box-shadow: -0.2em 0.2em #cd0707;
 }
-#interviewFarina p:nth-child(2n+1) {
+#interviewFarina p:nth-child(2n+1):not(:first-child) {
     margin-left: 3em;
     box-shadow: 0.2em 0.2em #006d95;
 }
@@ -221,7 +221,7 @@ div.fold p {
     box-shadow: -0.4em 0.4em #cd0707;
     transform: translateX(0.4em) translateY(-0.2em);
 }
-#interviewFarina:hover p:nth-child(2n+1) {
+#interviewFarina:hover p:nth-child(2n+1):not(:first-child) {
     box-shadow: 0.4em 0.4em #006d95;
     transform: translateX(-0.4em) translateY(-0.2em);
 }
