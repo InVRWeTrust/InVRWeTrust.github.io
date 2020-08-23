@@ -1,5 +1,5 @@
 Farina Hamann ist Interaktionsdesignerin und KünstlerIn. Sie ist in verschiedenen Communities tätig, äußerst gut vernetzt und unterstütz 'in VR we trust' diesbezüglich. 
-https://farina-hamann.de/
+<https://farina-hamann.de/>→
 
 **Daniel:** Hallo liebe Farina. Wir freuen uns dass Du mit im Team von 'In VR we trust' bist. Wie bist du zu VR gekommen und an welchen Stellen hat Dein Leben zur Zeit mit VR zu tun?
 
