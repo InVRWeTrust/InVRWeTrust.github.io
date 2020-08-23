@@ -260,6 +260,9 @@ div h2, h3 {
 div.window.right {
 margin-left: 42vw;
 }
+div.window.left {
+  z-index: 2;
+}
 div.left.parallax-child-2 {
   margin-left: -32vw;
 }

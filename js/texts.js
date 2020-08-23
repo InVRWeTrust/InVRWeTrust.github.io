@@ -156,6 +156,8 @@ function scrollTo(anc, intra) {
       if (scale) {
         scrollTarget = scrollTarget * scale;
       }
+      var stickyHeight = $('#static1').height();
+      scrollTarget = scrollTarget - stickyHeight - 200;
       scrollToAct(target, scrollTarget);
     }, 1100);
   } else {
