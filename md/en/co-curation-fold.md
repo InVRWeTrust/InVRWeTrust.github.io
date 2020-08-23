@@ -8,4 +8,4 @@ We would like to find a group of five to fifteen people - no matter if they are 
 
 Our joint discourse will be partly reflected here on our website, but will also be incorporated into the supporting programme of the four-day exhibitions. Since we are learning the process of co-curating with you, we reserve the right to make the final decision (which of course includes your thoughts and ideas) ourselves.
 
-If this appeals to you, we would be happy if you would send us an informal e-mail with a few words about yourself and your motivation to [we@trust.invr.info](mailto:we@trust.invr.info).
+If this appeals to you, we would be happy if you would send us an informal e-mail with a few words about yourself and your motivation to [invrwetrust@thisisfake.team](mailto:invrwetrust@thisisfake.team).

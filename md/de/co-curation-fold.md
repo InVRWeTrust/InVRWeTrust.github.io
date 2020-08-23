@@ -8,4 +8,4 @@ Wir möchten eine Gruppe von fünf bis fünfzehn Menschen finden — egal ob Kü
 
 Unser gemeinsamer Diskurs soll sich zum Teil hier auf unserer Website abbilden, aber auch in das Rahmenprogramm der viertägigen Ausstellungen einfließen. Da wir den Prozess des Ko-Kuratieren erst mit Euch erlernen, behalten wir uns bei diesem Projekt vor, die letztgültige Entscheidung (die aber natürlich Eure Gedanken und Ideen mit einbezieht) selber zu treffen.
 
-Wenn Dich dies anspricht, freuen wir uns wenn Du uns eine formlose E-Mail mit ein paar Worten zu Dir und Deiner Motivation an [we@trust.invr.info](mailto:we@trust.invr.info) schickst.
+Wenn Dich dies anspricht, freuen wir uns wenn Du uns eine formlose E-Mail mit ein paar Worten zu Dir und Deiner Motivation an [invrwetrust@thisisfake.team](mailto:invrwetrust@thisisfake.team) schickst.
