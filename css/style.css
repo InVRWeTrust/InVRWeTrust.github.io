@@ -488,7 +488,9 @@ div.window.placeholder span.placeholder-fill {
   position: absolute;
   top: 0;
   z-index: -1;
-  width: 110%;
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
 }
 div.window.placeholder.soundcloud span.placeholder-fill {
   word-break: break-all;
