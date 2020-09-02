@@ -116,6 +116,7 @@ div.prop-text:first-child {
 }
 div.window {
   max-width: 50vw;
+  position: relative;
 }
 #co-curation-fold {
   top: 66vh;
