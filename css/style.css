@@ -363,10 +363,10 @@ div.fold {
   border: solid 1px;
   position: relative;
 }
-div.parallax-child-1 + div.fold.first {
+div.parallax-child-1.window + div.fold {
   margin-top: 3000px;
 }
-div.parallax-child-2 + div.fold.first {
+div.parallax-child-2.window + div.fold {
   margin-top: 1500px;
 }
 div.fold p {
