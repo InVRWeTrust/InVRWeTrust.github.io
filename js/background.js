@@ -30,11 +30,9 @@ if (ios) {
 
 var text = '';
 for(var i=0; i<100; i++) {
-  text += '<div class="prop-text">in <span class="emph">VR</span> we <span class="emph">trust</span></div>'
-  text += '<div class="prop-text">we <span class="emph">trust</span> in <span class="emph">VR</span></div>'
-  text += '<div class="prop-text">we <span class="emph">trusted</span> in <span class="emph">VR</span></div>'
-  text += '<div class="prop-text">we <span class="emph">will trust</span> in <span class="emph">VR</span></div>'
-  text += '<div class="prop-text"><span class="emph">can</span> we <span class="emph">trust</span> in <span class="emph">VR</span>?</div>'
+  for (let phrase of bgText) {
+    text += '<div class="prop-text">' + phrase + '</div>'
+  }
 }
 $('#prop').html(text);
 
