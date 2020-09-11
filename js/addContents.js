@@ -84,20 +84,48 @@ function saveConsent(choice, clear) {
   }
   setSaveSlider(choice);
 }
-function addContents(div, contents, index) {
-  console.log(div, contents, index);
-  console.log( index + ": " + $( contents[index] ).text() );
-  $(div).removeClass('placeholder');
-  $(div).html(contents[index]);
+function addContents(div, targets, index) {
+  var html = '';
+  switch(targets) {
+  case "soundcloud":
+    var url = sounds[index].url;
+    $.get(
+      // construct url that returns info needed for the embed
+      'https://soundcloud.com/oembed?format=json&url=' + url,
+      function (result) {
+        // we need the id, but it's not its own json key
+        var id = result.html.match("tracks%2F(.*)\u0026show_artwork")[1];
+        // construct the embed iframe
+        html += '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/'
+        html += id
+        html += '&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>'
+        // put into DOM
+        placeholderReplace(div, html);
+      }
+    );
+  break;
+  case "vimeo":
+    html += '<div class="sliders">'
+    break;
+  default:
+    break;
+  }
 }
+function placeholderReplace(div, html) {
+  $(div).removeClass('placeholder');
+  $(div).html(html);
+}
+
 function delContents(div, targets, index) {
   console.log( "del " + index );
   var html = '';
   switch(targets) {
   case "soundcloud":
+    var url = sounds[index].url;
+    var title = sounds[index].title;
     html += '<div class="link">'
     html += '<p>'
-    html += '<b><a href="https://soundcloud.com/invrwetrust/baruch-gottlieb">Baruch Gottlieb in conversation with Clemens Schöll &rarr;</a></b>'
+    html += '<b><a href="' + url + '">' + title + ' &rarr;</a></b>'
     html += '</p>'
     html += '</div>'
     html += '<div class="sliders">'
@@ -226,7 +254,7 @@ function toggleContents(slider, type, choice) {
   // Set their sliders and poulate wach with content from array "contents[]".
   $('div.' + targets).each(function( index ) {
     if (choice) {
-      addContents(this, contents, index);
+      addContents(this, targets, index);
     } else {
       delContents(this, targets, index);
     }
