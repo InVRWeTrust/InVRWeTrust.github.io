@@ -105,7 +105,13 @@ function addContents(div, targets, index) {
     );
   break;
   case "vimeo":
-    html += '<div class="sliders">'
+    // id is part of url
+    var id = vimeos[index].url.match("vimeo.com/([0-9]+)")[1];
+    html += '<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/'
+    html += id
+    html += '?color=25afe0&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>'
+    // put into DOM
+    placeholderReplace(div, html);
     break;
   default:
     break;
@@ -138,6 +144,13 @@ function delContents(div, targets, index) {
     html += '</div>'
     break;
   case "vimeo":
+    var url = vimeos[index].url;
+    var title = vimeos[index].title;
+    html += '<div class="link">'
+    html += '<p>'
+    html += '<b><a href="' + url + '">' + title + ' &rarr;</a></b>'
+    html += '</p>'
+    html += '</div>'
     html += '<div class="sliders">'
     html += '<p>'
     html += '<span class="slider-desc md-sliderDesc sd-nop"></span> <b>Vimeo</b>. <span class="slider-desc md-privacyLink sd-nop"></span>'
