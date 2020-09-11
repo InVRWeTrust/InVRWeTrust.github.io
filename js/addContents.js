@@ -86,9 +86,11 @@ function saveConsent(choice, clear) {
 }
 function addContents(div, targets, index) {
   var html = '';
+  // use helper function to determine content type
+  var contents = chooseContents(targets).contents;
   switch(targets) {
   case "soundcloud":
-    var url = sounds[index].url;
+    var url = contents[index].url;
     $.get(
       // construct url that returns info needed for the embed
       'https://soundcloud.com/oembed?format=json&url=' + url,
@@ -106,7 +108,7 @@ function addContents(div, targets, index) {
   break;
   case "vimeo":
     // id is part of url
-    var id = vimeos[index].url.match("vimeo.com/([0-9]+)")[1];
+    var id = contents[index].url.match("vimeo.com/([0-9]+)")[1];
     html += '<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/'
     html += id
     html += '?color=25afe0&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>'
@@ -122,47 +124,14 @@ function placeholderReplace(div, html) {
   $(div).html(html);
 }
 
-function delContents(div, targets, index) {
+function delContents(div, type, index) {
+  // use helper function to determine content type
+  var content = chooseContents(type);
   console.log( "del " + index );
-  var html = '';
-  switch(targets) {
-  case "soundcloud":
-    var url = sounds[index].url;
-    var title = sounds[index].title;
-    html += '<div class="link">'
-    html += '<p>'
-    html += '<b><a href="' + url + '">' + title + ' &rarr;</a></b>'
-    html += '</p>'
-    html += '</div>'
-    html += '<div class="sliders">'
-    html += '<p>'
-    html += '<span class="slider-desc md-sliderDesc sd-nop"></span> <b>Soundcloud</b>. <span class="slider-desc md-privacyLink sd-nop"></span>'
-    html += '</p>'
-    html += '<p>'
-    html += '<label class="switch"><input data-slider="soundcloud" onclick="toggleContents(this);" type="checkbox"><span class="slider soundcloud"></span></label>'
-    html += '</p>'
-    html += '</div>'
-    break;
-  case "vimeo":
-    var url = vimeos[index].url;
-    var title = vimeos[index].title;
-    html += '<div class="link">'
-    html += '<p>'
-    html += '<b><a href="' + url + '">' + title + ' &rarr;</a></b>'
-    html += '</p>'
-    html += '</div>'
-    html += '<div class="sliders">'
-    html += '<p>'
-    html += '<span class="slider-desc md-sliderDesc sd-nop"></span> <b>Vimeo</b>. <span class="slider-desc md-privacyLink sd-nop"></span>'
-    html += '</p>'
-    html += '<p>'
-    html += '<label class="switch"><input data-slider="vimeo" onclick="toggleContents(this);" type="checkbox"><span class="slider vimeo"></span></label>'
-    html += '</p>'
-    html += '</div>'
-    break;
-  default:
-    break;
-  }
+  console.log(content);
+  var url = content.contents[index].url;
+  var title = content.contents[index].title;
+  var html = constructPlaceholder(content.targets, url, title);
   html += '<span class="placeholder-fill">'
   for(var i=0; i<1000; i++) {
     html += '�'
@@ -172,6 +141,30 @@ function delContents(div, targets, index) {
   if (typeof sd === "function") {
     sd('sliderDesc',['privacyLink'])
   }
+}
+function constructPlaceholder(targets, url, title) {
+  var html = '';
+  html += '<div class="link">'
+  html += '<p>'
+  html += '<b><a href="' + url + '">' + title + ' &rarr;</a></b>'
+  html += '</p>'
+  html += '</div>'
+  html += '<div class="sliders">'
+  html += '<p>'
+  html += '<span class="slider-desc md-sliderDesc sd-nop"></span> <b>'
+  // uppercase first letter
+  html += targets.charAt(0).toUpperCase() + targets.slice(1);
+  html += '</b>. <span class="slider-desc md-privacyLink sd-nop"></span>'
+  html += '</p>'
+  html += '<p>'
+  html += '<label class="switch"><input data-slider="'
+  html += targets
+  html += '" onclick="toggleContents(this);" type="checkbox"><span class="slider '
+  html += targets
+  html += '"></span></label>'
+  html += '</p>'
+  html += '</div>'
+  return html;
 }
 
 function chooseContents(type) {
