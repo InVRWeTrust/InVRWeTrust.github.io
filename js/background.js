@@ -29,7 +29,7 @@ if (ios) {
 }
 
 var text = '';
-for(var i=0; i<100; i++) {
+for(var i=0; i<bgRepeats; i++) {
   for (let phrase of bgText) {
     text += '<div class="prop-text">' + phrase + '</div>'
   }

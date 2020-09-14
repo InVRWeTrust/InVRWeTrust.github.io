@@ -37,4 +37,5 @@ var bgText = [
   'we <span class="emph">trusted</span> in <span class="emph">VR</span>',
   'we <span class="emph">will trust</span> in <span class="emph">VR</span>',
   '<span class="emph">can</span> we <span class="emph">trust</span> in <span class="emph">VR</span>?'
-]
+];
+var bgRepeats = 100;
