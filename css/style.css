@@ -113,17 +113,18 @@ div.prop-text:first-child {
 }
 #intro {
   margin-top: 1000px;
-  margin-bottom: 3000px;
 }
 div.window {
   max-width: 50vw;
   position: relative;
+  transform-origin: top;
 }
 div.window.mid-small {
   max-width: 25vw;
   transform: translate3d(0,0,-0.1px) scale(1.1);
   margin: 0;
   margin-left: 20%;
+  margin-bottom: 100px;
 }
 #co-curation-fold {
   top: 66vh;
@@ -321,7 +322,7 @@ div.right.parallax-child-2.interview-text {
   margin-left: 36vw;
 }
 div.parallax-child-1, div.parallax-child-2 {
-    margin-bottom: 1750px;
+    margin-bottom: 1200px;
 }
 /*
 div.left.parallax-child-1, div.right.parallax-child-2, article section div.window img {
@@ -347,6 +348,9 @@ div.left.parallax-child-1, div.right.parallax-child-2, article section div.windo
   perspective-origin: bottom;
   -webkit-overflow-scrolling: touch;
   transform-style: preserve-3d;
+}
+.menu {
+  transform-origin: bottom;
 }
 .invisible-scrollbar::-webkit-scrollbar {
   display: none;
@@ -408,10 +412,10 @@ div.fold {
   position: relative;
 }
 div.parallax-child-1.window + div.fold {
-  margin-top: 3000px;
+  margin-top: 12000px;
 }
 div.parallax-child-2.window + div.fold {
-  margin-top: 1500px;
+  margin-top: 4000px;
 }
 div.fold p {
   text-align: left;
@@ -649,6 +653,12 @@ input:checked + .slider:before {
   html, body {
     font-size: 120%;
   }
+  div.parallax-child-1 {
+    margin-bottom: 400px;
+  }
+  div.parallax-child-2 {
+      margin-bottom: 1200px;
+  }
 }
 @media only screen and (min-width: 1700px) {
   div.prop-text:first-child {
@@ -675,7 +685,7 @@ input:checked + .slider:before {
   html, body {
     font-size: 100%;
   }
-  div:not(.consent):not(.placeholder):not(.interview-text).window {
+  div:not(.consent):not(.interview-text).window {
     max-width: 66vw;
   }
   div:not(.consent):not(.placeholder).window.mid-small {
@@ -690,6 +700,9 @@ input:checked + .slider:before {
   div:not(.interview-text).right.parallax-child-1 {
     margin-left: -36vw;
   }
+  div.parallax-child-2.window + div.fold {
+    margin-top: calc( -20.95605*100vw + 22283.13px )
+  }
 }
 @media only screen and (max-width: 600px) {
   /*
@@ -697,7 +710,7 @@ input:checked + .slider:before {
     margin: -100vh 0 100vh -10vw;
   }
   */
-  div:not(.consent):not(.placeholder):not(.interview-text).window {
+  div:not(.consent):not(.interview-text).window {
     max-width: 80vw;
   }
   div:not(.consent):not(.placeholder).window.mid-small {
