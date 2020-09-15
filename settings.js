@@ -20,6 +20,7 @@ var texts = {
   'impressum-fold': ['impressumAddress'],
   'privacy-fold': [],
   'relativty': [],
+  'interviewIvana': [],
 };
 
 var sounds = [

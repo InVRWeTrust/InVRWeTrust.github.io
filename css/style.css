@@ -239,19 +239,19 @@ div.fold p {
   transform: translateX(0.2em) translateY(0.2em);
 }
 
-#interviewFarina p:nth-child(2n) {
+.interview-text p:nth-child(2n) {
     margin-right: 3em;
     box-shadow: -0.2em 0.2em #cd0707;
 }
-#interviewFarina p:nth-child(2n+1):not(:first-child) {
+.interview-text p:nth-child(2n+1):not(:first-child) {
     margin-left: 3em;
     box-shadow: 0.2em 0.2em #006d95;
 }
-#interviewFarina:hover p:nth-child(2n) {
+.interview-text:hover p:nth-child(2n) {
     box-shadow: -0.4em 0.4em #cd0707;
     transform: translateX(0.4em) translateY(-0.2em);
 }
-#interviewFarina:hover p:nth-child(2n+1):not(:first-child) {
+.interview-text:hover p:nth-child(2n+1):not(:first-child) {
     box-shadow: 0.4em 0.4em #006d95;
     transform: translateX(-0.4em) translateY(-0.2em);
 }
