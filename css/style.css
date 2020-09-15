@@ -118,6 +118,12 @@ div.window {
   max-width: 50vw;
   position: relative;
 }
+div.window.mid-small {
+  max-width: 25vw;
+  transform: translate3d(0,0,-0.1px);
+  margin: 0;
+  margin-left: 20%;
+}
 #co-curation-fold {
   top: 66vh;
 }
@@ -142,6 +148,18 @@ div.fold p {
  div.consent.window
 {
   box-shadow: 0.2em 0.2em darkgrey;
+  transition: all 1s;
+  border: solid 0.1em black;
+  background-color: white
+}
+ div.window.mid-small > img,
+ div.window.mid-small > p,
+ div.window.mid-small > iframe,
+ div.window.mid-small h2,
+ div.window.mid-small:not(.consent):not(.placeholder) div:not(.sliders),
+ div.consent.window.mid-small
+{
+  box-shadow: 0.2em -0.2em darkgrey;
   transition: all 1s;
   border: solid 0.1em black;
   background-color: white
@@ -173,6 +191,16 @@ div.fold p {
   box-shadow: 0.4em 0.4em lightgrey;
   transform: translateX(-0.2em) translateY(-0.2em);
   /*border: solid 1px black;*/
+}
+ div.window.mid-small:hover > img,
+ div.window.mid-small:hover > p,
+ div.window.mid-small:hover > iframe,
+ div.window.mid-small:hover h2,
+ div.window.mid-small:hover:not(.consent):not(.placeholder) div:not(.sliders),
+ div.consent.window.mid-small:hover
+{
+  box-shadow: 0.4em -0.4em lightgrey;
+  transform: translateX(-0.2em) translateY(0.2em);
 }
 #static1, #backToTop {
   transition: all 1s;
@@ -637,6 +665,9 @@ input:checked + .slider:before {
   div:not(.consent):not(.placeholder).window {
     max-width: 66vw;
   }
+  div:not(.consent):not(.placeholder).window.mid-small {
+    max-width: 16vw;
+  }
   div.window.placeholder.vimeo {
     height: calc(66vw * 0.5625);
   }
@@ -655,6 +686,9 @@ input:checked + .slider:before {
   */
   div:not(.consent):not(.placeholder).window {
     max-width: 80vw;
+  }
+  div:not(.consent):not(.placeholder).window.mid-small {
+    max-width: 40vw;
   }
   div.window.placeholder.vimeo {
     height: calc(80vw * 0.5625);

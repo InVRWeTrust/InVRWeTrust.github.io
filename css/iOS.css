@@ -18,9 +18,12 @@ div.fold:hover {
 div.fold.first {
   margin-top: 10vh;
 }
+div.parallax-child-1, div.parallax-child-2, div.window.mid-small {
+  margin-bottom: -10px !important;
+  transform: translateZ(0);
+}
 div.parallax-child-1, div.parallax-child-2 {
   margin-left: 0;
-  margin-bottom: -10px !important;
 }
 div.left, div.right {
   margin-left: 0 !important;
