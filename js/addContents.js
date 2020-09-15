@@ -151,17 +151,15 @@ function constructPlaceholder(targets, url, title) {
   html += '</div>'
   html += '<div class="sliders">'
   html += '<p>'
-  html += '<span class="slider-desc md-sliderDesc sd-nop"></span> <b>'
-  // uppercase first letter
-  html += targets.charAt(0).toUpperCase() + targets.slice(1);
-  html += '</b>. <span class="slider-desc md-privacyLink sd-nop"></span>'
-  html += '</p>'
-  html += '<p>'
   html += '<label class="switch"><input data-slider="'
   html += targets
   html += '" onclick="toggleContents(this);" type="checkbox"><span class="slider '
   html += targets
   html += '"></span></label>'
+  html += '<span class="slider-desc md-sliderDesc sd-nop"></span> <b>'
+  // uppercase first letter
+  html += targets.charAt(0).toUpperCase() + targets.slice(1);
+  html += '</b>. <span class="slider-desc md-privacyLink sd-nop"></span>'
   html += '</p>'
   html += '</div>'
   return html;

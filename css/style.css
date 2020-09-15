@@ -473,12 +473,9 @@ p:last-child {
 div.placeholder .sliders {
   font-size: small;
   background: inherit;
-  max-width: 92%;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  margin-top: 4%;
-  border: solid 1px;
+}
+div.placeholder .sliders .switch {
+  margin-right: 0.5em;
 }
 
 div.window.placeholder.soundcloud {
