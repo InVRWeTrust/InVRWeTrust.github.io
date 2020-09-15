@@ -18,7 +18,8 @@ var texts = {
   'subscribe-fold': [],
   'co-curation-fold': [],
   'impressum-fold': ['impressumAddress'],
-  'privacy-fold': []
+  'privacy-fold': [],
+  'relativty': [],
 };
 
 var sounds = [
