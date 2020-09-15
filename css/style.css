@@ -239,12 +239,15 @@ div.fold p {
   transform: translateX(0.2em) translateY(0.2em);
 }
 
+div.window.interview-text {
+  max-width: 51vw;
+}
 div.window.interview-text p:nth-child(2n) {
-    margin-right: 3em;
+    margin-right: 1em;
     box-shadow: -0.2em 0.2em #cd0707;
 }
 div.window.interview-text p:nth-child(2n+1):not(:first-child) {
-    margin-left: 3em;
+    margin-left: 1em;
     box-shadow: 0.2em 0.2em #006d95;
 }
 div.window.interview-text:hover p:nth-child(2n) {
@@ -287,7 +290,7 @@ div h2, h3 {
   display: inline;
   padding: 0.5em;
 }
-div.window.right {
+div:not(.interview-text).window.right {
 margin-left: 42vw;
 }
 div.window.left {
@@ -296,17 +299,26 @@ div.window.left {
 div.window.mid-small {
   z-index: 3;
 }
+div.window.interview-text {
+  z-index: 0;
+}
 div.left.parallax-child-2 {
   margin-left: -32vw;
+}
+div.left.parallax-child-2.interview-text {
+  margin-left: -38vw;
 }
 div.left.parallax-child-1 {
   margin-left: -150vw;
 }
-div.right.parallax-child-1 {
+div:not(.interview-text).right.parallax-child-1 {
   margin-left: -23vw;
 }
 div.right.parallax-child-2 {
   margin-left: 23vw;
+}
+div.right.parallax-child-2.interview-text {
+  margin-left: 36vw;
 }
 div.parallax-child-1, div.parallax-child-2 {
     margin-bottom: 1750px;
@@ -663,7 +675,7 @@ input:checked + .slider:before {
   html, body {
     font-size: 100%;
   }
-  div:not(.consent):not(.placeholder).window {
+  div:not(.consent):not(.placeholder):not(.interview-text).window {
     max-width: 66vw;
   }
   div:not(.consent):not(.placeholder).window.mid-small {
@@ -672,10 +684,10 @@ input:checked + .slider:before {
   div.window.placeholder.vimeo {
     height: calc(66vw * 0.5625);
   }
-  div.window.right {
+  div:not(.interview-text).window.right {
     margin-left: 33vw;
   }
-  div.right.parallax-child-1 {
+  div:not(.interview-text).right.parallax-child-1 {
     margin-left: -36vw;
   }
 }
@@ -685,7 +697,7 @@ input:checked + .slider:before {
     margin: -100vh 0 100vh -10vw;
   }
   */
-  div:not(.consent):not(.placeholder).window {
+  div:not(.consent):not(.placeholder):not(.interview-text).window {
     max-width: 80vw;
   }
   div:not(.consent):not(.placeholder).window.mid-small {
@@ -694,13 +706,13 @@ input:checked + .slider:before {
   div.window.placeholder.vimeo {
     height: calc(80vw * 0.5625);
   }
-  div.window.right {
+  div:not(.interview-text).window.right {
     margin-left: 18vw;
   }
-  div.right.parallax-child-1 {
+  div:not(.interview-text).right.parallax-child-1 {
     margin-left: -66vw;
   }
-  div.left.parallax-child-2 {
+  div:not(.interview-text).left.parallax-child-2 {
     margin-left: -28vw;
   }
   /*
