@@ -37,9 +37,9 @@ for(var i=0; i<bgRepeats; i++) {
 $('#prop').html(text);
 
 function fillBack() {
-  var viewHeight = document.getElementById("container").scrollHeight;
+  var viewHeight = document.getElementById("container").scrollHeight * 2;
   //console.log('fillBack: ' + viewHeight);
-  if (ios) {
+  if (true) {
     viewHeight = viewHeight;
   } else {
     viewHeight = viewHeight * (1 / 3);

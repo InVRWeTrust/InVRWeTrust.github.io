@@ -701,7 +701,12 @@ input:checked + .slider:before {
     margin-left: -36vw;
   }
   div.parallax-child-2.window + div.fold {
-    margin-top: calc( -20.95605*100vw + 22283.13px )
+    margin-top: calc( -20.95605*100vw + 22283.13px + 3000px )
+  }
+}
+@media only screen and (max-width: 360px) {
+  div.parallax-child-2.window + div.fold {
+    margin-top: calc( -20.95605*100vw + 22283.13px + 6000px )
   }
 }
 @media only screen and (max-width: 600px) {
