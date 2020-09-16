@@ -149,17 +149,15 @@ function scrollTo(anc, intra) {
   //console.log('scrollTo target obj: ' + JSON.stringify($(target)) );
   if ($(target).length) {
     $('#container').scrollTop(0);
-    setTimeout(function(){
-      //console.log('scrollTo offset: ' + JSON.stringify($(target).offset()));
-      scrollTarget = $(target).offset().top;
-      var scale = $(target).css('transform').split(',')[5];
-      if (scale) {
-        scrollTarget = scrollTarget * scale;
-      }
-      var stickyHeight = $('#static1').height();
-      scrollTarget = scrollTarget - stickyHeight - 200;
-      scrollToAct(target, scrollTarget);
-    }, 1100);
+    //console.log('scrollTo offset: ' + JSON.stringify($(target).offset()));
+    scrollTarget = $(target).offset().top;
+    var scale = $(target).css('transform').split(',')[5];
+    if (scale) {
+      scrollTarget = scrollTarget * scale;
+    }
+    var stickyHeight = $('#static1').height();
+    scrollTarget = scrollTarget - stickyHeight - 200;
+    scrollToAct(target, scrollTarget);
   } else {
     if (toTop) {
       scrollTarget = 0;
@@ -172,18 +170,14 @@ function scrollTo(anc, intra) {
 }
 
 function scrollToAct(target, scrollTarget) {
-  setTimeout(function(){
-    $(function(){
-        $('#container').animate({
-            scrollTop: scrollTarget
-        }, 2000);
-        return false;
-    });
-  }, 1000);
+  var scrollTime = 2000;
+  $('#container').animate({
+      scrollTop: scrollTarget
+  }, scrollTime);
   setTimeout(function(){
     var fold = $(target).find(".fold-start")[0];
     $(fold).show("slow");
-  }, 3000);
+  }, scrollTime + 100);
 }
 
 var textsN = Object.keys(texts).length;
