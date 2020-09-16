@@ -152,7 +152,7 @@ function scrollTo(anc, intra) {
     //console.log('scrollTo offset: ' + JSON.stringify($(target).offset()));
     scrollTarget = $(target).offset().top;
     var scale = $(target).css('transform').split(',')[5];
-    if (scale) {
+    if (typeof(scale) === 'number') {
       scrollTarget = scrollTarget * scale;
     }
     var stickyHeight = $('#static1').height();
