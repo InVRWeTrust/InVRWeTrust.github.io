@@ -34,7 +34,7 @@ $(document).on('click', 'a[href^="./?lang"]', function (event) {
   }
 });
 
-function sd(target, dependents) {
+function sd(target, dependents, initial) {
   var last;
   var fold = target.endsWith("-fold");
   if (!langs.includes(lang)) {
@@ -70,7 +70,7 @@ function sd(target, dependents) {
       if(dependents) {
         dependents.forEach(function(item, index, array) {
           textsN++;
-          sd(item, []);
+          sd(item, [], initial);
         });
       }
       textsI++;
@@ -82,7 +82,9 @@ function sd(target, dependents) {
         });
         intraLinks();
         fillBack();
-        scrollTo(window.location.hash, false);
+        if (initial) {
+          scrollTo(window.location.hash, false);
+        }
       }
   });
 }
@@ -184,6 +186,6 @@ var textsN = Object.keys(texts).length;
 var textsI = 0;
 $( document ).ready(function(){
   for (const prop in texts) {
-    sd(prop, texts[prop]);
+    sd(prop, texts[prop], true);
   };
 });
