@@ -79,9 +79,6 @@ div.prop-text:first-child {
   /* view height - consent box height - desired position */
   margin-top: calc(100vh - 360px - 30vh);
 }
-.prop-text, .prop-text .emph {
-  transition: 1s all;
-}
 .prop-text {
   text-shadow: 0.3vw 0.3vw #cd0707;
 }
@@ -119,12 +116,14 @@ div.window {
   position: relative;
   transform-origin: top;
 }
+div:not(.consent).window {
+   margin-bottom: 50ex;
+}
 div.window.mid-small {
   max-width: 25vw;
   transform: translate3d(0,0,-0.1px) scale(1.1);
-  margin: 0;
+  margin-right: 0;
   margin-left: 20%;
-  margin-bottom: 100px;
 }
 #co-curation-fold {
   top: 66vh;
@@ -150,7 +149,6 @@ div.fold p {
  div.consent.window
 {
   box-shadow: 0.2em 0.2em darkgrey;
-  transition: all 1s;
   border: solid 0.1em black;
   background-color: white
 }
@@ -162,7 +160,6 @@ div.fold p {
  div.consent.window.mid-small
 {
   box-shadow: 0.2em -0.2em darkgrey;
-  transition: all 1s;
   border: solid 0.1em black;
   background-color: white
 }
@@ -204,9 +201,6 @@ div.fold p {
   box-shadow: 0.4em -0.4em lightgrey;
   transform: translateX(-0.2em) translateY(0.2em);
 }
-#static1, #backToTop {
-  transition: all 1s;
-}
 #backToTop:hover {
   transform: translateX(-0.2em) translateY(-0.2em);
 }
@@ -240,9 +234,6 @@ div.fold p {
   transform: translateX(0.2em) translateY(0.2em);
 }
 
-div.window.interview-text {
-  max-width: 51vw;
-}
 div.window.interview-text p:nth-child(2n) {
     margin-right: 1em;
     box-shadow: -0.2em 0.2em #cd0707;
@@ -291,7 +282,7 @@ div h2, h3 {
   display: inline;
   padding: 0.5em;
 }
-div:not(.interview-text).window.right {
+div.window.right {
 margin-left: 42vw;
 }
 div.window.left {
@@ -310,9 +301,9 @@ div.left.parallax-child-2.interview-text {
   margin-left: -38vw;
 }
 div.left.parallax-child-1 {
-  margin-left: -150vw;
+  margin-left: -125vw;
 }
-div:not(.interview-text).right.parallax-child-1 {
+div.right.parallax-child-1 {
   margin-left: -23vw;
 }
 div.right.parallax-child-2 {
@@ -320,9 +311,6 @@ div.right.parallax-child-2 {
 }
 div.right.parallax-child-2.interview-text {
   margin-left: 36vw;
-}
-div.parallax-child-1, div.parallax-child-2 {
-    margin-bottom: 1200px;
 }
 /*
 div.left.parallax-child-1, div.right.parallax-child-2, article section div.window img {
@@ -400,7 +388,6 @@ div.fold, div.placeholder div.link {
   background: white;
 }
 div.fold {
-  transition: all 1s;
   text-align: center;
   padding: 1em;
   margin: 1em;
@@ -410,12 +397,6 @@ div.fold {
   left: -25%;
   border: solid 1px;
   position: relative;
-}
-div.parallax-child-1.window + div.fold {
-  margin-top: 12000px;
-}
-div.parallax-child-2.window + div.fold {
-  margin-top: 8000px;
 }
 div.fold p {
   text-align: left;
@@ -452,7 +433,6 @@ p.trust-btn button {
   background-color: inherit;
   border: solid 1px;
   color: #cd0707;
-  transition: 1s all;
 }
 p.trust-btn button.btn-yes {
   color: #006d95;
@@ -597,8 +577,6 @@ p.slider {
   right: 0;
   bottom: 0;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
   border: solid 1px;
 }
 
@@ -610,8 +588,6 @@ p.slider {
   left: 0.1em;
   bottom: 0.075em;
   background-color: black;
-  -webkit-transition: .4s;
-  transition: .4s;
 }
 input:checked + .slider {
   background-color: black;
@@ -653,12 +629,6 @@ input:checked + .slider:before {
   html, body {
     font-size: 120%;
   }
-  div.parallax-child-1 {
-    margin-bottom: 400px;
-  }
-  div.parallax-child-2 {
-      margin-bottom: 1200px;
-  }
 }
 @media only screen and (min-width: 1700px) {
   div.prop-text:first-child {
@@ -685,7 +655,7 @@ input:checked + .slider:before {
   html, body {
     font-size: 100%;
   }
-  div:not(.consent):not(.interview-text).window {
+  div:not(.consent).window {
     max-width: 66vw;
   }
   div:not(.consent):not(.placeholder).window.mid-small {
@@ -694,19 +664,11 @@ input:checked + .slider:before {
   div.window.placeholder.vimeo {
     height: calc(66vw * 0.5625);
   }
-  div:not(.interview-text).window.right {
+  div.window.right {
     margin-left: 33vw;
   }
-  div:not(.interview-text).right.parallax-child-1 {
+  div.right.parallax-child-1 {
     margin-left: -36vw;
-  }
-  div.parallax-child-2.window + div.fold {
-    margin-top: calc( -20.95605*100vw + 22283.13px + 3000px )
-  }
-}
-@media only screen and (max-width: 360px) {
-  div.parallax-child-2.window + div.fold {
-    margin-top: calc( -20.95605*100vw + 22283.13px + 6000px )
   }
 }
 @media only screen and (max-width: 600px) {
@@ -715,7 +677,7 @@ input:checked + .slider:before {
     margin: -100vh 0 100vh -10vw;
   }
   */
-  div:not(.consent):not(.interview-text).window {
+  div:not(.consent).window {
     max-width: 80vw;
   }
   div:not(.consent):not(.placeholder).window.mid-small {
@@ -724,13 +686,13 @@ input:checked + .slider:before {
   div.window.placeholder.vimeo {
     height: calc(80vw * 0.5625);
   }
-  div:not(.interview-text).window.right {
+  div.window.right {
     margin-left: 18vw;
   }
-  div:not(.interview-text).right.parallax-child-1 {
+  div.right.parallax-child-1 {
     margin-left: -66vw;
   }
-  div:not(.interview-text).left.parallax-child-2 {
+  div.left.parallax-child-2 {
     margin-left: -28vw;
   }
   /*

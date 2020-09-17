@@ -1,0 +1,18 @@
+.prop-text, .prop-text .emph,
+div.window > img,
+div.window > p,
+div.window > iframe,
+div.window h2,
+div.window:not(.consent):not(.placeholder) div:not(.sliders),
+div.consent.window,
+#static1, #backToTop,
+div.fold,
+p.trust-btn button
+{
+  transition: all 1s;
+}
+
+.slider, .slider:before {
+  -webkit-transition: .4s;
+  transition: .4s;
+}

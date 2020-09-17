@@ -80,11 +80,14 @@ function sd(target, dependents, initial) {
           var cnt = $(this).find("p").contents();
           $(this).find("p").replaceWith(cnt);
         });
-        intraLinks();
-        fillBack();
         if (initial) {
-          scrollTo(window.location.hash, false);
+          parallaxResize();
+          setTimeout(function(){
+            scrollTo(window.location.hash, false);
+          }, 500);
         }
+        fillBack();
+        intraLinks();
       }
   });
 }
@@ -153,20 +156,28 @@ function scrollTo(anc, intra) {
     $('#container').scrollTop(0);
     //console.log('scrollTo offset: ' + JSON.stringify($(target).offset()));
     scrollTarget = $(target).offset().top;
-    var scale = $(target).css('transform').split(',')[5];
-    if (typeof(scale) === 'number') {
-      scrollTarget = scrollTarget * scale;
-    }
     var stickyHeight = $('#static1').height();
-    scrollTarget = scrollTarget - stickyHeight - 200;
+    if (ios) {
+      var multiplier = 8;
+    } else {
+      var multiplier = 4;
+    }
+    scrollTarget = scrollTarget - stickyHeight * multiplier;
+
+    if (!ios) {
+      var scale = parseFloat($(target).css('transform').split(',')[5]);
+      if (scale > 0) {
+        scrollTarget = scrollTarget * scale;
+      }
+    }
     scrollToAct(target, scrollTarget);
   } else {
     if (toTop) {
       scrollTarget = 0;
       scrollToAct(null, scrollTarget);
     } else {
-    console.log('scrollTo: no valid scroll target: ' + target)
-    return;
+      console.log('scrollTo: no valid scroll target: ' + target)
+      return;
     }
   }
 }
