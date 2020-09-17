@@ -99,7 +99,6 @@ function uniqId() {
 function toggleFold(id) {
   $('#' + id).toggle("slow", function() {
     fillBack();
-    console.log(target);
   });
 }
 function setFold(target) {
