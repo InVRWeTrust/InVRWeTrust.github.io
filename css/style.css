@@ -92,14 +92,15 @@ div.prop-text:first-child {
 .prop-text:hover .emph {
   text-shadow: 0.3vw 0.3vw #cd0707;
 }
-#backToTop, #static1 {
+div.sticky {
   z-index: 90;
-}
-#backToTop {
   width: max-content;
-  right: 1ex;
   position: fixed;
   top: 1ex;
+  right: 1ex;
+}
+#backToTop {
+  top: 7ex;
 }
 #static1 {
   /*margin: -60vh 0 60vh -10vw;*/
@@ -111,12 +112,12 @@ div.prop-text:first-child {
 #intro {
   margin-top: 1000px;
 }
-div.window {
+div.window:not(.sticky) {
   max-width: 50vw;
   position: relative;
   transform-origin: top;
 }
-div:not(.consent).window {
+div:not(.consent):not(.sticky).window {
    margin-bottom: 50ex;
 }
 div.window.mid-small {
@@ -201,7 +202,7 @@ div.fold p {
   box-shadow: 0.4em -0.4em lightgrey;
   transform: translateX(-0.2em) translateY(0.2em);
 }
-#backToTop:hover {
+div.sticky:hover {
   transform: translateX(-0.2em) translateY(-0.2em);
 }
 #static1 h2 {

@@ -2,6 +2,7 @@ var langs = ["en", "de"];
 
 var texts = {
   'backToTop': [],
+  'toContact': [],
   'consentInfo': ['policiesSoundcloud','policiesVimeo','privacyLink'],
   'sliderDesc': [],
   'saveDesc': [],

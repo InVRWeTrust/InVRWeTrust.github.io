@@ -99,6 +99,7 @@ function uniqId() {
 function toggleFold(id) {
   $('#' + id).toggle("slow", function() {
     fillBack();
+    console.log(target);
   });
 }
 function setFold(target) {
@@ -190,6 +191,9 @@ function scrollToAct(target, scrollTarget) {
   setTimeout(function(){
     var fold = $(target).find(".fold-start")[0];
     $(fold).show("slow");
+    if (target == '#subscribe-fold') {
+      $('#mce-EMAIL').focus().select();
+    }
   }, scrollTime + 100);
 }
 
