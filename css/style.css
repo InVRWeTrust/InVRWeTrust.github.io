@@ -112,12 +112,10 @@ div.sticky {
 #intro {
   margin-top: 1000px;
 }
-div.window:not(.sticky) {
+div.window:not(.sticky):not(.consent) {
   max-width: 50vw;
   position: relative;
   transform-origin: top;
-}
-div:not(.consent):not(.sticky).window {
    margin-bottom: 50ex;
 }
 div.window.mid-small {
