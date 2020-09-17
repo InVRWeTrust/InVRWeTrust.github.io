@@ -25,6 +25,9 @@ div.parallax-child-1, div.parallax-child-2, div.window.mid-small {
   margin-bottom: -10px !important;
   transform: translateZ(0);
 }
+div.window.mid-small {
+  z-index: initial;
+}
 div.parallax-child-1, div.parallax-child-2 {
   margin-left: 0;
 }
@@ -46,6 +49,13 @@ div.right {
 }
 #container {
   min-width: none;
+}
+
+div.window.left + div.window.left,
+div.window.right + div.window.right,
+div.window.mid-small + div.window.mid-small
+{
+  margin-top: 10ex;
 }
 
 @media only screen and (max-width: 1000px) {
