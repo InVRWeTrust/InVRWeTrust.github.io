@@ -78,9 +78,6 @@ div.window.mid-small + div.window.mid-small
   }
 }
 @media (max-width: 600px) and (orientation: portrait) {
-  #static1, #backToTop {
-    top: 15px;
-  }
   body div:not(.fold).consent {
     bottom: 125px;
   }
