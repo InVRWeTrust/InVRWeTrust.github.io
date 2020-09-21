@@ -118,7 +118,7 @@ div.window:not(.sticky):not(.consent) {
   transform-origin: top;
    margin-bottom: 50ex;
 }
-div.window.mid-small {
+div.window:not(.sticky):not(.consent).mid-small {
   max-width: 25vw;
   transform: translate3d(0,0,-0.1px) scale(1.1);
   margin-right: 0;
