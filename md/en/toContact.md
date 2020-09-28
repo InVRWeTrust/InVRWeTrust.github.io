@@ -1,1 +1,1 @@
-[contact &darr;](#subscribe-fold)
+[subscribe &darr;](#subscribe-fold)
