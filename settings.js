@@ -24,6 +24,7 @@ var texts = {
   'interviewIvana': [],
   'interviewCreativePlaces': [],
   'commentArchitecture': [],
+  'commentEmpathyMachine': [],
 };
 
 var sounds = [
