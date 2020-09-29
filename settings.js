@@ -22,7 +22,7 @@ var texts = {
   'privacy-fold': [],
   'relativty': [],
   'interviewIvana': [],
-  'interviewCreativePlaces': [],
+  'interviewCreativePlacesText': [],
   'commentArchitecture': [],
   'commentEmpathyMachine': [],
 };
