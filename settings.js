@@ -23,6 +23,7 @@ var texts = {
   'relativty': [],
   'interviewIvana': [],
   'interviewCreativePlaces': [],
+  'commentArchitecture': [],
 };
 
 var sounds = [
