@@ -22,6 +22,9 @@ var texts = {
   'privacy-fold': [],
   'relativty': [],
   'interviewIvana': [],
+  'interviewCreativePlaces': [],
+  'commentArchitecture': [],
+  'commentEmpathyMachine': [],
 };
 
 var sounds = [
@@ -31,7 +34,10 @@ var sounds = [
   }
 ];
 var vimeos = [
-
+  {
+    'title': '“Creative Places” 2020 - Projekt ‘DE TACHED’',
+    'url': 'https://vimeo.com/462674377'
+  }
 ];
 
 var bgText = [
