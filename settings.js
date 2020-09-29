@@ -3,7 +3,7 @@ var langs = ["en", "de"];
 var texts = {
   'backToTop': [],
   'toContact': [],
-  'consentInfo': ['policiesSoundcloud','policiesVimeo','privacyLink'],
+  'consentInfo': ['policiesSoundcloud','policiesVimeo','policiesYoutube','privacyLink'],
   'sliderDesc': [],
   'saveDesc': [],
   'saveBtn': [],
@@ -22,6 +22,9 @@ var texts = {
   'privacy-fold': [],
   'relativty': [],
   'interviewIvana': [],
+  'interviewCreativePlacesText': [],
+  'commentArchitectureText': [],
+  'commentEmpathyMachine': [],
 };
 
 var sounds = [
@@ -31,7 +34,16 @@ var sounds = [
   }
 ];
 var vimeos = [
-
+  {
+    'title': '“Creative Places” 2020 - Projekt ‘DE TACHED’',
+    'url': 'https://vimeo.com/462674377'
+  }
+];
+var youtubes = [
+  {
+    'title': 'VR Meeting Rooms - MeetinVR',
+    'url': 'https://www.youtube.com/watch?v=UfCG3KWmh2Y'
+  }
 ];
 
 var bgText = [

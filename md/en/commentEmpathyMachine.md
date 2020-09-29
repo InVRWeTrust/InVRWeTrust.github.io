@@ -1,0 +1,2 @@
+»And this is the central critique of VR as a successful medium for “increasing” empathy: that it cannot reproduce internal states, only the physical conditions that might influence that.«   
+— [The Limits of Virtual Reality: Debugging the Empathy Machine](https://docubase.mit.edu/lab/case-studies/the-limits-of-virtual-reality-debugging-the-empathy-machine/)

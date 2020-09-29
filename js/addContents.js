@@ -1,4 +1,4 @@
-var options = ["save", "lang", "soundcloud", "vimeo", "trust"];
+var options = ["save", "lang", "soundcloud", "vimeo", "youtube", "trust"];
 readSavedConsent();
 
 function saveTrust(){
@@ -53,7 +53,7 @@ function readSavedConsent() {
 }
 
 function allAndClose(button) {
-  var turnOn = ['soundcloud', 'vimeo', 'save'];
+  var turnOn = ['soundcloud', 'vimeo', 'youtube', 'save'];
   turnOn.forEach(function(item, index, array) {
     toggleContents(false, item, true);
   });
@@ -109,9 +109,20 @@ function addContents(div, targets, index) {
   case "vimeo":
     // id is part of url
     var id = contents[index].url.match("vimeo.com/([0-9]+)")[1];
-    html += '<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/'
+    html += '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/'
     html += id
     html += '?color=25afe0&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>'
+    // put into DOM
+    placeholderReplace(div, html);
+    break;
+  case "youtube":
+    // id is part of url
+    var url = contents[index].url;
+    var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+    var id = url.match(regExp)[7];
+    html += '<div class="yt-container"><iframe src="https://www.youtube-nocookie.com/embed/'
+    html += id
+    html += '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
     // put into DOM
     placeholderReplace(div, html);
     break;
@@ -132,10 +143,6 @@ function delContents(div, type, index) {
   var url = content.contents[index].url;
   var title = content.contents[index].title;
   var html = constructPlaceholder(content.targets, url, title);
-  html += '<span class="placeholder-fill">'
-  for(var i=0; i<1000; i++) {
-    html += '�'
-  }
   $(div).html(html);
   $(div).addClass('placeholder');
   if (typeof sd === "function") {
@@ -144,6 +151,9 @@ function delContents(div, type, index) {
 }
 function constructPlaceholder(targets, url, title) {
   var html = '';
+  if (targets == 'vimeo' || targets == 'youtube')  {
+    html += '<div style="height:0;padding:56.25% 0 0 0;position:relative;"><div class="video-window" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow:hidden;">'
+  }
   html += '<div class="link">'
   html += '<p>'
   html += '<b><a href="' + url + '">' + title + ' &rarr;</a></b>'
@@ -162,6 +172,14 @@ function constructPlaceholder(targets, url, title) {
   html += '</b>. <span class="slider-desc md-privacyLink sd-nop"></span>'
   html += '</p>'
   html += '</div>'
+  html += '<span class="placeholder-fill">'
+  for(var i=0; i<1000; i++) {
+    html += '�'
+  }
+  html += '</span>'
+  if (targets == 'vimeo' || targets == 'youtube') {
+    html += '</div></div>'
+  }
   return html;
 }
 
@@ -175,6 +193,9 @@ function chooseContents(type) {
     break;
   case "vimeo":
     content.contents = vimeos;
+    break;
+  case "youtube":
+    content.contents = youtubes;
     break;
   case "next":
     content.contents = 'next';
