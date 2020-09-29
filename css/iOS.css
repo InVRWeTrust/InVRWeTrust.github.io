@@ -21,7 +21,7 @@ div.fold.first {
 div.window + div.fold {
   margin-top: 100px !important;
 }
-div.parallax-child-1, div.parallax-child-2, div.window.mid-small {
+div.parallax-child-1, div.parallax-child-2, div.window:not(.sticky):not(.consent).mid-small {
   margin-bottom: -10px !important;
   transform: translateZ(0);
 }
