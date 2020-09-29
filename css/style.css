@@ -118,6 +118,10 @@ div.window:not(.sticky):not(.consent) {
   transform-origin: top;
    margin-bottom: 50ex;
 }
+div.window.part:not(.sticky):not(.consent) {
+  margin-bottom: 10ex;
+}
+
 div.window:not(.sticky):not(.consent).mid-small {
   max-width: 25vw;
   transform: translate3d(0,0,-0.1px) scale(1.1);
@@ -478,6 +482,7 @@ div.placeholder .sliders .switch {
 }
 
 div.window.placeholder.soundcloud {
+  border: solid 1px black;
   height: 166px;
   background: #f5f5f5;
   box-shadow: 0.2em 0.2em rgb(204, 68, 0);
@@ -486,7 +491,8 @@ div.window.placeholder.soundcloud.right {
   box-shadow: -0.2em 0.2em rgb(204, 68, 0);
 }
 
-div.window.placeholder.vimeo {
+div.window.placeholder.vimeo > div > div {
+  border: solid 1px black;
   height: calc(50vw * 0.5625);
   background: #EEF1F2;
   box-shadow: 0.2em 0.2em #1AB7EA;
@@ -496,7 +502,6 @@ div.window.placeholder.vimeo.right {
 }
 
 div.window.placeholder {
-  border: solid 1px black;
   overflow-y: hidden;
   width: 100%;
   cursor: help;
@@ -510,23 +515,11 @@ div.window.placeholder span.placeholder-fill {
   padding: 0;
   font-size: 2em;
   line-height: calc(1ex * (4 / 3));
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  width: inherit;
-  height: inherit;
-  overflow: hidden;
 }
 div.window.placeholder.soundcloud span.placeholder-fill {
-  word-break: break-all;
-  padding: 0;
-  font-size: 2em;
   color: rgb(204, 68, 0);
 }
 div.window.placeholder.vimeo span.placeholder-fill {
-  word-break: break-all;
-  padding: 0;
-  font-size: 2em;
   color: #1AB7EA;
 }
 
@@ -660,9 +653,6 @@ input:checked + .slider:before {
   div:not(.consent):not(.placeholder).window.mid-small {
     max-width: 33vw;
   }
-  div.window.placeholder.vimeo {
-    height: calc(66vw * 0.5625);
-  }
   div.window.right {
     margin-left: 33vw;
   }
@@ -681,9 +671,6 @@ input:checked + .slider:before {
   }
   div:not(.consent):not(.placeholder).window.mid-small {
     max-width: 40vw;
-  }
-  div.window.placeholder.vimeo {
-    height: calc(80vw * 0.5625);
   }
   div.window.right {
     margin-left: 18vw;

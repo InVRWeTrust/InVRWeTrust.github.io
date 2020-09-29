@@ -109,7 +109,7 @@ function addContents(div, targets, index) {
   case "vimeo":
     // id is part of url
     var id = contents[index].url.match("vimeo.com/([0-9]+)")[1];
-    html += '<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/'
+    html += '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/'
     html += id
     html += '?color=25afe0&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>'
     // put into DOM
@@ -132,10 +132,6 @@ function delContents(div, type, index) {
   var url = content.contents[index].url;
   var title = content.contents[index].title;
   var html = constructPlaceholder(content.targets, url, title);
-  html += '<span class="placeholder-fill">'
-  for(var i=0; i<1000; i++) {
-    html += '�'
-  }
   $(div).html(html);
   $(div).addClass('placeholder');
   if (typeof sd === "function") {
@@ -144,6 +140,9 @@ function delContents(div, type, index) {
 }
 function constructPlaceholder(targets, url, title) {
   var html = '';
+  if (targets == 'vimeo') {
+    html += '<div style="height:0;padding:56.25% 0 0 0;position:relative;"><div style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow:hidden;">'
+  }
   html += '<div class="link">'
   html += '<p>'
   html += '<b><a href="' + url + '">' + title + ' &rarr;</a></b>'
@@ -162,6 +161,14 @@ function constructPlaceholder(targets, url, title) {
   html += '</b>. <span class="slider-desc md-privacyLink sd-nop"></span>'
   html += '</p>'
   html += '</div>'
+  html += '<span class="placeholder-fill">'
+  for(var i=0; i<1000; i++) {
+    html += '�'
+  }
+  html += '</span>'
+  if (targets == 'vimeo') {
+    html += '</div></div>'
+  }
   return html;
 }
 
