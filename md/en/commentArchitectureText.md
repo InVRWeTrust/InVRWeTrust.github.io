@@ -1,5 +1,3 @@
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UfCG3KWmh2Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 In hindsight, it may be possible to say that over the course of thousands of years 
 it became increasingly obvious that the architecture that surrounds us has a 
 decisive influence on the way we interact with each other. 

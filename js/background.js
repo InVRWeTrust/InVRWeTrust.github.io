@@ -25,7 +25,7 @@ if (ios) {
 }
 //ios = true;
 if (ios) {
-  $('head').append('<link rel="stylesheet" type="text/css" href="./css/iOS.css?1">');
+  $('head').append('<link rel="stylesheet" type="text/css" href="./css/iOS.css?2">');
 }
 
 var text = '';

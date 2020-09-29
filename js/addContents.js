@@ -1,4 +1,4 @@
-var options = ["save", "lang", "soundcloud", "vimeo", "trust"];
+var options = ["save", "lang", "soundcloud", "vimeo", "youtube", "trust"];
 readSavedConsent();
 
 function saveTrust(){
@@ -53,7 +53,7 @@ function readSavedConsent() {
 }
 
 function allAndClose(button) {
-  var turnOn = ['soundcloud', 'vimeo', 'save'];
+  var turnOn = ['soundcloud', 'vimeo', 'youtube', 'save'];
   turnOn.forEach(function(item, index, array) {
     toggleContents(false, item, true);
   });
@@ -115,6 +115,17 @@ function addContents(div, targets, index) {
     // put into DOM
     placeholderReplace(div, html);
     break;
+  case "youtube":
+    // id is part of url
+    var url = contents[index].url;
+    var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+    var id = url.match(regExp)[7];
+    html += '<div class="yt-container"><iframe src="https://www.youtube-nocookie.com/embed/'
+    html += id
+    html += '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+    // put into DOM
+    placeholderReplace(div, html);
+    break;
   default:
     break;
   }
@@ -140,8 +151,8 @@ function delContents(div, type, index) {
 }
 function constructPlaceholder(targets, url, title) {
   var html = '';
-  if (targets == 'vimeo') {
-    html += '<div style="height:0;padding:56.25% 0 0 0;position:relative;"><div style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow:hidden;">'
+  if (targets == 'vimeo' || targets == 'youtube')  {
+    html += '<div style="height:0;padding:56.25% 0 0 0;position:relative;"><div class="video-window" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow:hidden;">'
   }
   html += '<div class="link">'
   html += '<p>'
@@ -166,7 +177,7 @@ function constructPlaceholder(targets, url, title) {
     html += '�'
   }
   html += '</span>'
-  if (targets == 'vimeo') {
+  if (targets == 'vimeo' || targets == 'youtube') {
     html += '</div></div>'
   }
   return html;
@@ -182,6 +193,9 @@ function chooseContents(type) {
     break;
   case "vimeo":
     content.contents = vimeos;
+    break;
+  case "youtube":
+    content.contents = youtubes;
     break;
   case "next":
     content.contents = 'next';
