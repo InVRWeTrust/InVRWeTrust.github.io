@@ -58,6 +58,10 @@ div.window.mid-small + div.window.mid-small
   margin-top: 10ex;
 }
 
+div.window.placeholder {
+  overflow: scroll;
+}
+
 @media only screen and (max-width: 1000px) {
   div.right {
     transform: translateX(32vw) !important;
