@@ -128,9 +128,6 @@ div.window:not(.sticky):not(.consent).mid-small {
   margin-right: 0;
   margin-left: 20%;
 }
-#co-curation-fold {
-  top: 66vh;
-}
 body div:not(.fold).consent {
   left: 50%;
   transform: translateX(-50%);
