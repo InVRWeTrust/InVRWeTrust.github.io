@@ -17,7 +17,7 @@ var texts = {
   'interviewFarina': [],
   'interviewBroeckmann': [],
   'subscribe-fold': [],
-  'co-curation-fold': [],
+  'co-curation': [],
   'impressum-fold': ['impressumAddress'],
   'privacy-fold': [],
   'relativty': [],
