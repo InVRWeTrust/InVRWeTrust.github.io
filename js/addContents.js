@@ -1,5 +1,4 @@
 var options = ["save", "lang", "soundcloud", "vimeo", "youtube", "trust"];
-readSavedConsent();
 
 function saveTrust(){
   toggleContents('#trustInput');

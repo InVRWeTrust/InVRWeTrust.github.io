@@ -41,7 +41,7 @@ function sd(target, dependents, initial) {
     lang = langs[0];
     console.log('lang: falling back to ' + lang);
   }
-  var file = './md/' + lang + '/' + target + '.md?1';
+  var file = './md/' + lang + '/' + target + '.md';
   targetId = '#' + target;
   targetClass = '.md-' + target;
   if($(targetId).length) {
@@ -52,7 +52,6 @@ function sd(target, dependents, initial) {
       target = targetClass;
     } else {
       console.log('showdown: target ' + target + ' not found.');
-      return;
     }
   }
   var converter = new showdown.Converter(),
@@ -81,6 +80,7 @@ function sd(target, dependents, initial) {
           $(this).find("p").replaceWith(cnt);
         });
         if (initial) {
+          readSavedConsent();
           parallaxResize();
           setTimeout(function(){
             scrollTo(window.location.hash, false);
