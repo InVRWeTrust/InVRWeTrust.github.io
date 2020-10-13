@@ -41,7 +41,7 @@ function sd(target, dependents, initial) {
     lang = langs[0];
     console.log('lang: falling back to ' + lang);
   }
-  var file = './md/' + lang + '/' + target + '.md?1';
+  var file = './md/' + lang + '/' + target + '.md';
   targetId = '#' + target;
   targetClass = '.md-' + target;
   if($(targetId).length) {
