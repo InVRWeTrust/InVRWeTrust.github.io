@@ -114,6 +114,7 @@ function setFold(target) {
 }
 
 function intraLinks() {
+  $(document).off( "click", 'a[href^="#"]');
   $(document).on('click', 'a[href^="#"]', function (event) {
       event.preventDefault();
       scrollTo($.attr(this, 'href'), true);
