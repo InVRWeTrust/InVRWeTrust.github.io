@@ -13,7 +13,7 @@ function scrollCheck() {
   var scroll = $('#container').scrollTop();
   //scroll = scroll + tolerance;
   if (scroll > windowHeight) {
-    console.log("scrolled past windowHeight");
+    //console.log("scrolled past windowHeight");
     //$(openCall).appendTo("body");
     //$(openCall).css("position", "fixed");
     //$(openCall).css("top", "2ex");
