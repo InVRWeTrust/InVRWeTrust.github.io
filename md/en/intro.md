@@ -6,6 +6,6 @@ The two-part exhibition at the NRW Forum in Düsseldorf and at the Nudel in Zeit
 
 "In VR we trust", curated by [Daniel Hengst](http://danielhengst.de/) & [Clemens Schöll](http://neopostmodern.com/), 
 a project of [THIS IS FAKE](http://thisisfake.team/), in cooperation with [plusnull e.V.](http://www.plusnull.org/), 
-supported by the [innogy foundation](https://innogy-stiftung.com/).
+supported by the [E.ON foundation](http://www.eon-stiftung.com/).
 
 On this website we will collect conversations, sketches, excerpts of the curatorial process and relevant links for a critical examination of VR.
