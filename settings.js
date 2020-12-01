@@ -1,11 +1,17 @@
 var langs = ["en", "de"];
 
+var options = ["save", "lang", "soundcloud", "vimeo", "youtube", "trust"];
+var privacyOptions = ["soundcloud", "vimeo", "youtube"];
+
 var texts = {
   'backToTop': [],
   'toContact': [],
   'consentInfo': ['policiesSoundcloud','policiesVimeo','policiesYoutube','privacyLink'],
   'sliderDesc': [],
   'saveDesc': [],
+  'youtube': [],
+  'vimeo': [],
+  'soundcloud': [],
   'saveBtn': [],
   'trustQ': [],
   'yes': [],
@@ -57,9 +63,9 @@ var questions = [
         <span class="slider-desc md-sliderDesc"></span> \n \
         </p> \n \
         <p>'
-        + sliderConstructor('soundcloud', 'Soundcloud')
-        + sliderConstructor('vimeo', 'Vimeo')
-        + sliderConstructor('youtube', 'YouTube') +
+        + sliderConstructor('soundcloud', 'soundcloud')
+        + sliderConstructor('vimeo', 'vimeo')
+        + sliderConstructor('youtube', 'youtube') +
         '</p> \n \
         <p> \n \
         <span id="saveDesc"></span><span id="consentReminder" class="consent-reminder"></span> \n \
@@ -78,10 +84,11 @@ var questions = [
       '<div id="trustQ" class="consentInfo"></div> \n \
       <div class="consentSliders sliders"> \n \
         <p> \n \
-        <span id="no" class="slider-label"></span> \n'
-        + sliderConstructor('yes', 'Yes') +
-        '<p> \n \
-          <button class="md-saveAndClose" data-slider="yes" onclick=saveTrust()>&#10005;</button> \n \
+          <span class="md-no slider-label"></span> \n'
+          + sliderConstructor('trust', 'yes') +
+          '<p> \n \
+            <button class="md-saveAndClose" data-slider="trust" onclick=saveTrust(this)>&#10005;</button> \n \
+          </p> \n \
         </p> \n \
       </div>'
   }

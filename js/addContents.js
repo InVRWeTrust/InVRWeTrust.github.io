@@ -1,42 +1,45 @@
-var options = ["save", "lang", "soundcloud", "vimeo", "youtube", "trust"];
-
-function saveTrust(){
-  toggleContents('#trustInput');
-  hideConsent(true);
-  var value = $('#trustInput').is(":checked")
-  console.log("added to storage:" + 'trust' + ": " + value);
-  localStorage.setItem('trust', value);
+function saveTrust(button){
+  var type = $( button ).data('slider');
+  var box = $( button ).parent().closest('.consent');
+  var ID = $(box).attr('id');
+  var input = $(box).find("input");
+  var value = $(input).is(":checked");
+  localStorage.setItem(type, value);
   setSaveSlider(true);
+  saveConsent(true);
+  hideConsent('#' + ID);
 }
 
 function setSaveSlider(choice) {
   var saveSlider = $('#dataConsent').find('[data-slider="save"]')[0];
   $(saveSlider).prop('checked', choice);
 }
+
 function readSavedConsent() {
   var saved = false;
   var savedValue = localStorage.getItem("save");
-  if (savedValue == "true" || localStorage.getItem("trust")) {
+  if (savedValue == "true") {
     saved = true;
-  }
-  if (localStorage.getItem("trust")) {
-    hideConsent('#trust-q');
   }
   if (saved) {
     setSaveSlider(saved);
     options.forEach(function(item, index, array) {
+
+      if (item == "lang") {
+        return;
+      }
+
+      if (localStorage.getItem(item) !== null) {
+        var box = $('[data-slider="' + item + '"]').closest('.consent');
+        var ID = $(box).attr('id');
+        hideConsent('#' + ID);
+      }
+
       var value = false;
       var choice = false;
       value = localStorage.getItem(item);
-      console.log("read from storage: " + item + ": " + value);
       if (item == "save") {
         hideConsent('#dataConsent');
-        return;
-      }
-      if (item == "trust") {
-        hideConsent('#trust-q');
-      }
-      if (item == "lang") {
         return;
       }
       if (value === "true") {
@@ -52,7 +55,8 @@ function readSavedConsent() {
 }
 
 function allAndClose(button) {
-  var turnOn = ['soundcloud', 'vimeo', 'youtube', 'save'];
+  var turnOn = privacyOptions;
+  turnOn.push("save");
   turnOn.forEach(function(item, index, array) {
     toggleContents(false, item, true);
   });
@@ -61,22 +65,22 @@ function allAndClose(button) {
 
 function saveConsent(choice, clear) {
   if (choice) {
-    options.forEach(function(item, index, array) {
+    var choices = privacyOptions;
+    choices.push("save");
+    choices.push("lang");
+    choices.forEach(function(item, index, array) {
       var value;
       if (item == "lang") {
         value = lang;
       } else {
-        var slider = $('#dataConsent').find('[data-slider=' + item + ']')[0];
-        console.log(slider);
+        var slider = $('[data-slider=' + item + ']')[0];
         value = $(slider).is(":checked");
       }
-      console.log("added to storage:" + item + ": " + value);
       localStorage.setItem(item, value);
     });
   } else {
     if (clear) {
       options.forEach(function(item, index, array) {
-        console.log("removed from storage: " + item);
         localStorage.removeItem(item);
       });
     }
@@ -137,8 +141,6 @@ function placeholderReplace(div, html) {
 function delContents(div, type, index) {
   // use helper function to determine content type
   var content = chooseContents(type);
-  console.log( "del " + index );
-  console.log(content);
   var url = content.contents[index].url;
   var title = content.contents[index].title;
   var html = constructPlaceholder(content.targets, url, title);
@@ -183,7 +185,6 @@ function constructPlaceholder(targets, url, title) {
 }
 
 function chooseContents(type) {
-  console.log("type: " + type)
   var content = {contents:[], targets:"" };
   content.targets = type;
   switch(type) {
@@ -209,8 +210,7 @@ function chooseContents(type) {
 }
 
 function hideConsent(element) {
-  var id = '#' + $(element).parent().attr('id');
-  console.log('hideConsent id: ' + id);
+  var id = '#' + $(element).closest('.consent').attr('id');
   $(id).hide("slow");
   if (id === "#dataConsent") {
     var ms = 2000;
@@ -231,31 +231,25 @@ function hideConsent(element) {
 }
 
 function toggleContents(slider, type, choice) {
-  console.log("slider given: " + slider);
   var content,
       targets,
       contents;
   if (slider !== false) {
-    console.log("slider was given")
     type = $(slider).data("slider");
     choice = $(slider).is(":checked");
-    if (type !== "next" && type !== "save" && type !=="trust") {
+    if ( $.inArray(type, privacyOptions) !== -1 ) {
       // reset save state after togglings
       saveConsent(false, false);
     }
   }
 
-  console.log(type + " choice: " + choice);
   if (choice) {
-    console.log(type + ": entered choice == true routine");
-    console.log(type + ' checked');
     $('[data-slider="' + type + '"]').prop( "checked", true );
     content = chooseContents(type);
     targets = content.targets;
     contents = content.contents;
   } else {
     targets = type;
-    console.log(type + ' unchecked');
     $('[data-slider="' + type + '"]').prop( "checked", false );
   }
 
@@ -270,7 +264,6 @@ function toggleContents(slider, type, choice) {
     // We will handle it in the function above.
     return;
   }
-  console.log(targets + ': ' + choice)
   // cycle through all divs with class "target".
   // Set their sliders and poulate wach with content from array "contents[]".
   $('div.' + targets).each(function( index ) {

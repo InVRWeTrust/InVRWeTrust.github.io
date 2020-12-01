@@ -8,7 +8,6 @@ function qBox(id, location, template) {
   html += '</div>';
 
   $( html ).insertAfter( location );
-  console.log(html);
 }
 
 function sliderConstructor(type, label) {
@@ -18,7 +17,7 @@ function sliderConstructor(type, label) {
   + type
   + '"></span></label>'
   + '\n'
-  + '<span class="slider-label"><b>'
+  + '<span class="md-' + label + ' slider-label"><b>'
   + label
   + '</b></span>'
   + '\n';
