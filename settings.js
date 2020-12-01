@@ -27,7 +27,7 @@ var texts = {
   'interviewFarina': [],
   'interviewBroeckmann': [],
   'subscribe-fold': [],
-  'co-curation': [],
+  'curatorialStatement': [],
   'impressum-fold': ['impressumAddress'],
   'privacy-fold': [],
   'relativty': [],
@@ -44,6 +44,10 @@ var sounds = [
   }
 ];
 var vimeos = [
+  {
+    'title': 'Peggy Schoenegge im Gespräch mit Clemens Schöll',
+    'url': 'https://vimeo.com/485914908'
+  },
   {
     'title': '“Creative Places” 2020 - Projekt ‘DE TACHED’',
     'url': 'https://vimeo.com/462674377'
