@@ -1,6 +1,6 @@
 var langs = ["en", "de"];
 
-var options = ["save", "lang", "soundcloud", "vimeo", "youtube", "trust"];
+var options = ["save", "lang", "soundcloud", "vimeo", "youtube", "trust", "q1", "q2", "q3", "q4", "q5", "q6"];
 var privacyOptions = ["soundcloud", "vimeo", "youtube"];
 
 var texts = {
@@ -13,9 +13,13 @@ var texts = {
   'vimeo': [],
   'soundcloud': [],
   'saveBtn': [],
-  'trustQ': [],
-  'yes': [],
-  'no': [],
+  'trustQ': ['yes','no'],
+  'Q1': ['yes','no'],
+  'Q2': ['yes','no'],
+  'Q3': ['yes','no'],
+  'Q4': ['yes','no'],
+  'Q5': ['yes','no'],
+  'Q6': ['yes','no'],
   'allBtn': [],
   'saveAndClose': [],
   'consentReminder': [],
@@ -79,7 +83,7 @@ var questions = [
   },
   {
     'id': 'trust-q',
-    'insertAfter': '#toContact',
+    'insertAfter': '#intro',
     'template':
       '<div id="trustQ" class="consentInfo"></div> \n \
       <div class="consentSliders sliders"> \n \
@@ -88,6 +92,96 @@ var questions = [
           + sliderConstructor('trust', 'yes') +
           '<p> \n \
             <button class="md-saveAndClose" data-slider="trust" onclick=saveTrust(this)>&#10005;</button> \n \
+          </p> \n \
+        </p> \n \
+      </div>'
+  },
+  {
+    'id': 'q-1',
+    'insertAfter': '#relativty',
+    'template':
+      '<div id="Q1" class="consentInfo"></div> \n \
+      <div class="consentSliders sliders"> \n \
+        <p> \n \
+          <span class="md-no slider-label"></span> \n'
+          + sliderConstructor('q1', 'yes') +
+          '<p> \n \
+            <button class="md-saveAndClose" data-slider="q1" onclick=saveTrust(this)>&#10005;</button> \n \
+          </p> \n \
+        </p> \n \
+      </div>'
+  },
+  {
+    'id': 'q-2',
+    'insertAfter': '#interviewCreativePlaces',
+    'template':
+      '<div id="Q2" class="consentInfo"></div> \n \
+      <div class="consentSliders sliders"> \n \
+        <p> \n \
+          <span class="md-no slider-label"></span> \n'
+          + sliderConstructor('q2', 'yes') +
+          '<p> \n \
+            <button class="md-saveAndClose" data-slider="q2" onclick=saveTrust(this)>&#10005;</button> \n \
+          </p> \n \
+        </p> \n \
+      </div>'
+  },
+  {
+    'id': 'q-3',
+    'insertAfter': '#commentArchitecture',
+    'template':
+      '<div id="Q3" class="consentInfo"></div> \n \
+      <div class="consentSliders sliders"> \n \
+        <p> \n \
+          <span class="md-no slider-label"></span> \n'
+          + sliderConstructor('q3', 'yes') +
+          '<p> \n \
+            <button class="md-saveAndClose" data-slider="q3" onclick=saveTrust(this)>&#10005;</button> \n \
+          </p> \n \
+        </p> \n \
+      </div>'
+  },
+  {
+    'id': 'q-4',
+    'insertAfter': '#interviewGottlieb',
+    'template':
+      '<div id="Q4" class="consentInfo"></div> \n \
+      <div class="consentSliders sliders"> \n \
+        <p> \n \
+          <span class="md-no slider-label"></span> \n'
+          + sliderConstructor('q4', 'yes') +
+          '<p> \n \
+            <button class="md-saveAndClose" data-slider="q4" onclick=saveTrust(this)>&#10005;</button> \n \
+          </p> \n \
+        </p> \n \
+      </div>'
+  },
+  {
+    'id': 'q-5',
+    'insertAfter': '#interviewIvana',
+    'template':
+      '<div id="Q5" class="consentInfo"></div> \n \
+      <div class="consentSliders sliders"> \n \
+        <p> \n \
+          <span class="md-no slider-label"></span> \n'
+          + sliderConstructor('q5', 'yes') +
+          '<p> \n \
+            <button class="md-saveAndClose" data-slider="q5" onclick=saveTrust(this)>&#10005;</button> \n \
+          </p> \n \
+        </p> \n \
+      </div>'
+  },
+  {
+    'id': 'q-6',
+    'insertAfter': '#interviewBroeckmann',
+    'template':
+      '<div id="Q6" class="consentInfo"></div> \n \
+      <div class="consentSliders sliders"> \n \
+        <p> \n \
+          <span class="md-no slider-label"></span> \n'
+          + sliderConstructor('q6', 'yes') +
+          '<p> \n \
+            <button class="md-saveAndClose" data-slider="q6" onclick=saveTrust(this)>&#10005;</button> \n \
           </p> \n \
         </p> \n \
       </div>'

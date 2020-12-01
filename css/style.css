@@ -364,7 +364,7 @@ body div:not(.fold).consent {
 }
 
 body div#dataConsent {
-  z-index: 11;
+  z-index: 12;
 }
 
 div.fold div.consent {
@@ -397,6 +397,7 @@ div.fold {
   left: -25%;
   border: solid 1px;
   position: relative;
+  z-index: 11;
 }
 div.fold p {
   text-align: left;
@@ -454,10 +455,16 @@ div.window .sliders p {
   margin-top: 0;
   margin-bottom: 0;
 }
-div#trust-q span.slider-label {
+div.trustQ span.slider-label {
   display: inline-block;
 }
-div#trustQ {
+body div:not(.fold).consent:not(#dataConsent) {
+  position: sticky;
+  transform: translateX(-100%);
+  bottom: initial;
+  top: 50vh;
+}
+body div:not(.fold).consent:not(#dataConsent) .consentInfo {
   font-size: 150%;
 }
 b, strong {
