@@ -42,47 +42,6 @@
 <body onresize="resizeFunctions()">
   <div id="backToTop" class="window sticky"></div>
   <div id="toContact" class="window sticky"></div>
-  <div id="dataConsent" class="window consent">
-    <button class="md-closeBtn closeBtn" data-slider="next" onclick="toggleContents(this);">&#10005;</button>
-    <div id="consentInfo" class="consentInfo">
-    </div>
-    <div class="consentSliders sliders">
-      <p>
-      <span class="slider-desc md-sliderDesc"></span>
-      </p>
-      <p>
-      <label class="switch"><input data-slider="soundcloud" onclick="toggleContents(this);" type="checkbox"><span class="slider soundcloud"></span></label>
-      <span class="slider-label"><b>Soundcloud</b></span>
-      <label class="switch"><input data-slider="vimeo" onclick="toggleContents(this);" type="checkbox"><span class="slider vimeo"></span></label>
-      <span class="slider-label"><b>Vimeo</b></span>
-      <label class="switch"><input data-slider="youtube" onclick="toggleContents(this);" type="checkbox"><span class="slider youtube"></span></label>
-      <span class="slider-label"><b>YouTube</b></span>
-      </p>
-      <p>
-      <span id="saveDesc"></span><span id="consentReminder" class="consent-reminder"></span>
-      </p>
-      <p>
-      <label class="switch"><input data-slider="save" onclick="toggleContents(this);" type="checkbox"><span class="slider"></span></label>
-      <span class="md-saveBtn slider-label"></span>
-      <button class="md-allBtn" data-slider="next" onclick="allAndClose(this);"></button>
-      </p>
-    </div>
-  </div>
-  <div id="trust-q" class="window consent">
-    <button class="md-closeBtn closeBtn" data-slider="next" onclick="hideConsent(true);">&#10005;</button>
-    <div id="trustQ" class="consentInfo">
-    </div>
-    <div class="consentSliders sliders">
-      <p>
-      <span id="no" class="slider-label"></span>
-      <label class="switch"><input id="trustInput" data-slider="trust" onclick="toggleContents(this);" type="checkbox"><span class="slider yes"></span></label>
-      <span id="yes" class="slider-label"></span>
-      </p>
-      <p>
-        <button class="md-saveAndClose" data-slider="yes" onclick=saveTrust()>&#10005;</button>
-      </p>
-    </div>
-  </div>
 <div id="container">
   <div id="prop"></div>
   <div id="intro" class="window right parallax-child-1"></div>
@@ -105,6 +64,7 @@
   <a href="https://www.nextmuseum.io/exhibitions/in-vr-we-trust/"><h2 class="no-margin">open call &rarr;</h2></a>
 </div>
 
+<script src="./js/qBox.js"></script>
 <script src="./settings.js?2"></script>
 <script src="./js/jquery-3.5.1.min.js?2"></script>
 <script src="./js/background.js?2"></script>

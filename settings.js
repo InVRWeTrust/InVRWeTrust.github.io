@@ -46,6 +46,47 @@ var youtubes = [
   }
 ];
 
+var questions = [
+  {
+    'id': 'dataConsent',
+    'insertAfter': '#toContact',
+    'template':
+      '<div id="consentInfo" class="consentInfo"></div> \n \
+      <div class="consentSliders sliders"> \n \
+        <p> \n \
+        <span class="slider-desc md-sliderDesc"></span> \n \
+        </p> \n \
+        <p>'
+        + sliderConstructor('soundcloud', 'Soundcloud')
+        + sliderConstructor('vimeo', 'Vimeo')
+        + sliderConstructor('youtube', 'YouTube') +
+        '</p> \n \
+        <p> \n \
+        <span id="saveDesc"></span><span id="consentReminder" class="consent-reminder"></span> \n \
+        </p> \n \
+        <p> \n \
+        <label class="switch"><input data-slider="save" onclick="toggleContents(this);" type="checkbox"><span class="slider"></span></label> \n \
+        <span class="md-saveBtn slider-label"></span> \n \
+        <button class="md-allBtn" data-slider="next" onclick="allAndClose(this);"></button> \n \
+        </p> \n \
+      </div>'
+  },
+  {
+    'id': 'trust-q',
+    'insertAfter': '#toContact',
+    'template':
+      '<div id="trustQ" class="consentInfo"></div> \n \
+      <div class="consentSliders sliders"> \n \
+        <p> \n \
+        <span id="no" class="slider-label"></span>'
+        + sliderConstructor('youtube', 'YouTube') +
+        '<p> \n \
+          <button class="md-saveAndClose" data-slider="yes" onclick=saveTrust()>&#10005;</button> \n \
+        </p> \n \
+      </div>'
+  }
+];
+
 var bgText = [
   'in <span class="emph">VR</span> we <span class="emph">trust</span>',
   'we <span class="emph">trust</span> in <span class="emph">VR</span>',

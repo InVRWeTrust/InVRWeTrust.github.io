@@ -200,6 +200,9 @@ function scrollToAct(target, scrollTarget) {
 var textsN = Object.keys(texts).length;
 var textsI = 0;
 $( document ).ready(function(){
+  $.each( questions, function( key, value ) {
+    qBox(value.id, value.insertAfter, value.template);
+  });
   for (const prop in texts) {
     sd(prop, texts[prop], true);
   };

@@ -208,15 +208,12 @@ function chooseContents(type) {
   return content;
 }
 
-function hideConsent(id, option) {
-  if (id === true) {
-    id = '#trust-q';
-    option = "slow";
-  }
-  $(id).hide(option);
+function hideConsent(element) {
+  var id = '#' + $(element).parent().attr('id');
+  console.log('hideConsent id: ' + id);
+  $(id).hide("slow");
   if (id === "#dataConsent") {
     var ms = 2000;
-    option = "slow";
     setTimeout(function(){
       var target = '#privacy-fold'
       $(id).insertAfter(target);
@@ -226,7 +223,7 @@ function hideConsent(id, option) {
       $(nextBtn).hide();
       $(".consent-reminder").hide();
       $(".md-allBtn").hide();
-      $(id).show(option, function() {
+      $(id).show("slow", function() {
         fillBack();
       });
     }, ms);
