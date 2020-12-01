@@ -50,9 +50,9 @@ function sd(target, dependents, initial) {
   } else {
     if($(targetClass).length) {
       target = targetClass;
-    } else {
-      console.log('showdown: target ' + target + ' not found.');
-    }
+    }// else {
+      //console.log('showdown: target ' + target + ' not found.');
+    //}
   }
   var converter = new showdown.Converter(),
       text      = '';
@@ -74,7 +74,7 @@ function sd(target, dependents, initial) {
       }
       textsI++;
       if (textsI >= textsN) {
-        console.log("sd(): last text: " + textsN );
+        //console.log("sd(): last text: " + textsN );
         $(".sd-nop").each(function( index ) {
           var cnt = $(this).find("p").contents();
           $(this).find("p").replaceWith(cnt);
@@ -177,7 +177,7 @@ function scrollTo(anc, intra) {
       scrollTarget = 0;
       scrollToAct(null, scrollTarget);
     } else {
-      console.log('scrollTo: no valid scroll target: ' + target)
+      //console.log('scrollTo: no valid scroll target: ' + target)
       return;
     }
   }

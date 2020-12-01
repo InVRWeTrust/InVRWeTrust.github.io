@@ -1,5 +1,5 @@
 var windowHeight = $(window).height();
-console.log("windowHeight: " + windowHeight);
+//console.log("windowHeight: " + windowHeight);
 var backToTop = $('#backToTop');
 //var openCall = $('#static1');
 //var tolerance = Math.ceil( $(openCall).height() * 10 );
