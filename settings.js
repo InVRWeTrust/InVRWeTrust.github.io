@@ -78,8 +78,8 @@ var questions = [
       '<div id="trustQ" class="consentInfo"></div> \n \
       <div class="consentSliders sliders"> \n \
         <p> \n \
-        <span id="no" class="slider-label"></span>'
-        + sliderConstructor('youtube', 'YouTube') +
+        <span id="no" class="slider-label"></span> \n'
+        + sliderConstructor('yes', 'Yes') +
         '<p> \n \
           <button class="md-saveAndClose" data-slider="yes" onclick=saveTrust()>&#10005;</button> \n \
         </p> \n \
