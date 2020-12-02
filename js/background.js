@@ -16,6 +16,9 @@ function isIpadPro() {
     return (screen.width === 2048 && screen.height === 2732) || (screen.width === 2732 && screen.height === 2048) || (screen.width === 1536 && screen.height === 2048) || (screen.width === 2048 && screen.height === 1536);
 }
 
+//var iOS14 = 'iPhone OS 14';
+//var iPadOS14 = 'Version/14';
+
 var ios = false;
 ios = isIpadPro();
 if (ios) {
@@ -23,6 +26,10 @@ if (ios) {
 } else {
   ios = isIOS();
 }
+
+//if (NavigatorID.userAgent.includes(iOS14) || NavigatorID.userAgent.includes(iPadOS14) ) {
+//  ios = false;
+//}
 //ios = true;
 if (ios) {
   $('head').append('<link rel="stylesheet" type="text/css" href="./css/iOS.css?2">');
