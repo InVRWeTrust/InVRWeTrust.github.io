@@ -28,6 +28,7 @@ var texts = {
   'interviewBroeckmann': [],
   'subscribe-fold': [],
   'curatorialStatement': [],
+  'interviewBanzBowinkel': [],
   'impressum-fold': ['impressumAddress'],
   'privacy-fold': [],
   'relativty': [],
