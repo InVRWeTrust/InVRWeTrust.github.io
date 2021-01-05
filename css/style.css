@@ -310,7 +310,7 @@ div.right.parallax-child-2 {
   margin-left: 23vw;
 }
 div.right.parallax-child-2.interview-text {
-  margin-left: 36vw;
+  margin-left: 16vw;
 }
 /*
 div.left.parallax-child-1, div.right.parallax-child-2, article section div.window img {
@@ -717,6 +717,18 @@ input:checked + .slider:before {
   }
   div.right.parallax-child-1 {
     margin-left: -66vw;
+  }
+  div.left.parallax-child-1 {
+    margin-left: -119vw;
+  }
+  div.left.parallax-child-1.interview-text {
+    margin-left: -117vw;
+  }
+  div.right.parallax-child-2 {
+    margin-left: 0vw;
+  }
+  div.right.parallax-child-2.interview-text {
+    margin-left: -2vw;
   }
   div.left.parallax-child-2 {
     margin-left: -28vw;
