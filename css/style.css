@@ -292,7 +292,7 @@ div.window.mid-small {
   z-index: 3;
 }
 div.window.interview-text {
-  z-index: 0;
+  z-index: 2;
 }
 div.left.parallax-child-2 {
   margin-left: -32vw;
