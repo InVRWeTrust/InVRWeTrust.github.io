@@ -294,6 +294,9 @@ div.window.mid-small {
 div.window.interview-text {
   z-index: 2;
 }
+div.window.soundcloud, div.window.vimeo, div.window.youtube {
+  z-index: 2;
+}
 div.left.parallax-child-2 {
   margin-left: -32vw;
 }
@@ -536,10 +539,6 @@ div.window.placeholder.vimeo span.placeholder-fill {
 }
 div.window.placeholder.youtube span.placeholder-fill {
   color: #FF0000;
-}
-
-div.window.soundcloud, div.window.vimeo, div.window.youtube {
-  z-index: 3;
 }
 
 .yt-container {
