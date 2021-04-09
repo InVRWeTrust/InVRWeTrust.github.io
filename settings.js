@@ -39,6 +39,7 @@ var texts = {
   'commentLowTech': [],
   'nav': [],
   'nav-fold': [],
+  'opencall': [],
 };
 
 var sounds = [
