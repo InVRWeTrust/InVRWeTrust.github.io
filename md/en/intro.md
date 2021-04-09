@@ -2,10 +2,14 @@ Do you also want to ride on the virtual reality hypetrain? Do you dream of a mix
 <br><br>
 [Full text of our open call on nextmuseum.io →](https://www.nextmuseum.io/en/exhibitions/in-vr-we-trust/)
 <br><br>
-The two-part exhibition at the NRW Forum in Düsseldorf and at the Nudel in Zeitz aims to reflect on the current status and future value of virtual reality as an artistic tool or medium on the basis of four critical positions and at the same time to enable a public discussion about it.
+The two-part exhibition, planned for the NRW Forum in Düsseldorf and the Nudel in Zeitz, aims to reflect on the current status and future value of virtual reality as an artistic tool or medium on the basis of four critical positions and at the same time to enable a public discussion about it.
+<br><br>
+Due to the effects of the pandemic and the uncertain situation for visitors to the exhibition, we decided not to hold the exhibition in the planned venues in Düsseldorf and Zeitz. Instead, a postal-virtual adaptation will open on May 1, 2021. To be notified as soon as the admission package can be ordered, sign up for [our newsletter](#subscribe-fold)!
 
-"In VR we trust", curated by [Daniel Hengst](http://danielhengst.de/) & [Clemens Schöll](http://neopostmodern.com/), 
-a project of [THIS IS FAKE](http://thisisfake.team/), in cooperation with [plusnull e.V.](http://www.plusnull.org/), 
-supported by the [E.ON foundation](http://www.eon-stiftung.com/).
-
-On this website we will collect conversations, sketches, excerpts of the curatorial process and relevant links for a critical examination of VR.
+"In VR we trust"  
+curated by [Clemens Schöll](http://neopostmodern.com/) & [Daniel Hengst](http://danielhengst.de/)  
+Open Call & Co-Curation through [nextmuseum.io](https://www.nextmuseum.io/)  
+a project of [THIS IS FAKE](http://thisisfake.team/)  
+in cooperation with [plusnull e.V.](http://www.plusnull.org/)  
+for [NRW Forum, Düsseldorf](https://www.nrw-forum.de/) and Nudel, Zeitz  
+supported by the [E.ON foundation](http://www.eon-stiftung.com/)
