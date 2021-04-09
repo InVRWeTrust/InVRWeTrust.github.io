@@ -1,1 +1,1 @@
-[zurück &uarr;](#top)
+[zurück &uarr;](#nav-fold)

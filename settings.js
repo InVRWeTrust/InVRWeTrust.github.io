@@ -37,6 +37,8 @@ var texts = {
   'commentArchitectureText': [],
   'commentEmpathyMachine': [],
   'commentLowTech': [],
+  'nav': [],
+  'nav-fold': [],
 };
 
 var sounds = [

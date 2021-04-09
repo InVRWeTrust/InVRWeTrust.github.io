@@ -1,0 +1,1 @@
+Willkommen auf dieser Website. Hier finden Sie Informationen zu den ausgewählten Kunstwerken des OpenCalls, Gespräche und und relevante Links zur kritischen Auseinandersetzung mit VR.
