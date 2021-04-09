@@ -42,8 +42,8 @@ function sd(target, dependents, initial) {
     console.log('lang: falling back to ' + lang);
   }
   var file = './md/' + lang + '/' + target + '.md';
-  targetId = '#' + target;
-  targetClass = '.md-' + target;
+  targetId = '#' + target.toLowerCase();
+  targetClass = '.md-' + target.toLowerCase();
   if($(targetId).length) {
     target = targetId;
   // else we assume it's a class
@@ -135,6 +135,7 @@ function scrollTo(anc, intra) {
   //console.log('scrollTo: ' + anc + ', ' + intra);
   var scrollTarget = 0;
   var toTop = false
+  anc = anc.toLowerCase()
   if (anc == "#top") {
     target = anc;
     toTop = true;
@@ -151,7 +152,7 @@ function scrollTo(anc, intra) {
   }
 
   //target = tryFoldTarget(target);
-  //console.log('scrollTo target: ' + target);
+  console.log('scrollTo target: ' + target);
 
   //console.log('scrollTo target obj: ' + JSON.stringify($(target)) );
   if ($(target).length) {

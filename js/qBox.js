@@ -1,13 +1,13 @@
 function qBox(id, location, template) {
   var html ='';
-  html += '<div id="' + id + '" class="window consent">';
-  html += '<button class="md-closeBtn closeBtn" data-slider="next" onclick="hideConsent(this);">&#10005;</button>';
+  html += '<div id="' + id.toLowerCase() + '" class="window consent">';
+  html += '<button class="md-closebtn closeBtn" data-slider="next" onclick="hideConsent(this);">&#10005;</button>';
 
   html += template;
 
   html += '</div>';
 
-  $( html ).insertAfter( location );
+  $( html ).insertAfter( location.toLowerCase() );
 }
 
 function sliderConstructor(type, label) {

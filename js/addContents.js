@@ -171,10 +171,10 @@ function constructPlaceholder(targets, url, title) {
   html += '" onclick="toggleContents(this);" type="checkbox"><span class="slider '
   html += targets
   html += '"></span></label>'
-  html += '<span class="slider-desc md-sliderDesc sd-nop"></span> <b>'
+  html += '<span class="slider-desc md-sliderdesc sd-nop"></span> <b>'
   // uppercase first letter
   html += targets.charAt(0).toUpperCase() + targets.slice(1);
-  html += '</b>. <span class="slider-desc md-privacyLink sd-nop"></span>'
+  html += '</b>. <span class="slider-desc md-privacylink sd-nop"></span>'
   html += '</p>'
   html += '</div>'
   html += '<span class="placeholder-fill">'
@@ -226,7 +226,7 @@ function hideConsent(element) {
       var nextBtn = $(id).find('[data-slider="next"]')[0];
       $(nextBtn).hide();
       $(".consent-reminder").hide();
-      $(".md-allBtn").hide();
+      $(".md-allbtn").hide();
       $(id).show("slow", function() {
         fillBack();
       });

@@ -99,7 +99,7 @@ div.sticky {
   top: 1ex;
   right: 1ex;
 }
-#backToTop {
+#backtotop {
   top: 7ex;
 }
 #static1 {
@@ -256,24 +256,24 @@ div.window img {
   display: block;
   margin: 0 auto;
 }
-#langChange {
+#langchange {
   border-bottom: solid 1px;
   text-align: center;
   display: block;
   padding-bottom: 1ex;
   margin-bottom: 0;
 }
-#langChange img {
+#langchange img {
   height: 4ex;
   width: auto;
   vertical-align: middle;
   display: inline;
   margin-left: -4ex;
 }
-#dataConsent div > p:nth-child(1) {
+#dataconsent div > p:nth-child(1) {
   margin-bottom: 0;
 }
-#dataConsent div > p:nth-child(2) {
+#dataconsent div > p:nth-child(2) {
   margin-top: 0;
 }
 
@@ -366,7 +366,7 @@ body div:not(.fold).consent {
   max-height: 80vh;
 }
 
-body div#dataConsent {
+body div#dataconsent {
   z-index: 12;
 }
 
@@ -409,7 +409,7 @@ div.fold p, div.fold ul {
   margin-right: auto;
 }
 /*
-div:not(#dataConsent).fold p:first-child {
+div:not(#dataconsent).fold p:first-child {
   margin-top: revert;
 }
 */
@@ -463,13 +463,13 @@ div.window .sliders p {
 div.trustQ span.slider-label {
   display: inline-block;
 }
-body div:not(.fold).consent:not(#dataConsent) {
+body div:not(.fold).consent:not(#dataconsent) {
   position: sticky;
   transform: translateX(-100%);
   bottom: initial;
   top: 50vh;
 }
-body div:not(.fold).consent:not(#dataConsent) .consentInfo {
+body div:not(.fold).consent:not(#dataconsent) .consentInfo {
   font-size: 150%;
 }
 b, strong {

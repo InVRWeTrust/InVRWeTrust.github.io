@@ -1,6 +1,6 @@
 ## Impressum
 
-<div class="md-impressumAddress"></div>
+<div class="md-impressumaddress"></div>
 
 ### Urheberrecht
 
