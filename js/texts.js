@@ -57,6 +57,7 @@ function sd(target, dependents, initial) {
   var converter = new showdown.Converter(),
       text      = '';
   //converter.setOption('noHeaderId', true);
+  converter.setOption('strikethrough', true);
   $.get(file, function (response) {
       text = response;
       var html      = converter.makeHtml(text);
