@@ -1,0 +1,19 @@
+## Chinesischer Pavillon
+
+Robin Kötzle, 2020 
+
+![Screenshot VR installation](./graphics/content/1_DokuChinesischerPavillon_4.jpg)
+
+Virtual Reality Installation und Audio
+
+Die Frage nach Wirklichkeit und den damit verbundenen Machtstrukturen sind zentral für Robin Kötzles Arbeiten. Davon ausgehend beschäftigt er sich mit historischen wie auch kapitalismuskritischen Prozessen und untersucht die gesellschaftlichen Veränderungen in Zeiten der digitalen Revolution, indem er die unterschiedlichen digitalen Medien verbindet.
+
+![Screenshot VR installation](./graphics/content/2_DokuChinesischerPavillon_5.jpg)
+
+Die VR-Arbeit „Chinesischer Pavillon” setzt sich kapitalismuskritisch mit Immersion als historisch codierter Verschränkung medialer und kolonialer Fiktionen und Aneignungsstrategien auseinander. Sie besteht aus dem 3-D gescannten Raum des sog. Chinesischen Pavillons in der Parkanlage von Schloss Pillnitz bei Dresden. Er wurde 1808 mit dem Ziel errichtet, das immersive Gefühl eines Aufenthalts in China zu suggerieren. Mittel dieser Simulation war allerdings kein originalgetreuer Nachbau chinesischer Architektur, sondern die Dekoration einer europäischen Pavillonarchitektur mit asiatischen Elementen, wie etwa Wandgemälde von chinesischen Landschaften und Gebäuden.  
+<br>
+Nur Hundert Jahre später errichtete das Deutsche Kaiserreich in Qingdao eine weitere virtuelle Realität, eine von Grund auf neue Stadt nach deutschen Idealvorstellungen. Die “Musterkolonie” wurde aus der Residenz des Gouverneurs regiert. Das verbindende Element zwischen China und Deutschland war schon immer der wirtschaftliche Austausch. So zirkelt eine digitale Rekonstruktion der Residenz um den Pavillon herum, wie sich gleichzeitig der “Raum der Ruhe” in einen Paketumschlagplatz verwandelt. Dies wirft Fragen nach den Mindsets auf, unter denen wir heute im digitalen Zeitalter Beziehungen führen. Auch ein Schwein, das für die Wahrhaftigkeit im chinesischen Tierkreiszeichen steht, nimmt den Pavillon für sich ein und begleitet einen auf Schritt und Tritt. Der sich immer wieder nach außen öffnende Pavillon lässt zudem verschiedenste Blicke zu, auf marschierende Soldaten, wie sie mit imperialer Macht und politischer Repräsentation einhergehen, auf die Natur, die den Pavillon umgibt oder etwa auf Fassaden, die die Möglichkeit liefert in die Ferne zu sehen. Von Zeit zu Zeit fliegen steinerne Köcher, von der historischen Architektur gelöste Fragmente durch den Raum und ein Gefühl von etwas Fantastischem bleibt zurück.  
+<br>
+Der willkürlichen, palimzesthaften Überlagerungen von Fiktion und Realität, Gegenwart und Vergangenheit entspricht die sich zufällig immer wieder neu konfigurierenden Virtual Reality. Während der Pavillon sowohl digital als auch analog einem Ort zugehörig ist, bleiben die Körper der Betrachtenden unverbunden und auf das bloße Sehen reduziert. So geht es in der VR-Arbeit “Chinesischer Pavillon” ebenfalls darum, durch die Überführung des Analogen ins Digitale bestimmte zeit-räumliche Distanzen zu überwinden, dabei zugleich auch die Brüche dieser Transformationen und Übersetzungsprozesse sichtbar zu machen und schließlich die Funktionsweisen transkultureller Aneignungsprozesse zu untersuchen. Dadurch hinterfragt der Chinesische Pavillon nicht nur die heutige Virtual Reality, sondern das Sehen im Generellen. Darüber hinaus verweilt die VR nicht in einer medialen Erfahrung, sondern untersucht, wie Aneignungsprozesse durch virtuelle Realitäten funktionieren und auch heute reproduziert werden.
+
+![Screenshot VR installation](./graphics/content/3_DokuChinesischerPavillon_7.jpg)
