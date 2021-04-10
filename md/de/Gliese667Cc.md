@@ -1,6 +1,6 @@
 ## Gliese 667 Cc
 
-Elena Romenkova
+[Elena Romenkova](https://leromash.tumblr.com/)
 
 ![Screenshot VR Ausstellung](./graphics/content/1-1_submissions_single_large.png)
 

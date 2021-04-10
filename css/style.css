@@ -296,6 +296,9 @@ div.window.interview-text {
 div.window.soundcloud, div.window.vimeo, div.window.youtube {
   z-index: 2;
 }
+div.right.parallax-child-2 {
+  z-index: 2;
+}
 div.left.parallax-child-2 {
   margin-left: -32vw;
 }

@@ -1,6 +1,6 @@
 ## Chinesischer Pavillon
 
-Robin Kötzle, 2020 
+[Robin Kötzle](http://www.robinkoetzle.org/), 2020
 
 ![Screenshot VR installation](./graphics/content/1_DokuChinesischerPavillon_4.jpg)
 

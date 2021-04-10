@@ -1,5 +1,5 @@
 ## The Grass Smells So Sweet  
-Dani Ploeger, 2018  
+[Dani Ploeger](https://www.daniploeger.org/), 2018
   
 ![Grass overview](./graphics/content/1_Grass_overview.jpg)
 

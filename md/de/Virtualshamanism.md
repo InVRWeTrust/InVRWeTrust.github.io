@@ -1,6 +1,6 @@
 ## Virtualshamanism: Towards an alternative digital reality of consciousness
 
-Matias Brunacci
+[Matias Brunacci](https://www.matiasbrunacci.com/)
 
 ![Screenshot VR experience](./graphics/content/1_virtualshamanism3_submissions_single_large.jpg)
 
