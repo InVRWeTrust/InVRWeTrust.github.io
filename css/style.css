@@ -647,6 +647,11 @@ input:checked + .slider:before {
 }
 
 /*************************************/
+
+div.parallax-child-1.left + div.parallax-child-2.right {
+  margin-top: 100vh;
+}
+
 @media only screen and (min-height: 1000px) {
   div.prop-text:first-child {
     margin-top: 30vh;
@@ -655,6 +660,9 @@ input:checked + .slider:before {
 @media only screen and (min-width: 1000px) {
   html, body {
     font-size: 110%;
+  }
+  div.parallax-child-2.right + div.parallax-child-1.left {
+    margin-top: -100vh;
   }
 }
 @media only screen and (min-width: 1500px) {
@@ -694,7 +702,7 @@ input:checked + .slider:before {
     max-width: 33vw;
   }
   div.window.right {
-    margin-left: 33vw;
+    margin-left: 16vw;
   }
   div.right.parallax-child-1 {
     margin-left: -36vw;
@@ -713,7 +721,7 @@ input:checked + .slider:before {
     max-width: 40vw;
   }
   div.window.right {
-    margin-left: 18vw;
+    margin-left: 16vw;
   }
   div.right.parallax-child-1 {
     margin-left: -66vw;
@@ -725,7 +733,7 @@ input:checked + .slider:before {
     margin-left: -117vw;
   }
   div.right.parallax-child-2 {
-    margin-left: 0vw;
+    margin-left: -1vw;
   }
   div.right.parallax-child-2.interview-text {
     margin-left: -2vw;
