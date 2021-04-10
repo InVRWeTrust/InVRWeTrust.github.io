@@ -42,6 +42,7 @@ var texts = {
   'opencall': [],
   'TheGrassSmellsSoSweet': [],
   'Virtualshamanism': [],
+  'Gliese667Cc': [],
 };
 
 var sounds = [
