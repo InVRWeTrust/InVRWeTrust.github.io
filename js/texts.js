@@ -208,4 +208,5 @@ $( document ).ready(function(){
   for (const prop in texts) {
     sd(prop, texts[prop], true);
   };
+  resizeFunctions();
 });

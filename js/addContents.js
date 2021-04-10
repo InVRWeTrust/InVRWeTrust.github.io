@@ -273,8 +273,10 @@ function toggleContents(slider, type, choice) {
   $('div.' + targets).each(function( index ) {
     if (choice) {
       addContents(this, targets, index);
+      resizeFunctions();
     } else {
       delContents(this, targets, index);
+      resizeFunctions();
     }
   });
 }
