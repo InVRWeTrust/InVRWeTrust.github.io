@@ -40,6 +40,7 @@ var texts = {
   'nav': [],
   'nav-fold': [],
   'opencall': [],
+  'TheGrassSmellsSoSweet': []
 };
 
 var sounds = [
