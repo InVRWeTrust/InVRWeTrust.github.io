@@ -152,7 +152,7 @@ function scrollTo(anc, intra) {
   }
 
   //target = tryFoldTarget(target);
-  console.log('scrollTo target: ' + target);
+  //console.log('scrollTo target: ' + target);
 
   //console.log('scrollTo target obj: ' + JSON.stringify($(target)) );
   if ($(target).length) {
