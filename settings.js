@@ -40,7 +40,8 @@ var texts = {
   'nav': [],
   'nav-fold': [],
   'opencall': [],
-  'TheGrassSmellsSoSweet': []
+  'TheGrassSmellsSoSweet': [],
+  'Virtualshamanism': [],
 };
 
 var sounds = [
