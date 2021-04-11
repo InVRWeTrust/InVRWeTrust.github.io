@@ -216,7 +216,7 @@ function chooseContents(type) {
 function hideConsent(element) {
   var id = '#' + $(element).closest('.consent').attr('id');
   $(id).hide("slow");
-  if (id === "#dataConsent") {
+  if (id === "#dataconsent") {
     var ms = 2000;
     setTimeout(function(){
       var target = '#privacy-fold'
