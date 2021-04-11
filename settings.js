@@ -111,7 +111,7 @@ var questions = [
   },
   {
     'id': 'q-1',
-    'insertAfter': '#relativty',
+    'insertAfter': '#thegrasssmellssosweet',
     'template':
       '<div id="q1" class="consentInfo"></div> \n \
       <div class="consentSliders sliders"> \n \
@@ -126,7 +126,7 @@ var questions = [
   },
   {
     'id': 'q-2',
-    'insertAfter': '#interviewCreativePlaces',
+    'insertAfter': '#gliese667cc',
     'template':
       '<div id="q2" class="consentInfo"></div> \n \
       <div class="consentSliders sliders"> \n \
@@ -141,7 +141,7 @@ var questions = [
   },
   {
     'id': 'q-3',
-    'insertAfter': '#commentArchitecture',
+    'insertAfter': '#interviewbanzbowinkel',
     'template':
       '<div id="q3" class="consentInfo"></div> \n \
       <div class="consentSliders sliders"> \n \
@@ -156,7 +156,7 @@ var questions = [
   },
   {
     'id': 'q-4',
-    'insertAfter': '#interviewGottlieb',
+    'insertAfter': '#interviewcreativeplaces',
     'template':
       '<div id="q4" class="consentInfo"></div> \n \
       <div class="consentSliders sliders"> \n \
@@ -171,7 +171,7 @@ var questions = [
   },
   {
     'id': 'q-5',
-    'insertAfter': '#interviewIvana',
+    'insertAfter': '#interviewgottlieb',
     'template':
       '<div id="q5" class="consentInfo"></div> \n \
       <div class="consentSliders sliders"> \n \
@@ -186,7 +186,7 @@ var questions = [
   },
   {
     'id': 'q-6',
-    'insertAfter': '#interviewBroeckmann',
+    'insertAfter': '#interviewfarina',
     'template':
       '<div id="q6" class="consentInfo"></div> \n \
       <div class="consentSliders sliders"> \n \
