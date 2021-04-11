@@ -43,7 +43,7 @@ var texts = {
   'TheGrassSmellsSoSweet': [],
   'Virtualshamanism': [],
   'Gliese667Cc': [],
-  'ChinesischerPavillon': [],
+  'ChinesePavilion': [],
 };
 
 var sounds = [
