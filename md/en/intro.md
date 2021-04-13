@@ -8,8 +8,10 @@ Due to the effects of the pandemic and the uncertain situation for visitors to t
 
 "In VR we trust"  
 curated by [Clemens Schöll](http://neopostmodern.com/) & [Daniel Hengst](http://danielhengst.de/)  
-Open Call & Co-Curation through [nextmuseum.io](https://www.nextmuseum.io/)  
 a project of [THIS IS FAKE](http://thisisfake.team/)  
 in cooperation with [plusnull e.V.](http://www.plusnull.org/)  
 for [NRW Forum, Düsseldorf](https://www.nrw-forum.de/) and Nudel, Zeitz  
-supported by the [E.ON foundation](http://www.eon-stiftung.com/)
+now brought to you by mail and the internet  
+supported by the [E.ON foundation](http://www.eon-stiftung.com/)  
+open call & co-curation through [nextmuseum.io](https://www.nextmuseum.io/)  
+website by [alex h](https://alexh.name)
