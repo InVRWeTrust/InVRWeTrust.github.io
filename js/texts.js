@@ -197,6 +197,8 @@ function scrollToAct(target, scrollTarget) {
       $('#mce-EMAIL').focus().select();
     }
   }, scrollTime + 100);
+  var url = window.location.href.split('#')[0];
+  window.location.href = url + target;
 }
 
 var textsN = Object.keys(texts).length;
