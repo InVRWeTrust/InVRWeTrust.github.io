@@ -1,6 +1,6 @@
 var windowHeight = $(window).height();
 //console.log("windowHeight: " + windowHeight);
-var backToTop = $('#backToTop');
+var backToTop = $('#backtotop');
 //var openCall = $('#static1');
 //var tolerance = Math.ceil( $(openCall).height() * 10 );
 //console.log("windowHeight tol: " + tolerance)
@@ -9,6 +9,7 @@ var backToTop = $('#backToTop');
 //var left = $(openCall).css("left");
 //var margin = $(openCall).css("margin");
 
+/*
 function scrollCheck() {
   var scroll = $('#container').scrollTop();
   //scroll = scroll + tolerance;
@@ -35,3 +36,4 @@ $('#container').scroll(function (event) {
 });
 
 scrollCheck();
+*/

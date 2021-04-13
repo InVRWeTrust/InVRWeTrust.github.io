@@ -11,7 +11,7 @@ function saveTrust(button){
 }
 
 function setSaveSlider(choice) {
-  var saveSlider = $('#dataConsent').find('[data-slider="save"]')[0];
+  var saveSlider = $('#dataconsent').find('[data-slider="save"]')[0];
   $(saveSlider).prop('checked', choice);
 }
 
@@ -39,7 +39,7 @@ function readSavedConsent() {
       var choice = false;
       value = localStorage.getItem(item);
       if (item == "save") {
-        hideConsent('#dataConsent');
+        hideConsent('#dataconsent');
         return;
       }
       if (value === "true") {
@@ -273,10 +273,8 @@ function toggleContents(slider, type, choice) {
   $('div.' + targets).each(function( index ) {
     if (choice) {
       addContents(this, targets, index);
-      resizeFunctions();
     } else {
       delContents(this, targets, index);
-      resizeFunctions();
     }
   });
 }
