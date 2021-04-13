@@ -198,7 +198,7 @@ function scrollToAct(target, scrollTarget) {
     }
   }, scrollTime + 100);
   var url = window.location.href.split('#')[0];
-  window.location.href = url + target;
+  window.location.href = url + target.replace(/-fold$/, "");
 }
 
 var textsN = Object.keys(texts).length;
