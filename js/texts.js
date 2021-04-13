@@ -42,8 +42,8 @@ function sd(target, dependents, initial) {
     console.log('lang: falling back to ' + lang);
   }
   var file = './md/' + lang + '/' + target + '.md';
-  targetId = '#' + target;
-  targetClass = '.md-' + target;
+  targetId = '#' + target.toLowerCase();
+  targetClass = '.md-' + target.toLowerCase();
   if($(targetId).length) {
     target = targetId;
   // else we assume it's a class
@@ -57,6 +57,7 @@ function sd(target, dependents, initial) {
   var converter = new showdown.Converter(),
       text      = '';
   //converter.setOption('noHeaderId', true);
+  converter.setOption('strikethrough', true);
   $.get(file, function (response) {
       text = response;
       var html      = converter.makeHtml(text);
@@ -134,6 +135,7 @@ function scrollTo(anc, intra) {
   //console.log('scrollTo: ' + anc + ', ' + intra);
   var scrollTarget = 0;
   var toTop = false
+  anc = anc.toLowerCase()
   if (anc == "#top") {
     target = anc;
     toTop = true;
@@ -206,4 +208,5 @@ $( document ).ready(function(){
   for (const prop in texts) {
     sd(prop, texts[prop], true);
   };
+  resizeFunctions();
 });

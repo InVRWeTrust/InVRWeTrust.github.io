@@ -13,7 +13,7 @@ The content can be markdown ([showdown.js flavor](https://github.com/showdownjs/
 HTML or a mix of both.  
 It's also possible to embed another content (for example for repeating phrases)
 by referencing it with a `span` element with a class consisting of that content,
-prefixed with `md-`, e.g. [`<span class="md-policiesSoundcloud"></span>`](https://raw.githubusercontent.com/InVRWeTrust/InVRWeTrust.github.io/bc984c5fac98b2be7fcddd8101f1a060df76b46b/md/en/consentInfo.md).
+prefixed with `md-`, e.g. [`<span class="md-policiessoundcloud"></span>`](https://raw.githubusercontent.com/InVRWeTrust/InVRWeTrust.github.io/bc984c5fac98b2be7fcddd8101f1a060df76b46b/md/en/consentInfo.md).
 
 2. Define its role in the template:  
 [`./index.html`](https://github.com/InVRWeTrust/InVRWeTrust.github.io/blob/master/index.html) contains the template. Elements that should end up containing the

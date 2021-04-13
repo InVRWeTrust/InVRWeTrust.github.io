@@ -99,7 +99,7 @@ div.sticky {
   top: 1ex;
   right: 1ex;
 }
-#backToTop {
+#backtotop {
   top: 7ex;
 }
 #static1 {
@@ -256,30 +256,29 @@ div.window img {
   display: block;
   margin: 0 auto;
 }
-#langChange {
+#langchange {
   border-bottom: solid 1px;
   text-align: center;
   display: block;
   padding-bottom: 1ex;
   margin-bottom: 0;
 }
-#langChange img {
+#langchange img {
   height: 4ex;
   width: auto;
   vertical-align: middle;
   display: inline;
   margin-left: -4ex;
 }
-#dataConsent div > p:nth-child(1) {
+#dataconsent div > p:nth-child(1) {
   margin-bottom: 0;
 }
-#dataConsent div > p:nth-child(2) {
+#dataconsent div > p:nth-child(2) {
   margin-top: 0;
 }
 
 div h2, h3 {
   margin-top: 0;
-  display: inline;
   padding: 0.5em;
 }
 div.window.right {
@@ -295,6 +294,9 @@ div.window.interview-text {
   z-index: 2;
 }
 div.window.soundcloud, div.window.vimeo, div.window.youtube {
+  z-index: 2;
+}
+div.right.parallax-child-2 {
   z-index: 2;
 }
 div.left.parallax-child-2 {
@@ -366,7 +368,7 @@ body div:not(.fold).consent {
   max-height: 80vh;
 }
 
-body div#dataConsent {
+body div#dataconsent {
   z-index: 12;
 }
 
@@ -402,15 +404,17 @@ div.fold {
   position: relative;
   z-index: 11;
 }
-div.fold p {
+div.fold p, div.fold ul {
   text-align: left;
   max-width: 80ch;
   margin-left: auto;
   margin-right: auto;
 }
-div:not(#dataConsent).fold p:first-child {
+/*
+div:not(#dataconsent).fold p:first-child {
   margin-top: revert;
 }
+*/
 div.fold div.fold-start {
   margin-top: 2ex;
 }
@@ -461,13 +465,13 @@ div.window .sliders p {
 div.trustQ span.slider-label {
   display: inline-block;
 }
-body div:not(.fold).consent:not(#dataConsent) {
+body div:not(.fold).consent:not(#dataconsent) {
   position: sticky;
   transform: translateX(-100%);
   bottom: initial;
   top: 50vh;
 }
-body div:not(.fold).consent:not(#dataConsent) .consentInfo {
+body div:not(.fold).consent:not(#dataconsent) .consentInfo {
   font-size: 150%;
 }
 b, strong {
@@ -646,6 +650,11 @@ input:checked + .slider:before {
 }
 
 /*************************************/
+
+div.parallax-child-1.left + div.parallax-child-2.right {
+  margin-top: 100vh;
+}
+
 @media only screen and (min-height: 1000px) {
   div.prop-text:first-child {
     margin-top: 30vh;
@@ -654,6 +663,9 @@ input:checked + .slider:before {
 @media only screen and (min-width: 1000px) {
   html, body {
     font-size: 110%;
+  }
+  div.parallax-child-2.right + div.parallax-child-1.left {
+    margin-top: -100vh;
   }
 }
 @media only screen and (min-width: 1500px) {
@@ -693,7 +705,7 @@ input:checked + .slider:before {
     max-width: 33vw;
   }
   div.window.right {
-    margin-left: 33vw;
+    margin-left: 16vw;
   }
   div.right.parallax-child-1 {
     margin-left: -36vw;
@@ -712,7 +724,7 @@ input:checked + .slider:before {
     max-width: 40vw;
   }
   div.window.right {
-    margin-left: 18vw;
+    margin-left: 16vw;
   }
   div.right.parallax-child-1 {
     margin-left: -66vw;
@@ -724,7 +736,7 @@ input:checked + .slider:before {
     margin-left: -117vw;
   }
   div.right.parallax-child-2 {
-    margin-left: 0vw;
+    margin-left: -1vw;
   }
   div.right.parallax-child-2.interview-text {
     margin-left: -2vw;

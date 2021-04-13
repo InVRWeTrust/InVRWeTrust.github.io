@@ -2,7 +2,7 @@
 
 ### Website provided by
 
-<div class="md-impressumAddress"></div>
+<div class="md-impressumaddress"></div>
 
 ### Copyright
 

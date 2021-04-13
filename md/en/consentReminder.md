@@ -1,1 +1,1 @@
-You can later change the settings at our <span class="md-privacyLink sd-nop"></span>.
+You can later change the settings at our <span class="md-privacylink sd-nop"></span>.
