@@ -243,7 +243,7 @@ function toggleContents(slider, type, choice) {
     choice = $(slider).is(":checked");
     if ( $.inArray(type, privacyOptions) !== -1 ) {
       // reset save state after togglings
-      saveConsent(false, false);
+      saveConsent(false, true);
     }
   }
 
