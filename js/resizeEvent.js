@@ -1,12 +1,5 @@
 function resizeFunctions() {
 	parallaxResize();
 	fillBack();
+	return $.ajax()
 }
-
-var firstScroll = true;
-$( '#container' ).scroll(function() {
-	if (firstScroll) {
-		resizeFunctions();
-		firstScroll = false;
-	}
-});

@@ -61,35 +61,40 @@ function sd(target, dependents, initial) {
   $.get(file, function (response) {
       text = response;
       var html      = converter.makeHtml(text);
-      $(target).each(function( index ) {
-        $(this).html(html);
-      });
-      if (fold) {
-        setFold(target);
-      };
-      if(dependents) {
-        dependents.forEach(function(item, index, array) {
-          textsN++;
-          sd(item, [], initial);
+
+      function sdAct(target){
+        $(target).each(function( index ) {
+          $(this).html(html);
         });
+        return $.ajax()
       }
-      textsI++;
-      if (textsI >= textsN) {
-        //console.log("sd(): last text: " + textsN );
-        $(".sd-nop").each(function( index ) {
-          var cnt = $(this).find("p").contents();
-          $(this).find("p").replaceWith(cnt);
-        });
-        if (initial) {
-          readSavedConsent();
-          parallaxResize();
-          setTimeout(function(){
-            scrollTo(window.location.hash, false);
-          }, 500);
+
+      sdAct(target).done(function(){
+        if (fold) {
+          setFold(target);
+        };
+        if(dependents) {
+          dependents.forEach(function(item, index, array) {
+            textsN++;
+            sd(item, [], initial);
+          });
         }
-        fillBack();
-        intraLinks();
-      }
+        textsI++;
+        if (textsI >= textsN) {
+          //console.log("sd(): last text: ", target, textsN );
+          $(".sd-nop").each(function( index ) {
+            var cnt = $(this).find("p").contents();
+            $(this).find("p").replaceWith(cnt);
+          });
+          if (initial) {
+            readSavedConsent();
+            setTimeout(function(){
+              scrollToo(window.location.hash, false);
+            }, 500);
+          }
+          intraLinks();
+        }
+      });
   });
 }
 
@@ -117,13 +122,13 @@ function setFold(target) {
 function intraLinks() {
   $(document).off( "click", 'a[href^="#"]');
   $(document).on('click', 'a[href^="#"]', function (event) {
-      event.preventDefault();
-      scrollTo($.attr(this, 'href'), true);
+    event.preventDefault();
+    scrollToo($.attr(this, 'href'), true);
   });
 }
 
 function tryFoldTarget(target) {
-  console.log('scrollTo target obj: ' + JSON.stringify($(target)) );
+  //console.log('scrollTo target obj: ' + JSON.stringify($(target)) );
     if ( target === '#top' || $(target).length ) {
       return target;
     } else {
@@ -131,58 +136,64 @@ function tryFoldTarget(target) {
     }
 }
 
-function scrollTo(anc, intra) {
-  //console.log('scrollTo: ' + anc + ', ' + intra);
-  var scrollTarget = 0;
-  var toTop = false
-  anc = anc.toLowerCase()
-  if (anc == "#top") {
-    target = anc;
-    toTop = true;
-  } else {
-    if (intra) {
+function scrollToo(anc, intra) {
+  resizeFunctions().done(function(){
+
+    //console.log('scrollTo: ' + anc + ', ' + intra);
+    var scrollTarget = 0;
+    var toTop = false
+    anc = anc.toLowerCase()
+    if (anc == "#top") {
       target = anc;
+      toTop = true;
     } else {
-      if ($(anc).length) {
+      if (intra) {
         target = anc;
       } else {
-        target = anc + '-fold';
+        if ($(anc).length) {
+          target = anc;
+        } else {
+          target = anc + '-fold';
+        }
       }
     }
-  }
 
-  //target = tryFoldTarget(target);
-  //console.log('scrollTo target: ' + target);
+    //target = tryFoldTarget(target);
+    //console.log('scrollTo target: ' + target);
 
-  //console.log('scrollTo target obj: ' + JSON.stringify($(target)) );
-  if ($(target).length) {
-    $('#container').scrollTop(0);
-    //console.log('scrollTo offset: ' + JSON.stringify($(target).offset()));
-    scrollTarget = $(target).offset().top;
-    var stickyHeight = $('#static1').height();
-    if (ios) {
-      var multiplier = 8;
+    //console.log('scrollTo target obj: ' + JSON.stringify($(target)) );
+    if ($(target).length) {
+      $('#container').scrollTop(0);
+      //console.log('scrollTo offset: ' + JSON.stringify($(target).offset()));
+      scrollTarget = $(target).offset().top;
+      var stickyHeight = $('#static1').height();
+      if (ios) {
+        var multiplier = 8;
+      } else {
+        var multiplier = 4;
+      }
+      scrollTarget = scrollTarget - stickyHeight * multiplier;
+
+      if (!ios) {
+        var scale = parseFloat($(target).css('transform').split(',')[5]);
+        if (scale > 0) {
+          scrollTarget = scrollTarget * scale;
+        }
+      }
+
+      scrollToAct(target, scrollTarget)
+
+
     } else {
-      var multiplier = 4;
-    }
-    scrollTarget = scrollTarget - stickyHeight * multiplier;
-
-    if (!ios) {
-      var scale = parseFloat($(target).css('transform').split(',')[5]);
-      if (scale > 0) {
-        scrollTarget = scrollTarget * scale;
+      if (toTop) {
+        scrollTarget = 0;
+        scrollToAct(null, scrollTarget);
+      } else {
+        //console.log('scrollTo: no valid scroll target: ' + target)
+        return;
       }
     }
-    scrollToAct(target, scrollTarget);
-  } else {
-    if (toTop) {
-      scrollTarget = 0;
-      scrollToAct(null, scrollTarget);
-    } else {
-      //console.log('scrollTo: no valid scroll target: ' + target)
-      return;
-    }
-  }
+  });
 }
 
 function scrollToAct(target, scrollTarget) {
@@ -210,5 +221,4 @@ $( document ).ready(function(){
   for (const prop in texts) {
     sd(prop, texts[prop], true);
   };
-  resizeFunctions();
 });
