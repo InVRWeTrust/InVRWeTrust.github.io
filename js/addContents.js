@@ -258,7 +258,7 @@ function toggleContents(slider, type, choice) {
   }
 
   if (targets === 'next') {
-    hideConsent('#dataConsent', "slow");
+    hideConsent('#dataconsent', "slow");
     // it's a button, we don't need the following slider logic
     return;
   }
