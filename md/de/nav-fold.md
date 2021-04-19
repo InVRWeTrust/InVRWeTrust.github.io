@@ -4,7 +4,7 @@
 - [The Grass Smells So Sweet - Dani Ploeger](#TheGrassSmellsSoSweet)
 - [Virtualshamanism - Matias Brunacci](#Virtualshamanism)
 - [Gliese 667 Cc - Elena Romenkova](#Gliese667Cc)
-- [Chinesischer Pavillon - Robin Kötzle](#ChinesischerPavillon)
+- [Chinesischer Pavillon - Robin Kötzle](#ChinesePavilion)
 - [Interview Banz & Bowinkel](#InterviewBanzBowinkel)
 - [Interview Peggy Shoenegge (Peer2Space)](#InterviewSchoenegge)
 - [Interview Creative Places Residency Artists](#InterviewCreativePlaces)
