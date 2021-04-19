@@ -88,6 +88,8 @@ function sd(target, dependents, initial) {
           });
           if (initial) {
             readSavedConsent();
+            order();
+            hamTest();
             setTimeout(function(){
               scrollToo(window.location.hash, false);
             }, 500);

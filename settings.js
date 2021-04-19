@@ -44,6 +44,7 @@ var texts = {
   'Virtualshamanism': [],
   'Gliese667Cc': [],
   'ChinesePavilion': [],
+  'order-fold': [],
 };
 
 var sounds = [
