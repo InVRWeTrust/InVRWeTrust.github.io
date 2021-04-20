@@ -2,6 +2,7 @@ function order() {
 	$('#orderForm').on('submit',function(e){
 		e.preventDefault();
 		$('.orderMsgs').hide();
+		$('#orderSubmit').addClass('progress');
 		if ($('#ham3').is(':checked')) {
 			var object = {};
 			const formData = new FormData(e.target);
@@ -38,11 +39,12 @@ function order() {
 					$(".md-ordererror").show("slow")
 					$("#orderResponse").show("slow")
 					$("#orderResponse").empty().append(' (' + data.status + ')').css('visibility','visible');
-				}//,
-				//complete   : function(data) {
+				},
+				complete   : function(data) {
 					//console.log(data)
 					//$("#orderResponse").empty().append(data.responseText).css('visibility','visible');
-				//}
+					$('#orderSubmit').removeClass('progress');
+				}
 			});
 			//console.log(response);
 		} else {

@@ -25,7 +25,7 @@ In Kombination mit einem Smartphone als Display, einer Ausstellungsführung auf 
     <div id="ham">
       <p>Um Spam zu vermeiden, wähle bitte das Cardboard:</p>
     </div>
-   <div><input type="submit"><span id="orderResponse"></span></div>
+   <div><input type="submit" id="orderSubmit"><span id="orderResponse"></span></div>
 </form> 
 
 <div class="orderMsgs md-orderok"></div>

@@ -1,3 +1,23 @@
+.progress, input[type=submit].progress {
+  animation: gradient 3s ease infinite;
+  background: linear-gradient(-45deg, red 0%, black 50%, #1AB7EA 100%);
+  background-size: 400% 400%;
+}
+input[type=submit] {
+  background-size: 400% 400%;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 form sup {
   color: gray;
   font-size: 60%;
