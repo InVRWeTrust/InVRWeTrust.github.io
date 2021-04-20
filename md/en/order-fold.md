@@ -25,7 +25,7 @@ In combination with a smartphone as a display, a guided tour of the exhibition o
     <div id="ham">
     	<p>To prevent spam, please select the Cardboard:</p>
     </div>
-   <div><input type="submit"><span id="orderResponse"></span></div>
+   <div><input type="submit" id="orderSubmit"><span id="orderResponse"></span></div>
 </form>	
 
 <span class="orderMsgs sd-nop md-orderok"></span>
