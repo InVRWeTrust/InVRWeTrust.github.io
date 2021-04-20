@@ -1,1 +1,1 @@
-[pre-order &larr;](#order-fold)
+[&larr; pre-order](#order-fold)
