@@ -1,6 +1,7 @@
 function order() {
 	$('#orderForm').on('submit',function(e){
 		e.preventDefault();
+		$('.orderMsgs').hide();
 		if ($('#ham3').is(':checked')) {
 			var object = {};
 			const formData = new FormData(e.target);
@@ -28,18 +29,20 @@ function order() {
 				success    : function() {
 					//$("#orderResponse").css('color','green');
 					$("#orderForm").hide("slow", function() {
-						$("div.md-orderok").css('visibility','visible');
-						$("div.md-orderok").show("slow")
+						$(".md-orderok").css('visibility','visible');
+						$(".md-orderok").show("slow")
 					});
 				},
 				error      : function(data) {
-					$("#orderResponse").css('color','red');
-					$("#orderResponse").empty().append(data.responseText).css('visibility','hidden');
-				},
-				complete   : function(data) {
+					$(".md-ordererror").css('visibility','visible');
+					$(".md-ordererror").show("slow")
+					$("#orderResponse").show("slow")
+					$("#orderResponse").empty().append(' (' + data.status + ')').css('visibility','visible');
+				}//,
+				//complete   : function(data) {
 					//console.log(data)
-				//	$("#orderResponse").empty().append(data.responseText).css('visibility','visible');
-				}
+					//$("#orderResponse").empty().append(data.responseText).css('visibility','visible');
+				//}
 			});
 			//console.log(response);
 		} else {

@@ -28,7 +28,8 @@ In combination with a smartphone as a display, a guided tour of the exhibition o
    <div><input type="submit"><span id="orderResponse"></span></div>
 </form>	
 
-<div class="md-orderok"></div>
+<span class="orderMsgs sd-nop md-orderok"></span>
+<span class="orderMsgs sd-nop md-ordererror"></span><span class="orderMsgs sd-nop" id="orderResponse"></span>
 
 <sup>1</sup> We ask you to order only one Cardboard per household. We only have a limited number and want to enable as many people as possible to view the exhibition.
 

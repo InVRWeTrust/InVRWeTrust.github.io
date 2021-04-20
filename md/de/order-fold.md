@@ -28,7 +28,8 @@ In Kombination mit einem Smartphone als Display, einer Ausstellungsführung auf 
    <div><input type="submit"><span id="orderResponse"></span></div>
 </form> 
 
-<div class="md-orderok"></div>
+<div class="orderMsgs md-orderok"></div>
+<div class="orderMsgs md-ordererror"></div><span class="orderMsgs" id="orderResponse"></span>
 
 <sup>1</sup> Wir bitten euch, pro Haushalt nur ein Cardboard zu bestellen. Wir haben nur eine begrenzte Stückzahl und möchten möglichst vielen Menschen die Teilhabe ermöglichen.
 
