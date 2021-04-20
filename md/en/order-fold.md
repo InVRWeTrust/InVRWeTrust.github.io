@@ -1,7 +1,7 @@
 ## Pre-order the exhibition
 
 Order the "In VR we trust" exhibition here for free<sup>1</sup> to your home: At the beginning of May you will receive a limited edition Cardboard virtual reality headset.  
-In combination with a smartphone as a display, a guided tour of the exhibition on a computer / tablet and a reliable internet connection, you can visit our exhibition individually from May 1st.
+In combination with a smartphone as a display, a guided tour of the exhibition on a computer / tablet and a reliable internet connection, you can visit our exhibition individually from May 5th.
 
  <form action="https://data.invr.info/users" method="PUT" name="order" id="orderForm">
     <p>
@@ -56,7 +56,7 @@ With contact lenses it works without any problems. With glasses, the cardboard o
 
 **Can I use my existing cardboard?**
 Yes, but we recommend ordering an "In VR we trust" cardboard in order to be able to fully participate in the exhibition.
-If you would like to participate from outside of Germany (or if the "In VR we trust" Cardboard is no longer available) go to this website from May 1st, 2021 to get to the exhibition: [doubt.invr.info](https://doubt.invr.info)
+If you would like to participate from outside of Germany (or if the "In VR we trust" Cardboard is no longer available) go to this website from May 5th, 2021 to get to the exhibition: [doubt.invr.info](https://doubt.invr.info)
 
 **Can I also use my HTC / Vive / Oculus?**
 No, our exhibition is designed exclusively for Cardboard.

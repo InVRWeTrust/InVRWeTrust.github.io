@@ -1,7 +1,7 @@
 ## Ausstellung vorbestellen
 
 Bestelle dir hier die "In VR we trust" Ausstellung kostenlos<sup>1</sup> nach Hause: Du bekommst Anfang Mai eine limitierte Cardboard-Virtual-Reality-Brille zugeschickt.  
-In Kombination mit einem Smartphone als Display, einer Ausstellungsführung auf einem Computer/Tablet und einer zuverlässigen Internetverbindung kannst du unsere Ausstellung ab 1. Mai individuell besuchen.
+In Kombination mit einem Smartphone als Display, einer Ausstellungsführung auf einem Computer/Tablet und einer zuverlässigen Internetverbindung kannst du unsere Ausstellung ab 5. Mai individuell besuchen.
 
  <form action="https://data.invr.info/users" method="PUT" name="order" id="orderForm">
     <p>
@@ -56,7 +56,7 @@ Mit Kontaktlinsen funktioniert es ohne Probleme. Mit Brille sitzt das Cardboard 
 
 **Kann ich mein schon vorhandenes Cardboard verwenden?**  
 Ja, allerdings empfehlen wir ein "In VR we trust"-Cardboard zu bestellen, um im vollen Umfang an der Ausstellung teilhaben zu können. 
-Falls du aus dem Ausland teilnehmen möchtest (oder kein "In VR we trust"-Cardboard mehr verfügbar sein sollte) gehe ab 1. Mai 2021 auf diese Webseite um zur Ausstellung zu gelangen: [doubt.invr.info](https://doubt.invr.info)
+Falls du aus dem Ausland teilnehmen möchtest (oder kein "In VR we trust"-Cardboard mehr verfügbar sein sollte) gehe ab 5. Mai 2021 auf diese Webseite um zur Ausstellung zu gelangen: [doubt.invr.info](https://doubt.invr.info)
 
 **Kann ich auch meine HTC / Vive / Oculus verwenden?**  
 Nein, unsere Ausstellung ist ausschließlich für Cardboard konzipiert. 
