@@ -23,4 +23,4 @@ In the context of this exhibition project we want to experiment with a process o
 
 On [trust.invr.info](https://trust.invr.info/) we accompany the project with conversations, discussions and links.
 
-“In VR we trust”, curated by [Daniel Hengst](http://danielhengst.de/) & [Clemens Schöll](http://neopostmodern.com/), a project of [THIS IS FAKE](http://thisisfake.team/), in cooperation with [plusnull e.V.](http://www.plusnull.org/), supported by the [innogy foundation](https://innogy-stiftung.com/).
+“In VR we trust”, curated by [Daniel Hengst](http://danielhengst.de/) & [Clemens Schöll](http://neopostmodern.com/), a project of [THIS IS FAKE](http://thisisfake.team/), in cooperation with [plusnull e.V.](http://www.plusnull.org/), supported by the [innogy foundation](https://innogy-stiftung.com/), website by [alex h](https://alexh.name).

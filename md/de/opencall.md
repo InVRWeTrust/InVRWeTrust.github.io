@@ -23,4 +23,4 @@ Wir wollen im Rahmen dieses Ausstellungsprojektes mit einem Prozess der Co-Kurat
 
 Auf [trust.invr.info](https://trust.invr.info/) begleiten wir das Projekt mit Gesprächen, Diskussionen und Links.
 
-„In VR we trust“, kuratiert von [Daniel Hengst](http://danielhengst.de/) & [Clemens Schöll](http://neopostmodern.com/), ein Projekt von [THIS IS FAKE](http://thisisfake.team/), in Kooperation mit [pl](http://www.plusnull.org/)[usnull e.V.](http://www.plusnull.org/), gefördert durch die [innogy Stiftung](https://innogy-stiftung.com/).
+„In VR we trust“, kuratiert von [Daniel Hengst](http://danielhengst.de/) & [Clemens Schöll](http://neopostmodern.com/), ein Projekt von [THIS IS FAKE](http://thisisfake.team/), in Kooperation mit [pl](http://www.plusnull.org/)[usnull e.V.](http://www.plusnull.org/), gefördert durch die [innogy Stiftung](https://innogy-stiftung.com/), Website von [alex h](https://alexh.name).
