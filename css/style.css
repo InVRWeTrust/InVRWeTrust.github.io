@@ -8,7 +8,7 @@ input {
   -moz-appearance: none;
   appearance: none;
 }
-#orderForm input[type=text], #orderForm input[type=email] {
+input:matches([type="password"], [type="search"], [type=email], [type=text]) {
   font-size: 100%;
   font-family: inherit;
   border: none;
