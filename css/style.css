@@ -7,9 +7,13 @@ body {
   border: none;
   border-bottom: black solid 1px;
 }
+#orderForm input::placeholder {
+  color: lightgray;
+}
 #orderForm input.readonly {
   border: none;
   cursor: not-allowed;
+  border-bottom: lightgray solid 1px;
 }
 #orderForm input[type=submit] {
   display: block;
