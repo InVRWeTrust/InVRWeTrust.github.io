@@ -5,13 +5,13 @@ form sup {
 #order-fold pre {
   display: none;
 }
-.md-orderok {
+.orderMsgs {
   visibility: hidden;
+  display: none;
   font-size: 125%;
 }
-#orderResponse {
-  visibility: hidden;
-  margin-left: 1em;
+.md-ordererror, #orderResponse {
+  color: red;
 }
 .ham {
   width: 20%;

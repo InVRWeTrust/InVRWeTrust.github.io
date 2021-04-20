@@ -4,7 +4,7 @@ Do you also want to ride on the virtual reality hypetrain? Do you dream of a mix
 <br><br>
 The two-part exhibition, planned for the NRW Forum in Düsseldorf and the Nudel in Zeitz, aims to reflect on the current status and future value of virtual reality as an artistic tool or medium on the basis of four critical positions and at the same time to enable a public discussion about it.
 <br><br>
-Due to the effects of the pandemic and the uncertain situation for visitors to the exhibition, we decided not to hold the exhibition in the planned venues in Düsseldorf and Zeitz. Instead, a postal-virtual adaptation will open on May 1, 2021. To be notified as soon as the admission package can be ordered, sign up for [our newsletter](#subscribe-fold)!
+Due to the effects of the pandemic and the uncertain situation for visitors to the exhibition, we decided not to hold the exhibition in the planned venues in Düsseldorf and Zeitz. Instead, a postal-virtual adaptation will open on May 5th, 2021. To be notified as soon as the admission package can be ordered, sign up for [our newsletter](#subscribe-fold)!
 
 "In VR we trust"  
 curated by [Clemens Schöll](http://neopostmodern.com/) & [Daniel Hengst](http://danielhengst.de/)  

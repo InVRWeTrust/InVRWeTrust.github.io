@@ -4,7 +4,7 @@ Willst Du auch mitfahren auf dem Virtual-Reality-Hypetrain? Träumst du von eine
 <br><br>
 Die zweiteilige Ausstellung, geplant im NRW Forum in Düsseldorf und in der Nudelfabrik in Zeitz, will anhand von vier kritischen Positionen den aktuellen Stand und zukünftigen Wert von Virtual Reality als künstlerischem Werkzeug oder Medium reflektieren und zugleich eine öffentliche Diskussion darüber ermöglichen.
 <br><br>
-Durch die Auswirkungen der Pandemie und die unsichere Situation für Besucher:innen der Ausstellung, haben wir uns entschieden die Ausstellung nicht in den geplanten Räumlichkeiten in Düsseldorf und Zeitz stattfinden zu lassen. Stattdessen eröffnet am 1. Mai 2021 eine postalisch-virtuelle Adaptation. Um benachrichtigt zu werden, sobald das Eintrittspaket bestellt werden kann, trage dich in [unseren Newsletter](#subscribe-fold) ein!
+Durch die Auswirkungen der Pandemie und die unsichere Situation für Besucher:innen der Ausstellung, haben wir uns entschieden die Ausstellung nicht in den geplanten Räumlichkeiten in Düsseldorf und Zeitz stattfinden zu lassen. Stattdessen eröffnet am 5. Mai 2021 eine postalisch-virtuelle Adaptation. Um benachrichtigt zu werden, sobald das Eintrittspaket bestellt werden kann, trage dich in [unseren Newsletter](#subscribe-fold) ein!
 
 "In VR we trust"  
 kuratiert von [Clemens Schöll](http://neopostmodern.com/) & [Daniel Hengst](http://danielhengst.de/)  
