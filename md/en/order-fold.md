@@ -47,7 +47,7 @@ A Cardboard is a virtual reality headset made of cardboard into which your smart
 **Does your exhibition work with my smartphone?**
 Most likely yes. To play the 360° videos on the Cardboard, you need the YouTube app on Android and iOS. On Android you also need the Cardboard app. Don't worry, we will give you installation instructions at the beginning of the exhibition.  
 If your cell phone is very old and you don't know whether it is powerful enough, you can test whether it can play [this video](https://youtu.be/XPhmpfiWEEw) smoothly. To do this, you have to open the video in the YouTube app (not in the browser) and then click the cardboard symbol <object data="./graphics/google-cardboard.svg" type="image/svg+xml" width="24" height="13">
-</object>!
+</object> !
 
 **I don't have a smartphone. Can I still see the exhibition?**
 Unfortunately, no. But maybe you know someone who can lend you a device?
