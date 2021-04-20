@@ -2,6 +2,13 @@ form sup {
   color: gray;
   font-size: 60%;
 }
+#order-fold pre {
+  display: none;
+}
+.md-orderok {
+  visibility: hidden;
+  font-size: 125%;
+}
 #orderResponse {
   visibility: hidden;
   margin-left: 1em;

@@ -3,7 +3,7 @@
 Bestelle dir hier die "In VR we trust" Ausstellung kostenlos<sup>1</sup> nach Hause: Du bekommst Anfang Mai eine limitierte Cardboard-Virtual-Reality-Brille zugeschickt.  
 In Kombination mit einem Smartphone als Display, einer Ausstellungsführung auf einem Computer/Tablet und einer zuverlässigen Internetverbindung kannst du unsere Ausstellung ab 1. Mai individuell besuchen.
 
- <form action="https://data.invr.info/users" method="PUT" name="order" id="order">
+ <form action="https://data.invr.info/users" method="PUT" name="order" id="orderForm">
     <p>
       <input type="text" name="firstname" id="firstname" placeholder="Vorname" required>
       <input type="text" name="lastname" id="lastname" placeholder="Nachname" required><br>
@@ -16,7 +16,7 @@ In Kombination mit einem Smartphone als Display, einer Ausstellungsführung auf 
       <input type="text" name="country" id="country" placeholder="Deutschland" readonly><sup>2</sup>
     </p>
     <p>
-      <input type="text" name="email" id="email" placeholder="E-Mail" required><sup>3</sup>
+      <input type="email" name="email" id="email" placeholder="E-Mail" required><sup>3</sup>
     </p>
     <p>
       <input type="checkbox" name="newsletter" id="newsletter">
@@ -27,6 +27,8 @@ In Kombination mit einem Smartphone als Display, einer Ausstellungsführung auf 
     </div>
    <div><input type="submit"><span id="orderResponse"></span></div>
 </form> 
+
+<div class="md-orderok"></div>
 
 <sup>1</sup> Wir bitten euch, pro Haushalt nur ein Cardboard zu bestellen. Wir haben nur eine begrenzte Stückzahl und möchten möglichst vielen Menschen die Teilhabe ermöglichen.
 

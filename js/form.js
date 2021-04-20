@@ -1,5 +1,5 @@
 function order() {
-	$('#order').on('submit',function(e){
+	$('#orderForm').on('submit',function(e){
 		e.preventDefault();
 		if ($('#ham3').is(':checked')) {
 			var object = {};
@@ -26,15 +26,22 @@ function order() {
 				data       : json,
 				contentType: 'application/json',
 				success    : function() {
-					$("#orderResponse").css('color','green');
+					//$("#orderResponse").css('color','green');
+					$("#orderForm").hide("slow", function() {
+						$("div.md-orderok").css('visibility','visible');
+						$("div.md-orderok").show("slow")
+					});
 				},
-				error      : function() {
+				error      : function(data) {
 					$("#orderResponse").css('color','red');
+					$("#orderResponse").empty().append(data.responseText).css('visibility','hidden');
 				},
 				complete   : function(data) {
-					$("#orderResponse").empty().append(data.responseText).css('visibility','visible');
+					//console.log(data)
+				//	$("#orderResponse").empty().append(data.responseText).css('visibility','visible');
 				}
 			});
+			//console.log(response);
 		} else {
 			$("#ham").css('background-color','lightgray');
 			setTimeout(function(){

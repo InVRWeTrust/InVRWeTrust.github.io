@@ -3,7 +3,7 @@
 Order the "In VR we trust" exhibition here for free<sup>1</sup> to your home: At the beginning of May you will receive a limited edition Cardboard virtual reality headset.  
 In combination with a smartphone as a display, a guided tour of the exhibition on a computer / tablet and a reliable internet connection, you can visit our exhibition individually from May 1st.
 
- <form action="https://data.invr.info/users" method="PUT" name="order" id="order">
+ <form action="https://data.invr.info/users" method="PUT" name="order" id="orderForm">
     <p>
       <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
       <input type="text" name="lastname" id="lastname" placeholder="Last Name" required><br>
@@ -16,7 +16,7 @@ In combination with a smartphone as a display, a guided tour of the exhibition o
       <input type="text" name="country" id="country" placeholder="Germany" readonly><sup>2</sup>
     </p>
     <p>
-      <input type="text" name="email" id="email" placeholder="Email" required><sup>3</sup>
+      <input type="email" name="email" id="email" placeholder="Email" required><sup>3</sup>
     </p>
     <p>
       <input type="checkbox" name="newsletter" id="newsletter">
@@ -27,6 +27,8 @@ In combination with a smartphone as a display, a guided tour of the exhibition o
     </div>
    <div><input type="submit"><span id="orderResponse"></span></div>
 </form>	
+
+<div class="md-orderok"></div>
 
 <sup>1</sup> We ask you to order only one Cardboard per household. We only have a limited number and want to enable as many people as possible to view the exhibition.
 

@@ -63,6 +63,7 @@ function sd(target, dependents, initial) {
       var html      = converter.makeHtml(text);
 
       function sdAct(target){
+        //console.log(target)
         $(target).each(function( index ) {
           $(this).html(html);
         });
@@ -77,6 +78,7 @@ function sd(target, dependents, initial) {
           dependents.forEach(function(item, index, array) {
             textsN++;
             sd(item, [], initial);
+            //console.log(item)
           });
         }
         textsI++;
@@ -87,17 +89,23 @@ function sd(target, dependents, initial) {
             $(this).find("p").replaceWith(cnt);
           });
           if (initial) {
-            readSavedConsent();
-            order();
-            hamTest();
-            setTimeout(function(){
-              scrollToo(window.location.hash, false);
-            }, 500);
+            contentsDone().done(function(){
+              setTimeout(function(){
+                scrollToo(window.location.hash, false);
+              }, 500);
+            });
           }
           intraLinks();
         }
       });
   });
+}
+
+function contentsDone() {
+  readSavedConsent();
+  order();
+  hamTest();
+  return $.ajax()
 }
 
 function uniqId() {

@@ -1,1 +1,1 @@
-[vorbestellen &darr;](#order-fold)
+[vorbestellen &larr;](#order-fold)
