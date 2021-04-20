@@ -39,8 +39,6 @@ In combination with a smartphone as a display, a guided tour of the exhibition o
 <p><sup>3</sup> If you do not subscribe to the newsletter, the e-mail address will only be used to confirm your address data (to prevent spam) and a one-time invitation to the talks.</p>
 </div>
 
-<br><br>
-
 ### Frequently asked questions
 
 **What is a cardboard?**
