@@ -105,6 +105,7 @@ function contentsDone() {
   readSavedConsent();
   order();
   hamTest();
+  foldFaq();
   return $.ajax()
 }
 

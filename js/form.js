@@ -90,3 +90,13 @@ function shuffle(array) {
 
   return array;
 }
+
+function foldFaq() {
+	$( "#order-fold h3 + p" ).hide();
+	$( "#order-fold h3 + p" ).nextAll().hide();
+
+	$( "#order-fold h3" ).click(function() {
+		$( "#order-fold h3 + p" ).toggle("slow");
+		$( "#order-fold h3 + p" ).nextAll().toggle("slow");
+	});
+}

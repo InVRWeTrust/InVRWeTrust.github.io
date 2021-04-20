@@ -453,7 +453,7 @@ div.consent, div.fold {
   max-width: 90vw;
 }
 
-div.fold h2 {
+div.fold h2, div.fold h3 {
   cursor: context-menu;
   margin: 0;
   display: block;
