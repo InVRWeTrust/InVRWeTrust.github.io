@@ -90,6 +90,8 @@ function sd(target, dependents, initial) {
           });
           if (initial) {
             contentsDone().done(function(){
+              $('body').css('filter', 'initial');
+              $('body').removeClass('progress');
               setTimeout(function(){
                 scrollToo(window.location.hash, false);
               }, 500);

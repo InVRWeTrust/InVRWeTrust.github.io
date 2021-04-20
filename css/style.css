@@ -1,3 +1,6 @@
+body {
+  filter: blur(10px);
+}
 #orderForm input[type=text], #orderForm input[type=email] {
   font-size: 100%;
   font-family: inherit;
