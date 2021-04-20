@@ -104,9 +104,9 @@ var questions = [
         <p> \n \
           <span class="md-no slider-label"></span> \n'
           + sliderConstructor('trust', 'yes') +
-          '<p> \n \
-            <button class="md-saveandclose" data-slider="trust" onclick=saveTrust(this)>&#10005;</button> \n \
-          </p> \n \
+        '</p> \n \
+        <p> \n \
+          <button class="md-saveandclose" data-slider="trust" onclick=saveTrust(this)>&#10005;</button> \n \
         </p> \n \
       </div>'
   },
@@ -119,9 +119,9 @@ var questions = [
         <p> \n \
           <span class="md-no slider-label"></span> \n'
           + sliderConstructor('q1', 'yes') +
-          '<p> \n \
-            <button class="md-saveandclose" data-slider="q1" onclick=saveTrust(this)>&#10005;</button> \n \
-          </p> \n \
+        '</p> \n \
+        <p> \n \
+          <button class="md-saveandclose" data-slider="trust" onclick=saveTrust(this)>&#10005;</button> \n \
         </p> \n \
       </div>'
   },
@@ -134,9 +134,9 @@ var questions = [
         <p> \n \
           <span class="md-no slider-label"></span> \n'
           + sliderConstructor('q2', 'yes') +
-          '<p> \n \
-            <button class="md-saveandclose" data-slider="q2" onclick=saveTrust(this)>&#10005;</button> \n \
-          </p> \n \
+         '</p> \n \
+        <p> \n \
+          <button class="md-saveandclose" data-slider="trust" onclick=saveTrust(this)>&#10005;</button> \n \
         </p> \n \
       </div>'
   },
@@ -149,9 +149,9 @@ var questions = [
         <p> \n \
           <span class="md-no slider-label"></span> \n'
           + sliderConstructor('q3', 'yes') +
-          '<p> \n \
-            <button class="md-saveandclose" data-slider="q3" onclick=saveTrust(this)>&#10005;</button> \n \
-          </p> \n \
+        '</p> \n \
+        <p> \n \
+          <button class="md-saveandclose" data-slider="trust" onclick=saveTrust(this)>&#10005;</button> \n \
         </p> \n \
       </div>'
   },
@@ -164,9 +164,9 @@ var questions = [
         <p> \n \
           <span class="md-no slider-label"></span> \n'
           + sliderConstructor('q4', 'yes') +
-          '<p> \n \
-            <button class="md-saveandclose" data-slider="q4" onclick=saveTrust(this)>&#10005;</button> \n \
-          </p> \n \
+        '</p> \n \
+        <p> \n \
+          <button class="md-saveandclose" data-slider="trust" onclick=saveTrust(this)>&#10005;</button> \n \
         </p> \n \
       </div>'
   },
@@ -179,9 +179,9 @@ var questions = [
         <p> \n \
           <span class="md-no slider-label"></span> \n'
           + sliderConstructor('q5', 'yes') +
-          '<p> \n \
-            <button class="md-saveandclose" data-slider="q5" onclick=saveTrust(this)>&#10005;</button> \n \
-          </p> \n \
+        '</p> \n \
+        <p> \n \
+          <button class="md-saveandclose" data-slider="trust" onclick=saveTrust(this)>&#10005;</button> \n \
         </p> \n \
       </div>'
   },
@@ -194,9 +194,9 @@ var questions = [
         <p> \n \
           <span class="md-no slider-label"></span> \n'
           + sliderConstructor('q6', 'yes') +
-          '<p> \n \
-            <button class="md-saveandclose" data-slider="q6" onclick=saveTrust(this)>&#10005;</button> \n \
-          </p> \n \
+        '</p> \n \
+        <p> \n \
+          <button class="md-saveandclose" data-slider="trust" onclick=saveTrust(this)>&#10005;</button> \n \
         </p> \n \
       </div>'
   }

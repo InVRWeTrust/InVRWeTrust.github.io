@@ -549,7 +549,7 @@ body div:not(.fold).consent:not(#dataconsent) {
   position: sticky;
   top: 1em;
   bottom: revert;
-  max-width: 60ex;
+  max-width: 40ex;
 }
 body div:not(.fold).consent:not(#dataconsent) p {
   padding-right: 3.5ex;
