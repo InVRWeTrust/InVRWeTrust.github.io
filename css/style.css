@@ -213,13 +213,6 @@ div.window:not(.sticky):not(.consent).mid-small {
   margin-right: 0;
   margin-left: 20%;
 }
-body div:not(.fold).consent {
-  left: 50%;
-  transform: translateX(-50%);
-}
-body div:hover:not(.fold).consent {
-  transform: translateX(calc(-50% - 0.2em)) translateY(-0.2em);
-}
 div.window p, div.fold p {
   padding: 1ex;
 }
@@ -451,6 +444,7 @@ body div:not(.fold).consent {
   font-size: 80%;
   bottom: 2vh;
   max-height: 80vh;
+  margin-left: 1em;
 }
 
 body div#dataconsent {
@@ -552,9 +546,12 @@ div.trustQ span.slider-label {
 }
 body div:not(.fold).consent:not(#dataconsent) {
   position: sticky;
-  transform: translateX(-100%);
-  bottom: initial;
-  top: 50vh;
+  top: 1em;
+  bottom: revert;
+  max-width: 60ex;
+}
+body div:not(.fold).consent:not(#dataconsent) p {
+  padding-right: 3.5ex;
 }
 body div:not(.fold).consent:not(#dataconsent) .consentInfo {
   font-size: 150%;
