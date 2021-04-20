@@ -5,18 +5,18 @@ In Kombination mit einem Smartphone als Display, einer Ausstellungsführung auf 
 
  <form action="https://data.invr.info/users" method="PUT" name="order" id="orderForm">
     <p>
-      <input type="text" name="firstname" id="firstname" placeholder="Vorname" required>
-      <input type="text" name="lastname" id="lastname" placeholder="Nachname" required><br>
-      <input type="text" name="additionalAddress" id="additionalAddress" placeholder="Adresszusatz (opt.)">
+      <input type="text" name="firstname" id="firstname" placeholder="Vorname" class="half" required>
+      <input type="text" name="lastname" id="lastname" placeholder="Nachname" class="half" required><br>
+      <input type="text" name="additionalAddress" id="additionalAddress" placeholder="Adresszusatz (opt.)" class="full">
     </p>
     <p>
-      <input type="text" name="streetAndHouseNumber" id="streetAndHouseNumber" placeholder="Straße & Hausnummer" required><br>
-      <input type="text" name="postalCode" id="postalCode" placeholder="PLZ" pattern="[0-9]{5}" required>
-      <input type="text" name="city" id="city" placeholder="Stadt" required><br>
-      <input type="text" name="country" id="country" placeholder="Deutschland" readonly><sup>2</sup>
+      <input type="text" name="streetAndHouseNumber" id="streetAndHouseNumber" placeholder="Straße & Hausnummer" class="full" required><br>
+      <input type="text" name="postalCode" id="postalCode" placeholder="PLZ" pattern="[0-9]{5}" class="half" required>
+      <input type="text" name="city" id="city" placeholder="Stadt" class="half" required><br>
+      <input type="text" name="country" id="country" placeholder="Deutschland" class="full readonly" readonly><sup>2</sup>
     </p>
     <p>
-      <input type="email" name="email" id="email" placeholder="E-Mail" required><sup>3</sup>
+      <input type="email" name="email" id="email" placeholder="E-Mail" class="full" required><sup>3</sup>
     </p>
     <p>
       <input type="checkbox" name="newsletter" id="newsletter">
@@ -25,19 +25,19 @@ In Kombination mit einem Smartphone als Display, einer Ausstellungsführung auf 
     <div id="ham">
       <p>Um Spam zu vermeiden, wähle bitte das Cardboard:</p>
     </div>
-   <div><input type="submit" id="orderSubmit"><span id="orderResponse"></span></div>
+   <input type="submit" id="orderSubmit" value="Ausstellung bestellen">
 </form> 
 
 <div class="orderMsgs md-orderok"></div>
 <div class="orderMsgs md-ordererror"></div><span class="orderMsgs" id="orderResponse"></span>
 
-<sup>1</sup> Wir bitten euch, pro Haushalt nur ein Cardboard zu bestellen. Wir haben nur eine begrenzte Stückzahl und möchten möglichst vielen Menschen die Teilhabe ermöglichen.
+<div class="footnotes">
+<p><sup>1</sup> Wir bitten euch, pro Haushalt nur ein Cardboard zu bestellen. Wir haben nur eine begrenzte Stückzahl und möchten möglichst vielen Menschen die Teilhabe ermöglichen.</p>
 
-<sup>2</sup> Aus finanziellen Gründen können wir leider ausschließlich innerhalb Deutschlands versenden (inklusive Inseln). Es ist administrativ leider nicht möglich die Mehrkosten für den Auslandsversand selbst zu zahlen. Falls du aus dem Ausland teilhaben möchtest, organisiere dir bitte eine andere Cardboard (siehe auch *Häufige Fragen: Kann ich mein schon vorhandenes Cardboard verwenden?*).
+<p><sup>2</sup> Aus finanziellen Gründen können wir leider ausschließlich innerhalb Deutschlands versenden (inklusive Inseln). Es ist administrativ leider nicht möglich die Mehrkosten für den Auslandsversand selbst zu zahlen. Falls du aus dem Ausland teilhaben möchtest, organisiere dir bitte eine andere Cardboard (siehe auch *Häufige Fragen: Kann ich mein schon vorhandenes Cardboard verwenden?*).</p>
 
-<sup>3</sup> Die E-Mail Adresse wird, sofern du dich nicht in den Newsletter einträgst, ausschließlich zur Bestätigung deiner Adressdaten (um Spam zu verhindern) und einer einmaligen Einladung zum Rahmenprogramm verwendet.
-
-<br><br>
+<p><sup>3</sup> Die E-Mail Adresse wird, sofern du dich nicht in den Newsletter einträgst, ausschließlich zur Bestätigung deiner Adressdaten (um Spam zu verhindern) und einer einmaligen Einladung zum Rahmenprogramm verwendet.</p>
+</div>
 
 ### Häufige Fragen
 

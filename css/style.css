@@ -1,3 +1,23 @@
+#orderForm input[type=text], #orderForm input[type=email] {
+  font-size: 100%;
+  font-family: inherit;
+  border: none;
+  border-bottom: black solid 1px;
+}
+#orderForm input.readonly {
+  border: none;
+  cursor: not-allowed;
+}
+#orderForm input[type=submit] {
+  display: block;
+  margin-left: 1ex;
+}
+input.half {
+  width: calc(100% / 2 - 16px);
+}
+input.full {
+  width: calc(100% - 1em);
+}
 .progress, input[type=submit].progress {
   animation: gradient 3s ease infinite;
   background: linear-gradient(-45deg, red 0%, black 50%, #1AB7EA 100%);
@@ -17,10 +37,12 @@ input[type=submit] {
     background-position: 0% 50%;
   }
 }
-
-form sup {
-  color: gray;
-  font-size: 60%;
+div.footnotes {
+  text-align: left;
+  font-size: 80%;
+}
+#order-fold div.footnotes p {
+  margin: 0;
 }
 #order-fold pre {
   display: none;
@@ -34,11 +56,17 @@ form sup {
   color: red;
 }
 .ham {
-  width: 20%;
+  width: calc((100% / 2 - 16px) / 3);
 }
 #ham {
   transition: background-color 1s;
-  padding: 1em;
+  text-align: left;
+}
+#ham input {
+    display: none;
+}
+#ham input[type="radio"]:checked + label {
+    border-top: black 1px solid;
 }
 /* vietnamese */
 @font-face {

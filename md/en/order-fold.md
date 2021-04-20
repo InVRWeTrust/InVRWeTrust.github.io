@@ -5,18 +5,18 @@ In combination with a smartphone as a display, a guided tour of the exhibition o
 
  <form action="https://data.invr.info/users" method="PUT" name="order" id="orderForm">
     <p>
-      <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
-      <input type="text" name="lastname" id="lastname" placeholder="Last Name" required><br>
-      <input type="text" name="additionalAddress" id="additionalAddress" placeholder="Additional Address (opt.)">
+      <input type="text" name="firstname" id="firstname" placeholder="First Name" class="half" required>
+      <input type="text" name="lastname" id="lastname" placeholder="Last Name" class="half" required><br>
+      <input type="text" name="additionalAddress" id="additionalAddress" placeholder="Additional Address (opt.)" class="full">
     </p>
     <p>
-      <input type="text" name="streetAndHouseNumber" id="streetAndHouseNumber" placeholder="Street and House Number" required><br>
-      <input type="text" name="postalCode" id="postalCode" placeholder="Postal Code" pattern="[0-9]{5}" required>
-      <input type="text" name="city" id="city" placeholder="City" required><br>
-      <input type="text" name="country" id="country" placeholder="Germany" readonly><sup>2</sup>
+      <input type="text" name="streetAndHouseNumber" id="streetAndHouseNumber" placeholder="Street and House Number" class="full" required><br>
+      <input type="text" name="postalCode" id="postalCode" placeholder="Postal Code" pattern="[0-9]{5}" class="half" required>
+      <input type="text" name="city" id="city" placeholder="City" class="half" required><br>
+      <input type="text" name="country" id="country" placeholder="Germany" class="full readonly" readonly><sup>2</sup>
     </p>
     <p>
-      <input type="email" name="email" id="email" placeholder="Email" required><sup>3</sup>
+      <input type="email" name="email" id="email" placeholder="Email" class="full" required><sup>3</sup>
     </p>
     <p>
       <input type="checkbox" name="newsletter" id="newsletter">
@@ -25,17 +25,19 @@ In combination with a smartphone as a display, a guided tour of the exhibition o
     <div id="ham">
     	<p>To prevent spam, please select the Cardboard:</p>
     </div>
-   <div><input type="submit" id="orderSubmit"><span id="orderResponse"></span></div>
+   <input type="submit" id="orderSubmit" value="Place exhibition order">
 </form>	
 
 <span class="orderMsgs sd-nop md-orderok"></span>
 <span class="orderMsgs sd-nop md-ordererror"></span><span class="orderMsgs sd-nop" id="orderResponse"></span>
 
-<sup>1</sup> We ask you to order only one Cardboard per household. We only have a limited number and want to enable as many people as possible to view the exhibition.
+<div class="footnotes">
+<p><sup>1</sup> We ask you to order only one Cardboard per household. We only have a limited number and want to enable as many people as possible to view the exhibition.</p>
 
-<sup>2</sup> For financial reasons, we can unfortunately only ship within Germany (including islands). Unfortunately, it is administratively not possible to pay the additional costs for international shipping yourself. If you would like to participate from abroad, please organize a different Cardboard viewer (see also Frequently asked questions: Can I use my existing Cardboard viewer?).
+<p><sup>2</sup> For financial reasons, we can unfortunately only ship within Germany (including islands). Unfortunately, it is administratively not possible to pay the additional costs for international shipping yourself. If you would like to participate from abroad, please organize a different Cardboard viewer (see also Frequently asked questions: Can I use my existing Cardboard viewer?).</p>
 
-<sup>3</sup> If you do not subscribe to the newsletter, the e-mail address will only be used to confirm your address data (to prevent spam) and a one-time invitation to the talks.
+<p><sup>3</sup> If you do not subscribe to the newsletter, the e-mail address will only be used to confirm your address data (to prevent spam) and a one-time invitation to the talks.</p>
+</div>
 
 <br><br>
 

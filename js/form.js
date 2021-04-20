@@ -2,8 +2,8 @@ function order() {
 	$('#orderForm').on('submit',function(e){
 		e.preventDefault();
 		$('.orderMsgs').hide();
-		$('#orderSubmit').addClass('progress');
 		if ($('#ham3').is(':checked')) {
+			$('#orderSubmit').addClass('progress');
 			var object = {};
 			const formData = new FormData(e.target);
 			var object = {};
