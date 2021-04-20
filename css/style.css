@@ -1,3 +1,25 @@
+form sup {
+  color: gray;
+  font-size: 60%;
+}
+#order-fold pre {
+  display: none;
+}
+.md-orderok {
+  visibility: hidden;
+  font-size: 125%;
+}
+#orderResponse {
+  visibility: hidden;
+  margin-left: 1em;
+}
+.ham {
+  width: 20%;
+}
+#ham {
+  transition: background-color 1s;
+  padding: 1em;
+}
 /* vietnamese */
 @font-face {
   font-family: 'Inconsolata';
@@ -563,7 +585,7 @@ div.window.placeholder.youtube span.placeholder-fill {
     height: 100%;
 }
 
-button, input.button {
+button, input.button, input[type=submit] {
   border-style: initial;
   background: black;
   color: white;

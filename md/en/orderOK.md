@@ -1,0 +1,1 @@
+**Thank you for your order! We've sent you an e-mail – to confirm your address please check your inbox and open the confirmation link.**

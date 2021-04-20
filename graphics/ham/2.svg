@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 100 100"
+   version="1.1"
+   x="0px"
+   y="0px"
+   id="svg74"
+   sodipodi:docname="2.svg"
+   width="100"
+   height="100"
+   inkscape:version="1.0.2 (e86c8708, 2021-01-15)">
+  <metadata
+     id="metadata80">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Iron</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs78" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1080"
+     inkscape:window-height="1089"
+     id="namedview76"
+     showgrid="false"
+     inkscape:zoom="4.032"
+     inkscape:cx="31.353152"
+     inkscape:cy="22.647186"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg74" />
+  <title
+     id="title58">Iron</title>
+  <desc
+     id="desc60">Created with Sketch.</desc>
+  <g
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     id="g68">
+    <g
+       fill="#000000"
+       fill-rule="nonzero"
+       id="g66">
+      <g
+         transform="translate(14,27)"
+         id="g64">
+        <path
+           d="M 53.116782,1.5 H 17.366179 c -0.828427,0 -1.5,-0.67157287 -1.5,-1.5 0,-0.82842713 0.671573,-1.5 1.5,-1.5 h 36.777378 c 0.618957,0 1.174355,0.38018 1.39834,0.95718746 L 73.39834,45.457188 C 73.779992,46.440362 73.054652,47.5 72,47.5 H 0 c -0.98355394,0 -1.7009597,-0.93069 -1.450585,-1.881842 4.4855609,-17.040268 13.117719,-25.78463 25.800548,-25.78463 h 35.883593 z m 8.281324,21.333528 H 24.349963 C 13.673271,22.833528 6.2426255,29.923604 1.9732671,44.5 H 69.808674 Z"
+           id="path62" />
+      </g>
+    </g>
+  </g>
+</svg>

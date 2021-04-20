@@ -6,6 +6,13 @@
 
 Die durch die Seitenbetreiber:innen erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung der jeweiligen Autor:innen bzw. Ersteller:innen. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht von den Betreiber:innen erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
 
+Symbole zur Spam-Vermeidung:
+- No dry cleaning
+- ironing
+- VR Cardboard
+
+by Daniel Falk from the Noun Project
+
 ### Datenschutz
 
 Wir nehmen den Schutz deiner personenbezogenen Daten sehr ernst. Wir möchten, dass du weißt, wann wir welche Daten erheben und wie wir sie verwenden.

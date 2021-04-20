@@ -1,0 +1,1 @@
+**Danke für deine Bestellung! Wir haben dir eine E-Mail geschickt – um deine Adresse zu bestätigen, schau bitte in dein Postfach und öffne den Bestätigungslink.**

@@ -1,1 +1,1 @@
-[abonnieren &darr;](#subscribe-fold)
+[vorbestellen &larr;](#order-fold)

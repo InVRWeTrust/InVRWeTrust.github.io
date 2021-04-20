@@ -1,1 +1,1 @@
-[subscribe &darr;](#subscribe-fold)
+[pre-order &larr;](#order-fold)

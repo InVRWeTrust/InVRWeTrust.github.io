@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 100 100"
+   version="1.1"
+   x="0px"
+   y="0px"
+   id="svg50"
+   sodipodi:docname="1.svg"
+   width="100"
+   height="100"
+   inkscape:version="1.0.2 (e86c8708, 2021-01-15)">
+  <metadata
+     id="metadata56">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Dry Clean6</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs54" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="957"
+     inkscape:window-height="1039"
+     id="namedview52"
+     showgrid="false"
+     inkscape:zoom="2.8510545"
+     inkscape:cx="18.040779"
+     inkscape:cy="37.897739"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg50" />
+  <title
+     id="title28">Dry Clean6</title>
+  <desc
+     id="desc30">Created with Sketch.</desc>
+  <g
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     id="g44">
+    <g
+       fill="#000000"
+       id="g42">
+      <g
+         transform="translate(22,21)"
+         id="g36">
+        <rect
+           transform="rotate(45,27.930718,28.928243)"
+           x="-10.069283"
+           y="27.374672"
+           width="76"
+           height="3.1071429"
+           rx="1.5535715"
+           id="rect32" />
+        <rect
+           transform="rotate(-45,27.930718,28.928243)"
+           x="-10.069283"
+           y="27.374672"
+           width="76"
+           height="3.1071429"
+           rx="1.5535715"
+           id="rect34" />
+      </g>
+      <g
+         transform="translate(22,22)"
+         fill-rule="nonzero"
+         id="g40">
+        <path
+           d="M 28,57.5 C 11.7076,57.5 -1.5,44.2924 -1.5,28 -1.5,11.7076 11.7076,-1.5 28,-1.5 44.2924,-1.5 57.5,11.7076 57.5,28 57.5,44.2924 44.2924,57.5 28,57.5 Z m 0,-3 C 42.635546,54.5 54.5,42.635546 54.5,28 54.5,13.364454 42.635546,1.5 28,1.5 13.364454,1.5 1.5,13.364454 1.5,28 1.5,42.635546 13.364454,54.5 28,54.5 Z"
+           id="path38" />
+      </g>
+    </g>
+  </g>
+</svg>
