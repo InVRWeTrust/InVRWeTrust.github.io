@@ -121,7 +121,7 @@ var questions = [
           + sliderConstructor('q1', 'yes') +
         '</p> \n \
         <p> \n \
-          <button class="md-saveandclose" data-slider="trust" onclick=saveTrust(this)>&#10005;</button> \n \
+          <button class="md-saveandclose" data-slider="q1" onclick=saveTrust(this)>&#10005;</button> \n \
         </p> \n \
       </div>'
   },
@@ -136,7 +136,7 @@ var questions = [
           + sliderConstructor('q2', 'yes') +
          '</p> \n \
         <p> \n \
-          <button class="md-saveandclose" data-slider="trust" onclick=saveTrust(this)>&#10005;</button> \n \
+          <button class="md-saveandclose" data-slider="q2" onclick=saveTrust(this)>&#10005;</button> \n \
         </p> \n \
       </div>'
   },
@@ -151,7 +151,7 @@ var questions = [
           + sliderConstructor('q3', 'yes') +
         '</p> \n \
         <p> \n \
-          <button class="md-saveandclose" data-slider="trust" onclick=saveTrust(this)>&#10005;</button> \n \
+          <button class="md-saveandclose" data-slider="q3" onclick=saveTrust(this)>&#10005;</button> \n \
         </p> \n \
       </div>'
   },
@@ -166,7 +166,7 @@ var questions = [
           + sliderConstructor('q4', 'yes') +
         '</p> \n \
         <p> \n \
-          <button class="md-saveandclose" data-slider="trust" onclick=saveTrust(this)>&#10005;</button> \n \
+          <button class="md-saveandclose" data-slider="q4" onclick=saveTrust(this)>&#10005;</button> \n \
         </p> \n \
       </div>'
   },
@@ -181,7 +181,7 @@ var questions = [
           + sliderConstructor('q5', 'yes') +
         '</p> \n \
         <p> \n \
-          <button class="md-saveandclose" data-slider="trust" onclick=saveTrust(this)>&#10005;</button> \n \
+          <button class="md-saveandclose" data-slider="q5" onclick=saveTrust(this)>&#10005;</button> \n \
         </p> \n \
       </div>'
   },
@@ -196,7 +196,7 @@ var questions = [
           + sliderConstructor('q6', 'yes') +
         '</p> \n \
         <p> \n \
-          <button class="md-saveandclose" data-slider="trust" onclick=saveTrust(this)>&#10005;</button> \n \
+          <button class="md-saveandclose" data-slider="q6" onclick=saveTrust(this)>&#10005;</button> \n \
         </p> \n \
       </div>'
   }
