@@ -8,11 +8,12 @@ input {
   -moz-appearance: none;
   appearance: none;
 }
-input:matches([type="password"], [type="search"], [type=email], [type=text]) {
+input[type="password"], input[type="search"], input[type="email"], input[type="text"], input[type="checkbox"] {
   font-size: 100%;
   font-family: inherit;
   border: none;
   border-bottom: black solid 1px;
+  padding: 1px;
 }
 #orderForm input::placeholder {
   color: lightgray;
@@ -30,10 +31,13 @@ input:matches([type="password"], [type="search"], [type=email], [type=text]) {
   background-size: 400% 400%;
 }
 input.half {
-  width: calc(100% / 2 - 16px);
+  width: calc(48% - 0.5ch - 1px);
+}
+input.half.firstHalf {
+  margin-right: 1ch;
 }
 input.full {
-  width: calc(100% - 1em);
+  width: calc(96%);
 }
 .progress, input[type=submit].progress {
   animation: gradient 3s ease infinite;

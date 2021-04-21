@@ -5,22 +5,23 @@ In Kombination mit einem Smartphone als Display, einer Ausstellungsführung auf 
 
  <form action="https://data.invr.info/users" method="PUT" name="order" id="orderForm">
     <p>
-      <input type="text" name="firstname" id="firstname" placeholder="Vorname" class="half" required>
-      <input type="text" name="lastname" id="lastname" placeholder="Nachname" class="half" required><br>
+      <input type="text" name="firstname" id="firstname" placeholder="Vorname" class="half firstHalf" required><input type="text" name="lastname" id="lastname" placeholder="Nachname" class="half" required><br>
       <input type="text" name="additionalAddress" id="additionalAddress" placeholder="Adresszusatz (opt.)" class="full">
     </p>
     <p>
       <input type="text" name="streetAndHouseNumber" id="streetAndHouseNumber" placeholder="Straße & Hausnummer" class="full" required><br>
-      <input type="text" name="postalCode" id="postalCode" placeholder="PLZ" pattern="[0-9]{5}" class="half" required>
-      <input type="text" name="city" id="city" placeholder="Stadt" class="half" required><br>
+      <input type="text" name="postalCode" id="postalCode" placeholder="PLZ" pattern="[0-9]{5}" class="half firstHalf" required><input type="text" name="city" id="city" placeholder="Stadt" class="half" required><br>
       <input type="text" name="country" id="country" placeholder="Deutschland" class="full readonly" readonly><sup>2</sup>
     </p>
     <p>
       <input type="email" name="email" id="email" placeholder="E-Mail" class="full" required><sup>3</sup>
     </p>
     <p>
-      <input type="checkbox" name="newsletter" id="newsletter">
-      <label for="newsletter">Newsletter abonnieren</label>
+      <label class="switch">
+        <input type="checkbox" name="newsletter" id="newsletter">
+        <span class="slider"></span>
+      </label>
+      <span>Newsletter abonnieren</span>
     </p>
     <div id="ham">
       <p>Um Spam zu vermeiden, wähle bitte das Cardboard:</p>
