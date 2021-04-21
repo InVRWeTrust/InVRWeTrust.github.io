@@ -6,7 +6,7 @@ In combination with a smartphone as a display, a guided tour of the exhibition o
  <form action="https://data.invr.info/users" method="PUT" name="order" id="orderForm">
     <p>
       <input type="text" name="firstname" id="firstname" placeholder="First Name" class="half firstHalf" required><input type="text" name="lastname" id="lastname" placeholder="Last Name" class="half" required><br>
-      <input type="text" name="additionalAddress" id="additionalAddress" placeholder="Additional Address (opt.)" class="full">
+      <input type="text" name="additionalAddress" id="additionalAddress" placeholder="Additional Address, e.g. c/o (opt.)" class="full">
     </p>
     <p>
       <input type="text" name="streetAndHouseNumber" id="streetAndHouseNumber" placeholder="Street and House Number" class="full" required><br>
