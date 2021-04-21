@@ -76,17 +76,20 @@ div.footnotes {
 }
 .ham {
   width: calc((100% / 2 - 16px) / 3);
-  min-height: 5em;
+  height: calc((100% / 2 - 16px) / 3);
 }
 #ham {
   transition: background-color 1s;
   text-align: left;
 }
 #ham input {
-    display: none;
+  display: none;
 }
-#ham input[type="radio"]:checked + label {
-    border-top: black 1px solid;
+#ham input[type="radio"]:checked + label img {
+  border-bottom: black 1px solid;
+}
+#ham-test {
+  padding-top: 0;
 }
 /* vietnamese */
 @font-face {

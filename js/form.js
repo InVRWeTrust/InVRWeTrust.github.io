@@ -62,14 +62,17 @@ function hamTest() {
 
 	hamArray = shuffle(hamArray);
 
-	//$("#ham").empty();
+	var hamTests = '<p id="ham-test">';
 
 	hamArray.forEach(function(item) {
 		var input = '<input type="radio" name="ham" id="ham' + item + '">';
 		var img = '<label for="ham' + item + '"><img class="ham" src="./graphics/ham/' + item + '.svg"></label>';
-		$("#ham").append(input);
-		$("#ham").append(img);
+		hamTests += input + img;
 	});
+
+	hamTests += '</p>';
+
+	$("#ham").append(hamTests);
 }
 
 function shuffle(array) {
