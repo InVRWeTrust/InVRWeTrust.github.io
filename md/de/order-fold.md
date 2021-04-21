@@ -7,7 +7,7 @@ In Kombination mit einem Smartphone als Display, einer Ausstellungsführung auf 
     <p>
       <input type="text" name="firstname" id="firstname" placeholder="Vorname" class="half" required>
       <input type="text" name="lastname" id="lastname" placeholder="Nachname" class="half" required><br>
-      <input type="text" name="additionalAddress" id="additionalAddress" placeholder="Adresszusatz (opt.)" class="full">
+      <input type="text" name="additionalAddress" id="additionalAddress" placeholder="Adresszusatz, z.B. c/o (opt.)" class="full">
     </p>
     <p>
       <input type="text" name="streetAndHouseNumber" id="streetAndHouseNumber" placeholder="Straße & Hausnummer" class="full" required><br>
