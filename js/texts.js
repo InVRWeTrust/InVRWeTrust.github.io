@@ -61,11 +61,17 @@ function sd(target, dependents, initial) {
   $.get(file, function (response) {
       text = response;
       var html      = converter.makeHtml(text);
+      var $html = $('<div />',{html:html});
+      $html.find('img').each(function() {
+        $(this).addClass('lazy');
+        $(this).attr('data-original', $(this).attr('src'));
+        $(this).attr('loading', 'lazy');
+      });
 
       function sdAct(target){
         //console.log(target)
         $(target).each(function( index ) {
-          $(this).html(html);
+          $(this).html($html.html());
         });
         return $.ajax()
       }
@@ -90,6 +96,7 @@ function sd(target, dependents, initial) {
           });
           if (initial) {
             contentsDone().done(function(){
+              lazyload();
               $('body').css('filter', 'initial');
               $('body').removeClass('progress');
               setTimeout(function(){
@@ -227,11 +234,18 @@ function scrollToAct(target, scrollTarget) {
 
 var textsN = Object.keys(texts).length;
 var textsI = 0;
+
 $( document ).ready(function(){
+  prepare().done(function(){
+    for (const prop in texts) {
+      sd(prop, texts[prop], true);
+    };
+  });
+});
+
+function prepare() {
   $.each( questions, function( key, value ) {
     qBox(value.id, value.insertAfter, value.template);
   });
-  for (const prop in texts) {
-    sd(prop, texts[prop], true);
-  };
-});
+  return $.ajax()
+}
