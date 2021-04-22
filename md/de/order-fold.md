@@ -35,7 +35,7 @@ In Kombination mit einem Smartphone als Display, einer Ausstellungsführung auf 
 <div class="footnotes">
 <p><sup>1</sup> Wir bitten euch, pro Haushalt nur ein Cardboard zu bestellen. Wir haben nur eine begrenzte Stückzahl und möchten möglichst vielen Menschen die Teilhabe ermöglichen.</p>
 
-<p><sup>2</sup> Aus finanziellen Gründen können wir leider ausschließlich innerhalb Deutschlands versenden (inklusive Inseln). Es ist administrativ leider nicht möglich die Mehrkosten für den Auslandsversand selbst zu zahlen. Falls du aus dem Ausland teilhaben möchtest, organisiere dir bitte eine andere Cardboard (siehe auch *Häufige Fragen: Kann ich mein schon vorhandenes Cardboard verwenden?*).</p>
+<p><sup>2</sup> Aus finanziellen Gründen können wir leider ausschließlich innerhalb Deutschlands versenden (inklusive Inseln). Es ist administrativ leider nicht möglich die Mehrkosten für den Auslandsversand selbst zu zahlen. Falls du aus dem Ausland teilhaben möchtest, organisiere dir bitte ein anderes Cardboard (siehe auch *Häufige Fragen: Kann ich mein schon vorhandenes Cardboard verwenden?*).</p>
 
 <p><sup>3</sup> Die E-Mail Adresse wird, sofern du dich nicht in den Newsletter einträgst, ausschließlich zur Bestätigung deiner Adressdaten (um Spam zu verhindern) und einer einmaligen Einladung zum Rahmenprogramm verwendet.</p>
 </div>
