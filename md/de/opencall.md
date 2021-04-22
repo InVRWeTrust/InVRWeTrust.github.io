@@ -18,9 +18,3 @@ Wir suchen nach Arbeiten, die sich kritisch mit einer oder mehreren der folgende
 Die vier ausgesuchten Positionen werden jeweils einen Tag im NRW Forum in Düsseldorf und in der Nudel in Zeitz bei zwei vier-tägigen diskursiven Ausstellungen zusehen sein. Diese werden begleitet von Diskussionen, Vorträgen und einem intensiven Austausch mit den anderen Künstler_innen. Deshalb ist die durchgehende Anwesenheit bei beiden Ausstellungen erforderlich.
 
 Der Call richtet sich an künstlerisch schaffende Menschen jeder Selbstdefinition. Wir freuen uns insbesondere über Bewerbungen von in der VR-(Kunst-)Szene normalerweise unterrepräsentierten Menschen.
-
-Wir wollen im Rahmen dieses Ausstellungsprojektes mit einem Prozess der Co-Kuration experimentieren. Weitere Informationen dazu sind [unserer Website](https://trust.invr.info/#co-curation) zu finden.
-
-Auf [trust.invr.info](https://trust.invr.info/) begleiten wir das Projekt mit Gesprächen, Diskussionen und Links.
-
-„In VR we trust“, kuratiert von [Daniel Hengst](http://danielhengst.de/) & [Clemens Schöll](http://neopostmodern.com/), ein Projekt von [THIS IS FAKE](http://thisisfake.team/), in Kooperation mit [pl](http://www.plusnull.org/)[usnull e.V.](http://www.plusnull.org/), gefördert durch die [innogy Stiftung](https://innogy-stiftung.com/), Website von [alex h](https://alexh.name).
