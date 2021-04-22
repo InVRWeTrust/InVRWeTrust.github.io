@@ -16,14 +16,3 @@ Last but not least Robin Kötzle's [Chinesischer Pavillon](https://www.nextmuseu
 <br>
 We're very excited to show you these pieces next year and discuss them - because one thing was very obvious in our process: we're still learning how to talk about VR, what to relate it to, and how to document it in 2D material — thus seeing a piece in VR yourself makes all the difference.  
 We hope to welcome you in one of the exhibitions where you can validate our take on VR and discuss it with the artists, the audience, and us.<br>
-<br>
-Save the dates!<br>
-<br>
-~~2021-04-22 through 2021-04-25: Nudel, Zeitz~~
-~~2021-05-13 through 2021-05-16: NRW Forum, Düsseldorf~~<br>
-<br>
-starting from 20.04.2021 you can order the "in VR we trust" cardboard <br>
-<br>
-01.05.2021 online exhibition is opening<br>
-<br>
-11\. & 12.05.2021 Online-talks with the artists and experts

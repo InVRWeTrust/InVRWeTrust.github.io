@@ -4,15 +4,16 @@ on:
     branches:
       - public
 jobs:
-  jekyll-build-ftp-deploy:
-    name: Deploy via FTP
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
-      - name: Deploy via FTP
-        uses: sebastianpopp/ftp-action@releases/v1
+      - uses: actions/checkout@v2
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@4.1
         with:
-          host: chi-node5.websitehostserver.net:21
-          user: github@trust.invr.info
-          password: ${{ secrets.FTP_PASSWORD }}
+          switches: -avzr --delete
+          path: /
+          remote_path: /home/${{ secrets.UBERSPACE_USER }}/html/
+          remote_host: ${{ secrets.UBERSPACE_HOST }}
+          remote_user: ${{ secrets.UBERSPACE_USER }}
+          remote_key: ${{ secrets.DEPLOY_KEY_PRIVATE }}
