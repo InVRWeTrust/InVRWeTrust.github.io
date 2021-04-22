@@ -73,10 +73,10 @@ function sd(target, dependents, initial) {
         $(target).each(function( index ) {
           $(this).html($html.html());
         });
-        return $.ajax()
+        //return $.ajax()
       }
 
-      sdAct(target).done(function(){
+      sdAct(target)//.done(function(){
         if (fold) {
           setFold(target);
         };
@@ -106,7 +106,7 @@ function sd(target, dependents, initial) {
           }
           intraLinks();
         }
-      });
+      //});
   });
 }
 
