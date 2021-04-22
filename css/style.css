@@ -16,12 +16,12 @@ input[type="password"], input[type="search"], input[type="email"], input[type="t
   padding: 1px;
 }
 #orderForm input::placeholder {
-  color: lightgray;
+  color: #aaa;
 }
 #orderForm input.readonly {
   border: none;
   cursor: not-allowed;
-  border-bottom: lightgray solid 1px;
+  border-bottom: #aaa solid 1px;
 }
 #orderForm input[type=submit] {
   display: block;
