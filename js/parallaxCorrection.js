@@ -1,7 +1,7 @@
 function parallaxResize () {
 	if (!ios) {
+		$('#animationCss').prop('disabled', true);
 		$("div.parallax-child-1, div.parallax-child-2, div.mid-small").each(function( index ) {
-			$('#animationCss').prop('disabled', true);
 
 			$(this).removeAttr("style");
 
@@ -14,8 +14,7 @@ function parallaxResize () {
 			var nHeight = Math.ceil( oHeight * scale );
 			$(this).height( nHeight );
 			$(this).width( nWidth );
-
-			$('#animationCss').prop('disabled', false);
 		});
+		$('#animationCss').prop('disabled', false);
 	}
 }

@@ -1,4 +1,6 @@
 var lang;
+$('body').css('filter', 'blur(10px)');
+
 $.urlParam = function(name){
     var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
     if (results==null) {
@@ -73,41 +75,53 @@ function sd(target, dependents, initial) {
         $(target).each(function( index ) {
           $(this).html($html.html());
         });
-        return $.ajax()
       }
 
-      sdAct(target).done(function(){
-        if (fold) {
-          setFold(target);
-        };
-        if(dependents) {
-          dependents.forEach(function(item, index, array) {
-            textsN++;
-            sd(item, [], initial);
-            //console.log(item)
+      sdAct(target);
+
+      if (fold) {
+        setFold(target);
+      };
+      if(dependents) {
+        dependents.forEach(function(item, index, array) {
+          textsN++;
+          sd(item, [], initial);
+          //console.log(item)
+        });
+      }
+      textsI++;
+      if (textsI >= textsN) {
+        //console.log("sd(): last text: ", target, textsN );
+        $(".sd-nop").each(function( index ) {
+          var cnt = $(this).find("p").contents();
+          $(this).find("p").replaceWith(cnt);
+        });
+        if (initial) {
+          contentsDone();
+          lazyload();
+          resizeFunctions();
+          $('body').css('filter', 'blur(100px)');
+          $('#container').trigger('resize');
+
+          $('#container').animate({
+            scrollTop: $('#prop').height() }, 500, function() {
+              $('#container').trigger('resize');
+
+              $('#container').animate({
+                scrollTop: 0 }, 500, function() {
+                  $('#container').trigger('resize');
+                  $('body').css('filter', 'initial');
+                  $('body').removeClass('progress');
+                  setTimeout(function(){
+                    scrollToo(window.location.hash, false);
+                  }, 500);
+              });
+
           });
         }
-        textsI++;
-        if (textsI >= textsN) {
-          //console.log("sd(): last text: ", target, textsN );
-          $(".sd-nop").each(function( index ) {
-            var cnt = $(this).find("p").contents();
-            $(this).find("p").replaceWith(cnt);
-          });
-          if (initial) {
-            contentsDone().done(function(){
-              lazyload();
-              $('body').css('filter', 'initial');
-              $('body').removeClass('progress');
-              setTimeout(function(){
-                scrollToo(window.location.hash, false);
-              }, 500);
-            });
-          }
-          intraLinks();
-        }
-      });
-  });
+        intraLinks();
+      }
+  }, 'text');
 }
 
 function contentsDone() {
@@ -115,7 +129,7 @@ function contentsDone() {
   order();
   hamTest();
   foldFaq();
-  return $.ajax()
+  resizeFunctions();
 }
 
 function uniqId() {
@@ -157,77 +171,75 @@ function tryFoldTarget(target) {
 }
 
 function scrollToo(anc, intra) {
-  resizeFunctions().done(function(){
-
-    //console.log('scrollTo: ' + anc + ', ' + intra);
-    var scrollTarget = 0;
-    var toTop = false
-    anc = anc.toLowerCase()
-    if (anc == "#top") {
+  //console.log('scrollTo: ' + anc + ', ' + intra);
+  var scrollTarget = 0;
+  var toTop = false
+  anc = anc.toLowerCase()
+  if (anc == "#top") {
+    target = anc;
+    toTop = true;
+  } else {
+    if (intra) {
       target = anc;
-      toTop = true;
     } else {
-      if (intra) {
+      if ($(anc).length) {
         target = anc;
       } else {
-        if ($(anc).length) {
-          target = anc;
-        } else {
-          target = anc + '-fold';
-        }
+        target = anc + '-fold';
       }
     }
+  }
 
-    //target = tryFoldTarget(target);
-    //console.log('scrollTo target: ' + target);
+  //target = tryFoldTarget(target);
+  //console.log('scrollTo target: ' + target);
 
-    //console.log('scrollTo target obj: ' + JSON.stringify($(target)) );
-    if ($(target).length) {
-      $('#container').scrollTop(0);
-      //console.log('scrollTo offset: ' + JSON.stringify($(target).offset()));
-      scrollTarget = $(target).offset().top;
-      var stickyHeight = $('#static1').height();
-      if (ios) {
-        var multiplier = 8;
-      } else {
-        var multiplier = 4;
-      }
-      scrollTarget = scrollTarget - stickyHeight * multiplier;
-
-      if (!ios) {
-        var scale = parseFloat($(target).css('transform').split(',')[5]);
-        if (scale > 0) {
-          scrollTarget = scrollTarget * scale;
-        }
-      }
-
-      scrollToAct(target, scrollTarget)
-
-
+  //console.log('scrollTo target obj: ' + JSON.stringify($(target)) );
+  if ($(target).length) {
+    $('#container').scrollTop(0);
+    //console.log('scrollTo offset: ' + JSON.stringify($(target).offset()));
+    scrollTarget = $(target).offset().top;
+    var stickyHeight = $('#static1').height();
+    if (ios) {
+      var multiplier = 8;
     } else {
-      if (toTop) {
-        scrollTarget = 0;
-        scrollToAct(null, scrollTarget);
-      } else {
-        //console.log('scrollTo: no valid scroll target: ' + target)
-        return;
+      var multiplier = 4;
+    }
+    scrollTarget = scrollTarget - stickyHeight * multiplier;
+
+    if (!ios) {
+      var scale = parseFloat($(target).css('transform').split(',')[5]);
+      if (scale > 0) {
+        scrollTarget = scrollTarget * scale;
       }
     }
-  });
+
+    scrollToAct(target, scrollTarget)
+
+
+  } else {
+    if (toTop) {
+      scrollTarget = 0;
+      scrollToAct(null, scrollTarget);
+    } else {
+      //console.log('scrollTo: no valid scroll target: ' + target)
+      return;
+    }
+  }
 }
 
 function scrollToAct(target, scrollTarget) {
-  var scrollTime = 2000;
+  var scrollTime = 1000;
   $('#container').animate({
       scrollTop: scrollTarget
-  }, scrollTime);
-  setTimeout(function(){
+  }, scrollTime, function() {
+
     var fold = $(target).find(".fold-start")[0];
     $(fold).show("slow");
     if (target == '#subscribe-fold') {
       $('#mce-EMAIL').focus().select();
     }
-  }, scrollTime + 100);
+
+  });
   var url = window.location.href.split('#')[0];
   window.location.href = url + target.replace(/-fold$/, "");
 }
@@ -236,16 +248,14 @@ var textsN = Object.keys(texts).length;
 var textsI = 0;
 
 $( document ).ready(function(){
-  prepare().done(function(){
-    for (const prop in texts) {
-      sd(prop, texts[prop], true);
-    };
-  });
+  prepare()
+  for (const prop in texts) {
+    sd(prop, texts[prop], true);
+  };
 });
 
 function prepare() {
   $.each( questions, function( key, value ) {
     qBox(value.id, value.insertAfter, value.template);
   });
-  return $.ajax()
 }
