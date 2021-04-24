@@ -62,6 +62,10 @@ div.window.mid-small + div.window.mid-small
   margin-top: 10ex;
 }
 
+div.window.interview-text.followup {
+  margin-top: 4ex !important;
+}
+
 div.window.placeholder {
   overflow: scroll;
 }
