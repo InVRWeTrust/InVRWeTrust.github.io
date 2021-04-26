@@ -3,7 +3,7 @@
   
 ![Grass overview](./graphics/content/1_Grass_overview.jpg)
 
-installation (VR headset, grass, electronic aroma dispenser, monitor, computer mouse)
+Installation (VR headset, grass, electronic aroma dispenser, monitor, computer mouse)
 
 Dani Ploeger makes objects, videos and software that explore situations of conflict and crisis on the fringes of the world of high-tech consumerism. His work has been exhibited at ZKM Karlsruhe, Venice Architecture Biennale, transmediale, V&A Museum London and The New Institute in Rotterdam. He holds a PhD from the University of Sussex, UK, and is currently a Research Fellow at The Royal Central School of Speech and Drama, University of London, and a Fellow at V2_Lab for the unstable media in Rotterdam. He is represented by Art Claims Impulse in Berlin.
 

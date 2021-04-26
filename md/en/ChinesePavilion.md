@@ -4,7 +4,7 @@
 
 ![Screenshot VR installation](./graphics/content/1_DokuChinesischerPavillon_4.jpg)
 
-Virtual Reality Installation und Audio
+Virtual Reality installation and audio
 
 The question of reality and the associated power structures are central to Robin Kötzle's work. Starting from this, he deals with historical as well as capitalism-critical processes and examines the social changes in times of the digital revolution through connecting different digital media.
 
