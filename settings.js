@@ -41,9 +41,13 @@ var texts = {
   'nav-fold': [],
   'opencall': [],
   'TheGrassSmellsSoSweet': [],
+  'TheGrassSmellsSoSweetInterview': [],
   'Virtualshamanism': [],
+  'VirtualshamanismInterview': [],
   'Gliese667Cc': [],
+  'Gliese667CcInterview': [],
   'ChinesePavilion': [],
+  'ChinesePavilionInterview': [],
   'order-fold': ['orderOK', 'orderError'],
 };
 
@@ -112,7 +116,7 @@ var questions = [
   },
   {
     'id': 'q-1',
-    'insertAfter': '#thegrasssmellssosweet',
+    'insertAfter': '#thegrasssmellssosweetinterview',
     'template':
       '<div id="q1" class="consentInfo"></div> \n \
       <div class="consentSliders sliders"> \n \
@@ -127,7 +131,7 @@ var questions = [
   },
   {
     'id': 'q-2',
-    'insertAfter': '#gliese667cc',
+    'insertAfter': '#gliese667ccinterview',
     'template':
       '<div id="q2" class="consentInfo"></div> \n \
       <div class="consentSliders sliders"> \n \

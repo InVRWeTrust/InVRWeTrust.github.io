@@ -32,7 +32,7 @@ if (ios) {
 //}
 //ios = true;
 if (ios) {
-  $('head').append('<link rel="stylesheet" type="text/css" href="./css/iOS.css?3">');
+  $('head').append('<link rel="stylesheet" type="text/css" href="./css/iOS.css?4">');
 }
 
 var text = '';
