@@ -4,7 +4,7 @@ Willst Du auch mitfahren auf dem Virtual-Reality-Hypetrain? Träumst du von eine
 <br><br>
 Die Ausstellung, ursprünglich geplant im NRW Forum in Düsseldorf und in der Nudelfabrik in Zeitz, will anhand von vier kritischen Positionen den aktuellen Stand und zukünftigen Wert von Virtual Reality als künstlerischem Werkzeug oder Medium reflektieren und zugleich eine öffentliche Diskussion darüber ermöglichen.
 <br><br>
-Durch die Auswirkungen der Pandemie und die unsichere Situation für Besucher:innen der Ausstellung, haben wir uns entschieden die Ausstellung nicht in den geplanten Räumlichkeiten in Düsseldorf und Zeitz stattfinden zu lassen. Stattdessen eröffnet am 5. Mai 2021 eine postalisch-virtuelle Adaptation.
+Durch die Auswirkungen der Pandemie und die unsichere Situation für Besucher:innen der Ausstellung, haben wir uns entschieden die Ausstellung nicht in den geplanten Räumlichkeiten in Düsseldorf und Zeitz stattfinden zu lassen. Stattdessen eröffnet am 5. Mai 2021 eine postalisch-virtuelle Adaption.
 [Bestelle eines der limitierten Cardboards](/#order-fold) zu dir nach Hause um die Ausstellung zu sehen!
 Am 11. & 12. Mai wird es Gespräche mit den Künstler:innen und Expert:innen geben – save the date.
 <br/>
