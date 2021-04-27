@@ -104,15 +104,16 @@ function sd(target, dependents, initial) {
           $('#container').trigger('resize');
 
           $('#container').animate({
-            scrollTop: $('#prop').height() }, 500, function() {
+            scrollTop: $('#prop').height() }, 1000, function() {
               $('#container').trigger('resize');
 
               $('#container').animate({
-                scrollTop: 0 }, 500, function() {
+                scrollTop: 0 }, 1000, function() {
                   $('#container').trigger('resize');
                   $('body').css('filter', 'initial');
                   $('body').removeClass('progress');
                   setTimeout(function(){
+                    $('#container').trigger('resize');
                     scrollToo(window.location.hash, false);
                   }, 500);
               });
