@@ -210,12 +210,6 @@ div.window:not(.sticky):not(.consent) {
   transform-origin: top;
    margin-bottom: 50ex;
 }
-div.window.followup:not(.sticky):not(.consent) {
-  margin-top: -47ex;
-}
-div.window.followup.left.parallax-child-1:not(.sticky):not(.consent) {
-  margin-top: -40ex;
-}
 div.window.part:not(.sticky):not(.consent) {
   margin-bottom: 10ex;
 }
