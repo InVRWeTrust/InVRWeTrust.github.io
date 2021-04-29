@@ -1,7 +1,7 @@
 function order() {
+	$('.orderMsgs').hide();
 	$('#orderForm').on('submit',function(e){
 		e.preventDefault();
-		$('.orderMsgs').hide();
 		if ($('#ham3').is(':checked')) {
 			$('#orderSubmit').addClass('progress');
 			var object = {};
@@ -21,6 +21,7 @@ function order() {
 				object["newsletter"] = false
 			}
 			var json = JSON.stringify(object);
+			$('#orderSubmit').attr('disabled', 'disabled')
 			response = $.ajax({
 				type       : $(this).attr('method'),
 				cache      : false,
@@ -44,6 +45,7 @@ function order() {
 					//console.log(data)
 					//$("#orderResponse").empty().append(data.responseText).css('visibility','visible');
 					$('#orderSubmit').removeClass('progress');
+					$('#orderSubmit').removeAttr('disabled');
 				}
 			});
 			//console.log(response);

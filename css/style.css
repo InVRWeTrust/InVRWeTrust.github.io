@@ -29,6 +29,10 @@ input[type="password"], input[type="search"], input[type="email"], input[type="t
 #orderForm input[type=submit] {
   background-size: 400% 400%;
 }
+#orderForm input[type=submit]:disabled {
+  opacity: 0.2;
+  cursor: progress;
+}
 input.half {
   width: calc(48% - 0.5ch - 1px);
 }
@@ -42,6 +46,7 @@ input.full {
   animation: gradient 3s ease infinite;
   background: linear-gradient(-45deg, red 0%, black 50%, #1AB7EA 100%);
   background-size: 400% 400%;
+  cursor: progress;
 }
 
 @keyframes gradient {
