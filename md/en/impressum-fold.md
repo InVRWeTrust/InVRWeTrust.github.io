@@ -13,6 +13,9 @@ Icons for spam prevention:
 - ironing
 - VR Cardboard 
 
+For the link to the settings:
+- Service Design
+
 by Daniel Falk from the Noun Project
 
 ### Privacy

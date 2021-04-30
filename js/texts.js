@@ -1,5 +1,6 @@
 var lang;
 $('body').css('filter', 'blur(10px)');
+$("#tosettings").hide();
 
 $.urlParam = function(name){
     var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);

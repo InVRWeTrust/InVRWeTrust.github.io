@@ -11,6 +11,9 @@ Symbole zur Spam-Vermeidung:
 - ironing
 - VR Cardboard
 
+Für den Link zu den Einstellungen:
+- Service Design
+
 by Daniel Falk from the Noun Project
 
 ### Datenschutz
