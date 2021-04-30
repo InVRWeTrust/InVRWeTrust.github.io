@@ -227,6 +227,7 @@ function hideConsent(element) {
       $(nextBtn).hide();
       $(".consent-reminder").hide();
       $(".md-allbtn").hide();
+      $("#tosettings").show("slow");
       $(id).show("slow", function() {
         fillBack();
       });

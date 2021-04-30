@@ -196,6 +196,13 @@ div.sticky {
   top: 1ex;
   right: 1ex;
 }
+#tosettings {
+  left: 1ex;
+}
+#tosettings img {
+  padding: 0.5ex;
+  max-width: 3ex;
+}
 #backtotop {
   top: 7ex;
 }
@@ -560,7 +567,7 @@ div.trustQ span.slider-label {
 }
 body div:not(.fold).consent:not(#dataconsent) {
   position: sticky;
-  top: 1em;
+  top: 10ex;
   bottom: revert;
   max-width: 40ex;
 }
