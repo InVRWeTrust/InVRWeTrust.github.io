@@ -856,6 +856,11 @@ div.parallax-child-1.left + div.parallax-child-2.right {
     font-size: 66%;
   }
 }
+@media only screen and (max-width: 390px) {
+  body div:not(.fold).consent:not(#dataconsent) {
+    max-width: 36ex;
+  }
+}
 @media (max-height: 550px) and (orientation: landscape) {
   div.prop-text:first-child {
     margin-top: 30vh;

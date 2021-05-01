@@ -1,6 +1,9 @@
 div.parallax-child-1.left + div.parallax-child-2.right {
   margin-top: 0;
 }
+body div:not(.fold).consent:not(#dataconsent) {
+  top: 26ex;
+}
 
 * {
   transform-style: flat;

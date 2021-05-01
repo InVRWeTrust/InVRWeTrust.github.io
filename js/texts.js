@@ -2,6 +2,40 @@ var lang;
 $('body').css('filter', 'blur(10px)');
 $("#tosettings").hide();
 
+var ready = false;
+
+setTimeout(function(){
+  containerRdy();
+}, 9000);
+
+function containerRdy() {
+  if (!ready) {
+    ready = true;
+    contentsDone();
+    lazyload();
+    resizeFunctions();
+    $('body').css('filter', 'blur(100px)');
+    $('#container').trigger('resize');
+
+    $('#container').animate({
+      scrollTop: $('#prop').height() }, 1000, function() {
+        $('#container').trigger('resize');
+
+        $('#container').animate({
+          scrollTop: 0 }, 1000, function() {
+            $('#container').trigger('resize');
+            $('body').css('filter', 'initial');
+            $('body').removeClass('progress');
+            setTimeout(function(){
+              $('#container').trigger('resize');
+              scrollToo(window.location.hash, false);
+            }, 500);
+        });
+
+    });
+  }
+}
+
 $.urlParam = function(name){
     var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
     if (results==null) {
@@ -61,69 +95,56 @@ function sd(target, dependents, initial) {
       text      = '';
   //converter.setOption('noHeaderId', true);
   converter.setOption('strikethrough', true);
-  $.get(file, function (response) {
-      text = response;
-      var html      = converter.makeHtml(text);
-      var $html = $('<div />',{html:html});
-      $html.find('img').each(function() {
-        $(this).addClass('lazy');
-        $(this).attr('data-original', $(this).attr('src'));
-        $(this).attr('loading', 'lazy');
-      });
 
-      function sdAct(target){
-        //console.log(target)
+
+  function sdFinish() {
+    if (textsI >= textsN) {
+      //console.log("sd(): last text: ", target, textsN );
+      $(".sd-nop").each(function( index ) {
+        var cnt = $(this).find("p").contents();
+        $(this).find("p").replaceWith(cnt);
+      });
+      if (initial) {
+        containerRdy();
+      }
+      intraLinks();
+    }
+  }
+
+  try {
+    $.get(file, function (response) {
+        text = response;
+        var html      = converter.makeHtml(text);
+        var $html = $('<div />',{html:html});
+        $html.find('img').each(function() {
+          $(this).addClass('lazy');
+          $(this).attr('data-original', $(this).attr('src'));
+          $(this).attr('loading', 'lazy');
+        });
+
         $(target).each(function( index ) {
           $(this).html($html.html());
         });
-      }
 
-      sdAct(target);
-
-      if (fold) {
-        setFold(target);
-      };
-      if(dependents) {
-        dependents.forEach(function(item, index, array) {
-          textsN++;
-          sd(item, [], initial);
-          //console.log(item)
-        });
-      }
-      textsI++;
-      if (textsI >= textsN) {
-        //console.log("sd(): last text: ", target, textsN );
-        $(".sd-nop").each(function( index ) {
-          var cnt = $(this).find("p").contents();
-          $(this).find("p").replaceWith(cnt);
-        });
-        if (initial) {
-          contentsDone();
-          lazyload();
-          resizeFunctions();
-          $('body').css('filter', 'blur(100px)');
-          $('#container').trigger('resize');
-
-          $('#container').animate({
-            scrollTop: $('#prop').height() }, 1000, function() {
-              $('#container').trigger('resize');
-
-              $('#container').animate({
-                scrollTop: 0 }, 1000, function() {
-                  $('#container').trigger('resize');
-                  $('body').css('filter', 'initial');
-                  $('body').removeClass('progress');
-                  setTimeout(function(){
-                    $('#container').trigger('resize');
-                    scrollToo(window.location.hash, false);
-                  }, 500);
-              });
-
+        if (fold) {
+          setFold(target);
+        };
+        if(dependents) {
+          dependents.forEach(function(item, index, array) {
+            textsN++;
+            sd(item, [], initial);
           });
         }
-        intraLinks();
-      }
-  }, 'text');
+        textsI++;
+        sdFinish();
+    }, 'text');
+  } catch(e) {
+    textsI++;
+    console.log(e);
+    sdFinish();
+    sd(target, dependents, initial);
+  }
+
 }
 
 function contentsDone() {
