@@ -15,4 +15,4 @@ You can choose whether and which of these embedded contents will be loaded [belo
 
 ### What rights you have over your data
 
-Complete General Data Protection Regulation: <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679>→
+Complete General Data Protection Regulation: <https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679>

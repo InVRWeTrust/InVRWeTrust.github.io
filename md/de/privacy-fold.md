@@ -16,4 +16,4 @@ Diese Internetseiten können Daten über Sie sammeln, Cookies benutzen, zusätzl
 
 ### Rechte betroffener Personen
 
-Vollständige Datenschutz-Grundverordnung: <http://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679>→
+Vollständige Datenschutz-Grundverordnung: <http://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679>

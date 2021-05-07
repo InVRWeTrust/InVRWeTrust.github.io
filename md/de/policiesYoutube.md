@@ -1,1 +1,1 @@
-**YouTube** [Datenschutzrichtlinie &rarr;](https://policies.google.com/privacy?hl=de)
+**YouTube** [Datenschutzrichtlinie](https://policies.google.com/privacy?hl=de)

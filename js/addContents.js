@@ -161,7 +161,7 @@ function constructPlaceholder(targets, url, title) {
   }
   html += '<div class="link">'
   html += '<p>'
-  html += '<b><a href="' + url + '">' + title + ' &rarr;</a></b>'
+  html += '<b><a href="' + url + '">' + title + '</a></b>'
   html += '</p>'
   html += '</div>'
   html += '<div class="sliders">'

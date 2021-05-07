@@ -1,6 +1,6 @@
 
 The artist duo Banz&Bowinkel has been working in the field of digital art since 2009. In addition to video works and printed CGI works, they have created several works in/with augmented and virtual reality since 2014.  
-<https://www.banzbowinkel.de/>→
+<https://www.banzbowinkel.de/>
 
 **Daniel:** As a duo you have been working together since 2009 and your Website shows printed works, one AR work and some video works before you started making and showing works in/with Virtual Reality in 2016. Could you please describe the path that brought you to VR and with what ideas and aspirations you started your first VR work?
 

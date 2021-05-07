@@ -1,1 +1,1 @@
-**Vimeo** [Cookie Policy &rarr;](https://vimeo.com/cookie_policy), [Privacy Policy &rarr;](https://vimeo.com/privacy)
+**Vimeo** [Cookie Policy](https://vimeo.com/cookie_policy), [Privacy Policy](https://vimeo.com/privacy)
