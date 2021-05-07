@@ -50,6 +50,10 @@ var texts = {
   'ChinesePavilionInterview': [],
   'order-fold': ['orderOK', 'orderError'],
   'toexhibition': [],
+  'talk1': [],
+  'talk2': [],
+  'talk3': [],
+  'talk4': [],
 };
 
 var sounds = [
