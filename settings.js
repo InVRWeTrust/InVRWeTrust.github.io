@@ -49,6 +49,7 @@ var texts = {
   'ChinesePavilion': [],
   'ChinesePavilionInterview': [],
   'order-fold': ['orderOK', 'orderError'],
+  'toexhibition': [],
 };
 
 var sounds = [
