@@ -1,4 +1,4 @@
-## Pre-order the exhibition
+## Pre-order the cardboard
 
 Order the "In VR we trust" exhibition here for free<sup>1</sup> to your home: At the beginning of May you will receive a limited edition Cardboard virtual reality headset.  
 In combination with a smartphone as a display, a guided tour of the exhibition on a computer / tablet and a reliable internet connection, you can visit our exhibition individually from May 5th.

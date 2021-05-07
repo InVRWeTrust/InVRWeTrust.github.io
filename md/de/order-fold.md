@@ -1,4 +1,4 @@
-## Ausstellung vorbestellen
+## cardboard vorbestellen
 
 Bestelle dir hier die "In VR we trust" Ausstellung kostenlos<sup>1</sup> nach Hause: Du bekommst Anfang Mai eine limitierte Cardboard-Virtual-Reality-Brille zugeschickt.  
 In Kombination mit einem Smartphone als Display, einer Ausstellungsführung auf einem Computer/Tablet und einer zuverlässigen Internetverbindung kannst du unsere Ausstellung ab 5. Mai individuell besuchen.
