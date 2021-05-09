@@ -1,1 +1,1 @@
-## [zur Ausstellung](https://doubt.invr.info)
+## [Zur Ausstellung](https://doubt.invr.info)

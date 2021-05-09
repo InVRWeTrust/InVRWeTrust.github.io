@@ -1,7 +1,7 @@
-**Wednesday, May 12, 2021 – 8:00pm**
+Wednesday | May 12, 2021 | 6:30 – 7:45 pm
 <br><br>
-"In VR we trust: A matter of course"
+**In VR we trust: Crossing sensations**
 <br><br>
-The work Chinese Pavilion is our occasion and inspiration to discuss with the artist of the work Robin Kötzle and the gallery owner and expert for digital art Wolf Lieser. The focus will be on the current and future significance of VR art.What modes of action and forms of representation can be discerned and what does art in, with and through VR look like, in which the 'newness' of the medium no longer plays a special role?
+Dani Ploeger's artwork The Grass Smells So Sweet offers an excellent starting point to talk with him and our guests, curator and art historian Johanna Neuschäffer and gallery owner and digital art expert Wolf Lieser, about the role of exterior space for VR and logics of representation in media. What are the spatial and medial relations between 'inside' and 'outside'? What expectations are present towards the medium of VR itself and how can these expectations be dealt with artistically?
 <br><br>
-Guests: Robin Kötzle (artist) & Wolf Lieser (DAM Projects)
+Guests: Dani Ploeger (artist), Johanna Neuschäffer (Office Impart), Wolf Lieser (DAM Projects)

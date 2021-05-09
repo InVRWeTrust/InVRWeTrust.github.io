@@ -54,6 +54,7 @@ var texts = {
   'talk2': [],
   'talk3': [],
   'talk4': [],
+  'talk-intro': [],
 };
 
 var sounds = [
