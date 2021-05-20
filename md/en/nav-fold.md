@@ -1,5 +1,13 @@
 ## Navigation
 
+- [Talk "Augmenting Bodies"](#talk-augmenting-bodies)  
+  (with Matias Brunacci, Einav Katan-Schmid & Michel Reilhac)
+- [Talk "Moving in Space"](#talk-moving-in-space)  
+  (with Elena Romenkova, Hannah Fitsch & Michel Reilhac)
+- [Talk "Crossing Sensations"](#talk-crossing-sensations)  
+  (with Dani Ploeger, Johanna Neuschäffer & Wolf Lieser)
+- [Talk "A Matter of Course"](#talk-a-matter-of-course)  
+  (with Robin Kötzle & Wolf Lieser)
 - [Curatorial Statement](#curatorialStatement)
 - [The Grass Smells So Sweet - Dani Ploeger](#TheGrassSmellsSoSweet)
 - [Virtualshamanism - Matias Brunacci](#Virtualshamanism)

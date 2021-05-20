@@ -50,11 +50,11 @@ var texts = {
   'ChinesePavilionInterview': [],
   'order-fold': ['orderOK', 'orderError'],
   'toexhibition': [],
-  'talk1': [],
-  'talk2': [],
-  'talk3': [],
-  'talk4': [],
-  'talk-intro': [],
+  'talks': [],
+  'talk-augmenting-bodies': [],
+  'talk-moving-in-space': [],
+  'talk-crossing-sensations': [],
+  'talk-a-matter-of-course': [],
 };
 
 var sounds = [
