@@ -8,7 +8,7 @@ Gäste: Robin Kötzle (Künstler) & Wolf Lieser (DAM Projects)<br/>
 Aufgenommen am: Mittwoch | 12. Mai 2021 | 20:00 – 21:15
 
 <p>
-<audio controls>
+<audio controls preload="metadata">
  <source type="audio/ogg" src="https://autobahn.neopostmodern.com/audio/ivwt/04%20-%20In%20VR%20we%20trust%20-%20A%20matter%20of%20course.oga" />
  <source type="audio/mpeg" src="https://autobahn.neopostmodern.com/audio/ivwt/04%20-%20In%20VR%20we%20trust%20-%20A%20matter%20of%20course.mp3" />
 </audio><br/>

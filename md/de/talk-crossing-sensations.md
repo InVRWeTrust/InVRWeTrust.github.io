@@ -10,11 +10,11 @@ Gäste: Dani Ploeger (Künstler), Johanna Neuschäffer (office impart), Wolf Lie
 Aufgenommen am: Mittwoch | 12. Mai 2021 | 18:30 – 19:45
 
 <p>
-<audio controls>
- <source type="audio/ogg" src="https://autobahn.neopostmodern.com/audio/ivwt/04%20-%20In%20VR%20we%20trust%20-%20Crossing%20sensations.oga" />
- <source type="audio/mpeg" src="https://autobahn.neopostmodern.com/audio/ivwt/04%20-%20In%20VR%20we%20trust%20-%20Crossing%20sensations.mp3" />
+<audio controls preload="metadata">
+ <source type="audio/ogg" src="https://autobahn.neopostmodern.com/audio/ivwt/03%20-%20In%20VR%20we%20trust%20-%20Crossing%20sensations.oga" />
+ <source type="audio/mpeg" src="https://autobahn.neopostmodern.com/audio/ivwt/03%20-%20In%20VR%20we%20trust%20-%20Crossing%20sensations.mp3" />
 </audio><br/>
 71 Minuten |
-<a href="https://autobahn.neopostmodern.com/audio/ivwt/04%20-%20In%20VR%20we%20trust%20-%20Crossing%20sensations.oga">Download (OGA / vorbis, 44.8MB)</a> |
-<a href="https://autobahn.neopostmodern.com/audio/ivwt/04%20-%20In%20VR%20we%20trust%20-%20Crossing%20sensations.mp3">Download (MP3, 51.5MB)</a>
+<a href="https://autobahn.neopostmodern.com/audio/ivwt/03%20-%20In%20VR%20we%20trust%20-%20Crossing%20sensations.oga">Download (OGA / vorbis, 44.8MB)</a> |
+<a href="https://autobahn.neopostmodern.com/audio/ivwt/03%20-%20In%20VR%20we%20trust%20-%20Crossing%20sensations.mp3">Download (MP3, 51.5MB)</a>
 </p>

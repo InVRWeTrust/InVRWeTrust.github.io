@@ -10,11 +10,11 @@ Guests: Elena Romenkova (artist), Hannah Fitsch (TU Berlin / Museums Queeren) & 
 Recorded: Tuesday | May 11, 2021 | 8:00 – 9:15 pm
 
 <p>
-<audio controls>
- <source type="audio/ogg" src="https://autobahn.neopostmodern.com/audio/ivwt/04%20-%20In%20VR%20we%20trust%20-%20Moving%20in%20space.oga" />
- <source type="audio/mpeg" src="https://autobahn.neopostmodern.com/audio/ivwt/04%20-%20In%20VR%20we%20trust%20-%20Moving%20in%20space.mp3" />
+<audio controls preload="metadata">
+ <source type="audio/ogg" src="https://autobahn.neopostmodern.com/audio/ivwt/02%20-%20In%20VR%20we%20trust%20-%20Moving%20in%20space.oga" />
+ <source type="audio/mpeg" src="https://autobahn.neopostmodern.com/audio/ivwt/02%20-%20In%20VR%20we%20trust%20-%20Moving%20in%20space.mp3" />
 </audio><br/>
 72 Minuten |
-<a href="https://autobahn.neopostmodern.com/audio/ivwt/04%20-%20In%20VR%20we%20trust%20-%20Moving%20in%20space.oga">Download (OGA / vorbis, 40.2MB)</a> |
-<a href="https://autobahn.neopostmodern.com/audio/ivwt/04%20-%20In%20VR%20we%20trust%20-%20Moving%20in%20space.mp3">Download (MP3, 70MB)</a>
+<a href="https://autobahn.neopostmodern.com/audio/ivwt/02%20-%20In%20VR%20we%20trust%20-%20Moving%20in%20space.oga">Download (OGA / vorbis, 40.2MB)</a> |
+<a href="https://autobahn.neopostmodern.com/audio/ivwt/02%20-%20In%20VR%20we%20trust%20-%20Moving%20in%20space.mp3">Download (MP3, 70MB)</a>
 </p>

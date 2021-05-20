@@ -10,11 +10,11 @@ Gäste: Matias Brunacci (Künstler), Einav Katan-Schmid (gamelab.berlin / HU Ber
 Aufgenommen am: Dienstag | 11. Mai 2021 | 18:30 – 19:45
 
 <p>
-<audio controls>
- <source type="audio/ogg" src="https://autobahn.neopostmodern.com/audio/ivwt/04%20-%20In%20VR%20we%20trust%20-%20Augmenting%20bodies.oga" />
- <source type="audio/mpeg" src="https://autobahn.neopostmodern.com/audio/ivwt/04%20-%20In%20VR%20we%20trust%20-%20Augmenting%20bodies.mp3" />
+<audio controls preload="metadata">
+ <source type="audio/ogg" src="https://autobahn.neopostmodern.com/audio/ivwt/01%20-%20In%20VR%20we%20trust%20-%20Augmenting%20bodies.oga" />
+ <source type="audio/mpeg" src="https://autobahn.neopostmodern.com/audio/ivwt/01%20-%20In%20VR%20we%20trust%20-%20Augmenting%20bodies.mp3" />
 </audio><br/>
 71 Minuten |
-<a href="https://autobahn.neopostmodern.com/audio/ivwt/04%20-%20In%20VR%20we%20trust%20-%20Augmenting%20bodies.oga">Download (OGA / vorbis, 37.5MB)</a> |
-<a href="https://autobahn.neopostmodern.com/audio/ivwt/04%20-%20In%20VR%20we%20trust%20-%20Augmenting%20bodies.mp3">Download (MP3, 68.3MB)</a>
+<a href="https://autobahn.neopostmodern.com/audio/ivwt/01%20-%20In%20VR%20we%20trust%20-%20Augmenting%20bodies.oga">Download (OGA / vorbis, 37.5MB)</a> |
+<a href="https://autobahn.neopostmodern.com/audio/ivwt/01%20-%20In%20VR%20we%20trust%20-%20Augmenting%20bodies.mp3">Download (MP3, 68.3MB)</a>
 </p>
