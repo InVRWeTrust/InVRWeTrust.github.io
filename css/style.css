@@ -402,6 +402,9 @@ div.window.soundcloud, div.window.vimeo, div.window.youtube {
 div.right.parallax-child-2 {
   z-index: 2;
 }
+.audio-container {
+  z-index: 3;
+}
 div.left.parallax-child-2 {
   margin-left: -32vw;
 }
