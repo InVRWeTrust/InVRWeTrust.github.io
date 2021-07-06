@@ -1,43 +1,10 @@
-## Pre-order the cardboard
+## Order the cardboard
 
-Order the "In VR we trust" exhibition here for free<sup>1</sup> to your home: At the beginning of May you will receive a limited edition Cardboard virtual reality headset.  
+Order the "In VR we trust" exhibition here for free to your home: At the beginning of May you will receive a limited edition Cardboard virtual reality headset.  
 In combination with a smartphone as a display, a guided tour of the exhibition on a computer / tablet and a reliable internet connection, you can visit our exhibition individually from May 5th.
 
- <form action="https://data.invr.info/users" method="PUT" name="order" id="orderForm">
-    <p>
-      <input type="text" name="firstname" id="firstname" placeholder="First Name" class="half firstHalf" required><input type="text" name="lastname" id="lastname" placeholder="Last Name" class="half" required><br>
-      <input type="text" name="additionalAddress" id="additionalAddress" placeholder="Additional Address, e.g. c/o (opt.)" class="full">
-    </p>
-    <p>
-      <input type="text" name="streetAndHouseNumber" id="streetAndHouseNumber" placeholder="Street and House Number" class="full" required><br>
-      <input type="text" name="postalCode" id="postalCode" placeholder="Postal Code" pattern="[0-9]{5}" class="half firstHalf" required><input type="text" name="city" id="city" placeholder="City" class="half" required><br>
-      <input type="text" name="country" id="country" placeholder="Germany" class="full readonly" readonly><sup>2</sup>
-    </p>
-    <p>
-      <input type="email" name="email" id="email" placeholder="Email" class="full" required><sup>3</sup>
-    </p>
-    <p>
-      <label class="switch">
-        <input type="checkbox" name="newsletter" id="newsletter">
-        <span class="slider"></span>
-      </label>
-      <span>Subscribe to Newsletter</span>
-    </p>
-    <div id="ham">
-    	<p>To prevent spam, please select the Cardboard:</p>
-    </div>
-   <input type="submit" id="orderSubmit" value="Place exhibition order">
-</form>	
-
-<span class="orderMsgs sd-nop md-orderok"></span>
-<span class="orderMsgs sd-nop md-ordererror"></span><span class="orderMsgs sd-nop" id="orderResponse"></span>
-
-<div class="footnotes">
-<p><sup>1</sup> We ask you to order only one Cardboard per household. We only have a limited number and want to enable as many people as possible to view the exhibition.</p>
-
-<p><sup>2</sup> For financial reasons, we can unfortunately only ship within Germany (including islands). Unfortunately, it is administratively not possible to pay the additional costs for international shipping yourself. If you would like to participate from abroad, please organize a different Cardboard viewer (see also Frequently asked questions: Can I use my existing Cardboard viewer?).</p>
-
-<p><sup>3</sup> If you do not subscribe to the newsletter, the e-mail address will only be used to confirm your address data (to prevent spam) and a one-time invitation to the talks.</p>
+<div style="padding: 0.5em; background-color: whitesmoke;">
+Unfortunately, we have already sent out all the cardboards. However, you can use your own cardboard (see also "Frequently asked questions").
 </div>
 
 ### Frequently asked questions

@@ -1,1 +1,1 @@
-[&larr; navigation](#nav-fold)
+[&larr; Navigation](#nav-fold)

@@ -1,1 +1,1 @@
-[&larr; vorbestellen](#order-fold)
+[&larr; Cardboard bestellen](#order-fold)
